@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[我是怎样搭建这个博客的]]></title>
       <url>%2F2017%2F03%2F28%2F%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%2F</url>
-      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。 ~注意~过程中可能会有报错，请不要放弃，多使用搜索引擎搜索报错信息。本人是在第四次尝试时才搭建成功，最后一次捣鼓了一整天终于弄好。所以坚持下去，你也会有自己的博客~ 准备工作注册Github 注册个人账号 创建一个新仓库，并命名为：你的用户名.github.io 环境安装 安装Node.js 安装Git 打开Git Bash，输入 123git config --global user.name &quot;你的github用户名&quot;git config --global user.email &quot;你的github注册邮箱&quot; 安装Hexo 1npm install -g hexo-cli 博客初始化 选择你的保存路径，打开命令行（这里推荐windows下的Cmder），输入 1hexo init blog 成功后，输入 1hexo g 这一步是使用hexo生成博客，不过还在本地。 （可选）在本地预览博客效果 1hexo d 会提示你可以浏览http://localhost:4000/查看 部署到github 意思就是上传到github上托管 主题设置发表文章(可选)安装插件绑定域名]]></content>
+      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。 ~注意~过程中可能会有报错，请不要放弃，多使用搜索引擎搜索报错信息。本人是在第四次尝试时才搭建成功，最后一次捣鼓了一整天终于弄好。所以坚持下去，你也会有自己的博客~ 准备工作注册Github 注册个人账号 创建一个新仓库，并命名为：你的用户名.github.io 环境安装 安装Node.js 安装Git 打开Git Bash，输入 123git config --global user.name &quot;你的github用户名&quot;git config --global user.email &quot;你的github注册邮箱&quot; 安装Hexo 1npm install -g hexo-cli 博客初始化 选择你的保存路径，打开命令行（这里推荐windows下的Cmder），输入 1hexo init blog 成功后，输入 1hexo g 这一步是使用hexo生成博客，不过还在本地。 （可选）在本地预览博客效果 1hexo d 会提示你可以浏览http://localhost:4000/ 查看 部署到github 意思就是上传到github上托管 主题设置发表文章(可选)安装插件绑定域名]]></content>
     </entry>
 
     
