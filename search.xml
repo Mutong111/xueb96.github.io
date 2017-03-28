@@ -10,16 +10,16 @@
 
     
     <entry>
-      <title><![CDATA[我是怎样搭建这个博客的]]></title>
-      <url>%2F2017%2F03%2F28%2F%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%2F</url>
-      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。]]></content>
+      <title><![CDATA[在Deepin操作系统下安装openCV]]></title>
+      <url>%2F2017%2F03%2F28%2F%E5%9C%A8Deepin%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85openCV%2F</url>
+      <content type="text"><![CDATA[在国产Linux发行版Deepin上使用openCV。 装系统Deepin是一个国产的linux发行版，因为其极高的颜值和不需要折腾的操作吸引了我。正好厌倦了windows 10，又赶上大四的毕业设计，就拿来玩玩了。首先,Deepin系统的安装是非常傻瓜式的，参照官网上的教程 几步就可装好。我采用的是体验安装，重启之后即可选择进入Deepin系统。 配置IDE写Python的应该都知道JetBrain家族的PyCharm好用,而这个家族的IDE们风格一致,使用体验好,所以C++也用他家的Clion吧。//如果是学生的话可以通过认证来获得免费的专业版许可证，实在良心。Deepin的深度商店里是Clion的，然鹅不是最新版，所以最好在官网 下载,然后解压缩，找到Clion.sh文件双击运行开始安装。//这里会出现一个问题，由于CLion是使用CMake Toolchain来编译，安装时会提示C++ Complier: not found 。解决方案为，在终端输入指令 sudo apt-get install g++，等待安装完成即可。 安装openCV下载官网下载：http://opencv.org/downloads.html 选择opencv3.2.0 linux 然后解压缩 安装依赖安装编译opencv的一些依赖 12345sudo apt-get install build-essentialsudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-devsudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev 进入opencv3.2.0文件夹（cd ~/opencv-3.1.0）执行： 123mkdir buildcd build 配置opencv文件12345cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..sudo makesudo make install 这样opencv3.2.0 就安装成功了 参考资料1]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=44751&amp;highlight=clion2]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43127&amp;extra=]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[在Deepin操作系统下安装openCV]]></title>
-      <url>%2F2017%2F03%2F28%2F%E5%9C%A8Deepin%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85openCV%2F</url>
-      <content type="text"><![CDATA[在国产Linux发行版Deepin上使用openCV。 装系统Deepin是一个国产的linux发行版，因为其极高的颜值和不需要折腾的操作吸引了我。正好厌倦了windows 10，又赶上大四的毕业设计，就拿来玩玩了。首先,Deepin系统的安装是非常傻瓜式的，参照官网上的教程 几步就可装好。我采用的是体验安装，重启之后即可选择进入Deepin系统。 配置IDE写Python的应该都知道JetBrain家族的PyCharm好用,而这个家族的IDE们风格一致,使用体验好,所以C++也用他家的Clion吧。//如果是学生的话可以通过认证来获得免费的专业版许可证，实在良心。Deepin的深度商店里是Clion的，然鹅不是最新版，所以最好在官网 下载,然后解压缩，找到Clion.sh文件双击运行开始安装。//这里会出现一个问题，由于CLion是使用CMake Toolchain来编译，安装时会提示C++ Complier: not found 。解决方案为，在终端输入指令 sudo apt-get install g++，等待安装完成即可。 安装openCV下载官网下载：http://opencv.org/downloads.html 选择opencv3.2.0 linux 然后解压缩 安装依赖安装编译opencv的一些依赖 12345sudo apt-get install build-essentialsudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-devsudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev 进入opencv3.2.0文件夹（cd ~/opencv-3.1.0）执行： 123mkdir buildcd build 配置opencv文件12345cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..sudo makesudo make install 这样opencv3.2.0 就安装成功了 参考资料1]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=44751&amp;highlight=clion2]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43127&amp;extra=]]></content>
+      <title><![CDATA[我是怎样搭建这个博客的]]></title>
+      <url>%2F2017%2F03%2F28%2F%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%2F</url>
+      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。]]></content>
     </entry>
 
     
