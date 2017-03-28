@@ -3,6 +3,69 @@
   
     
     <entry>
+      <title><![CDATA[计算机网络入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[计算机系统入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[数据结构与算法入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[大学数学学习资源推荐]]></title>
+      <url>%2F2017%2F03%2F29%2F%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[python入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2Fpython%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Web前端入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2FWeb%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[java入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2Fjava%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[C++入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2FC-%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[C语言入门汇总]]></title>
+      <url>%2F2017%2F03%2F29%2FC%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[A+B输入输出练习]]></title>
       <url>%2F2017%2F03%2F28%2Fcodeup%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%BB%83%E4%B9%A0%2F</url>
       <content type="text"><![CDATA[A+B的格式化输入输出，是最基本的练习。 本文给出 codeup上 A+B输入输出练习 关键代码 1000 123while(scanf("%d%d",&amp;a,&amp;b) != EOF)&#123; printf("%d\n", a+b); &#125; 1001 12345scanf("%d",&amp;n); while(n--)&#123; scanf("%d%d",&amp;a,&amp;b); printf("%d\n",a+b); &#125; 1002 12345scanf("%d %d",&amp;a,&amp;b);while((a!=0)||(b!=0))&#123; printf("%d\n", a+b); scanf("%d %d",&amp;a,&amp;b);&#125; 1003 123456789101112131415#include &lt;cstdio&gt;int main()&#123; int N = 0; scanf("%d",&amp;N); while(N!=0)&#123; int sum = 0, num = 0; //使用变量num接收N个数相加 for(int i=0;i&lt;N;i++)&#123; scanf("%d",&amp;num); sum+=num; &#125; printf("%d\n",sum); scanf("%d",&amp;N); &#125; return 0;&#125; 1004 123456789101112131415#include &lt;cstdio&gt;int main()&#123; int N = 0, M = 0; scanf("%d",&amp;N); for(int i=0;i&lt;N;i++)&#123; scanf("%d",&amp;M); int sum = 0,num = 0; for(int j=0;j&lt;M;j++)&#123; scanf("%d",&amp;num); sum += num; &#125; //算出此行的和 printf("%d\n",sum); &#125; //打印出所有行的和 return 0;&#125; 1005 1234567891011121314#include &lt;cstdio&gt; int main()&#123; int N = 0; //关键点在于结束判定 while(scanf("%d",&amp;N) != EOF)&#123; int sum = 0, num = 0; for(int i=0;i&lt;N;i++)&#123; scanf("%d", &amp;num); sum += num; &#125; printf("%d\n",sum); &#125; return 0; &#125; 1006 12345678#include &lt;cstdio&gt;int main()&#123; int a=0,b=0; while(scanf("%d %d",&amp;a,&amp;b) != EOF)&#123; printf("%d\n\n", a+b); &#125;return 0;&#125; 1007 123456789101112131415#include &lt;cstdio&gt;int main()&#123; int N = 0, M = 0; scanf("%d",&amp;N); for(int i=0;i&lt;N;i++)&#123; scanf("%d",&amp;M); int sum = 0,num = 0; for(int j=0;j&lt;M;j++)&#123; scanf("%d",&amp;num); sum += num; &#125; //算出此行的和 printf("%d\n\n",sum); //比1004多了一个\n &#125; //打印出所有行的和 return 0;&#125;]]></content>
@@ -10,16 +73,16 @@
 
     
     <entry>
-      <title><![CDATA[在Deepin操作系统下安装openCV]]></title>
-      <url>%2F2017%2F03%2F28%2F%E5%9C%A8Deepin%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85openCV%2F</url>
-      <content type="text"><![CDATA[在国产Linux发行版Deepin上使用openCV。 装系统Deepin是一个国产的linux发行版，因为其极高的颜值和不需要折腾的操作吸引了我。正好厌倦了windows 10，又赶上大四的毕业设计，就拿来玩玩了。首先,Deepin系统的安装是非常傻瓜式的，参照官网上的教程 几步就可装好。我采用的是体验安装，重启之后即可选择进入Deepin系统。 配置IDE写Python的应该都知道JetBrain家族的PyCharm好用,而这个家族的IDE们风格一致,使用体验好,所以C++也用他家的Clion吧。//如果是学生的话可以通过认证来获得免费的专业版许可证，实在良心。Deepin的深度商店里是Clion的，然鹅不是最新版，所以最好在官网 下载,然后解压缩，找到Clion.sh文件双击运行开始安装。//这里会出现一个问题，由于CLion是使用CMake Toolchain来编译，安装时会提示C++ Complier: not found 。解决方案为，在终端输入指令 sudo apt-get install g++，等待安装完成即可。 安装openCV下载官网下载：http://opencv.org/downloads.html 选择opencv3.2.0 linux 然后解压缩 安装依赖安装编译opencv的一些依赖 12345sudo apt-get install build-essentialsudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-devsudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev 进入opencv3.2.0文件夹（cd ~/opencv-3.1.0）执行： 123mkdir buildcd build 配置opencv文件12345cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..sudo makesudo make install 这样opencv3.2.0 就安装成功了 参考资料1]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=44751&amp;highlight=clion2]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43127&amp;extra=]]></content>
+      <title><![CDATA[我是怎样搭建这个博客的]]></title>
+      <url>%2F2017%2F03%2F28%2F%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%2F</url>
+      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。 ~注意~过程中可能会有报错，请不要放弃，多使用搜索引擎搜索报错信息。本人是在第四次尝试时才搭建成功，最后一次捣鼓了一整天终于弄好。所以坚持下去，你也会有自己的博客~ 准备工作注册Github 注册个人账号 创建一个新仓库，并命名为：你的用户名.github.io 环境安装 安装Node.js 安装Git 打开Git Bash，输入 123git config --global user.name &quot;你的github用户名&quot;git config --global user.email &quot;你的github注册邮箱&quot; 安装Hexo 1npm install -g hexo-cli 博客初始化 选择你的保存路径，打开命令行（这里推荐windows下的Cmder），输入 1hexo init blog 成功后，输入 1hexo g 这一步是使用hexo生成博客，不过还在本地。 （可选）在本地预览博客效果 1hexo d 会提示你可以浏览http://localhost:4000/ 查看 部署到github 意思就是上传到github上托管 主题设置发表文章(可选)安装插件绑定域名]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[我是怎样搭建这个博客的]]></title>
-      <url>%2F2017%2F03%2F28%2F%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%2F</url>
-      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。 ~注意~过程中可能会有报错，请不要放弃，多使用搜索引擎搜索报错信息。本人是在第四次尝试时才搭建成功，最后一次捣鼓了一整天终于弄好。所以坚持下去，你也会有自己的博客~ 准备工作注册Github 注册个人账号 创建一个新仓库，并命名为：你的用户名.github.io 环境安装 安装Node.js 安装Git 打开Git Bash，输入 123git config --global user.name &quot;你的github用户名&quot;git config --global user.email &quot;你的github注册邮箱&quot; 安装Hexo 1npm install -g hexo-cli 博客初始化 选择你的保存路径，打开命令行（这里推荐windows下的Cmder），输入 1hexo init blog 成功后，输入 1hexo g 这一步是使用hexo生成博客，不过还在本地。 （可选）在本地预览博客效果 1hexo d 会提示你可以浏览http://localhost:4000/ 查看 部署到github 意思就是上传到github上托管 主题设置发表文章(可选)安装插件绑定域名]]></content>
+      <title><![CDATA[在Deepin操作系统下安装openCV]]></title>
+      <url>%2F2017%2F03%2F28%2F%E5%9C%A8Deepin%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85openCV%2F</url>
+      <content type="text"><![CDATA[在国产Linux发行版Deepin上使用openCV。 装系统Deepin是一个国产的linux发行版，因为其极高的颜值和不需要折腾的操作吸引了我。正好厌倦了windows 10，又赶上大四的毕业设计，就拿来玩玩了。首先,Deepin系统的安装是非常傻瓜式的，参照官网上的教程 几步就可装好。我采用的是体验安装，重启之后即可选择进入Deepin系统。 配置IDE写Python的应该都知道JetBrain家族的PyCharm好用,而这个家族的IDE们风格一致,使用体验好,所以C++也用他家的Clion吧。//如果是学生的话可以通过认证来获得免费的专业版许可证，实在良心。Deepin的深度商店里是Clion的，然鹅不是最新版，所以最好在官网 下载,然后解压缩，找到Clion.sh文件双击运行开始安装。//这里会出现一个问题，由于CLion是使用CMake Toolchain来编译，安装时会提示C++ Complier: not found 。解决方案为，在终端输入指令 sudo apt-get install g++，等待安装完成即可。 安装openCV下载官网下载：http://opencv.org/downloads.html 选择opencv3.2.0 linux 然后解压缩 安装依赖安装编译opencv的一些依赖 12345sudo apt-get install build-essentialsudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-devsudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev 进入opencv3.2.0文件夹（cd ~/opencv-3.1.0）执行： 123mkdir buildcd build 配置opencv文件12345cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..sudo makesudo make install 这样opencv3.2.0 就安装成功了 参考资料1]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=44751&amp;highlight=clion2]https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43127&amp;extra=]]></content>
     </entry>
 
     
