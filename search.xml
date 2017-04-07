@@ -26,14 +26,14 @@
     <entry>
       <title><![CDATA[计算机系统入门汇总]]></title>
       <url>%2F2017%2F03%2F29%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[组成原理与操作系统。 有一本书，号称价值超过等体积的黄金，这就是 《深入理解计算机系统》 卡耐基梅隆大学的计算机导论课教材，出自CS系主任之手，知识点涉及汇编、操作系统、组成原理、编译原理。 考研的同学： 计算机系统基础(一)：程序的表示、转换与链接 计算机系统基础（二）：程序的执行和存储访问 南大袁春风老师的课一定要看，因为她是408命题组组长（逃]]></content>
+      <content type="text"><![CDATA[组成原理与操作系统。 《深入理解计算机系统》 卡耐基梅隆大学的计算机导论课教材，出自CS系主任之手，知识点涉及汇编、操作系统、组成原理、编译原理。 计算机组成与设计 软件/硬件接口 美国经典教材 考研的同学： 计算机系统基础(一)：程序的表示、转换与链接 计算机系统基础（二）：程序的执行和存储访问 南大袁春风老师的课，一定要看，因为她是408命题组组长（逃]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[数据结构与算法入门汇总]]></title>
       <url>%2F2017%2F03%2F29%2F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[Programs = Data Structure + Algorithm 面向学习： 清华邓俊辉的数据结构 估计是中文资料中最好的数据结构MOOC。 浙大陈越姥姥的数据结构 面向考试： 《数据结构高分笔记》 购买链接请关注率辉学长的公众号：shuaihui_ds 率辉学长为18考研出了专栏，已经开始更新了，在他的公众号里找 面向Java程序员： 算法第4版 (Ps:作者是高德纳的学生) 应该是最好的选择 同时配合Coursera上普林斯顿的课程，直接打通。 面向天才： 计算机程序设计艺术（第1卷） : 基本算法 算法导论（原书第3版） 实战： CS界的托福考试 PAT ，考好会有名企通知面试- -（Ps：牛客网有优惠券活动，能减50元报名费） 算法笔记 江湖人称晴神宝典的PAT上机指南，刷两遍书，PAT甲级能考满分]]></content>
+      <content type="text"><![CDATA[Programs = Data Structure + Algorithm 面向学习： 清华邓俊辉的数据结构 估计是中文资料中最好的数据结构MOOC。 浙大陈越姥姥的数据结构 面向考试： 《数据结构高分笔记》 购买链接请关注率辉学长的公众号：shuaihui_ds 率辉学长为18考研出了专栏，已经开始更新了，在他的公众号里 面向Java程序员： 算法第4版 (Ps:作者是高德纳的学生) 应该是最好的选择 同时配合Coursera上普林斯顿的课程，直接打通。 面向天才： 计算机程序设计艺术（第1卷） : 基本算法 算法导论（原书第3版） 实战： CS界的托福考试 PAT ，考好会有名企通知面试- -（Ps：牛客网有优惠券活动，能减50元报名费） 算法笔记 江湖人称晴神宝典的PAT上机指南，刷两遍书，PAT甲级能考满分]]></content>
     </entry>
 
     
@@ -61,7 +61,7 @@
     <entry>
       <title><![CDATA[Java入门汇总]]></title>
       <url>%2F2017%2F03%2F29%2Fjava%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[新手上路，如何学习一个。 零基础超入门: 《Java核心技术·卷Ⅰ》 对比了网上推荐的众多经典书籍，我选定了这本作为我的入门教材。目前出到了第10版，基于 Java 8 ，可以说非常新。计划一周看完。]]></content>
+      <content type="text"><![CDATA[新手上路，如何学习一个。 零基础超入门：Java核心技术·卷Ⅰ 对比了网上推荐的众多经典书籍，我选定了这本作为我的入门教材。目前出到了第10版，基于 Java 8 ，非常新，面向零基础。 经典必看：Java编程思想 如果想深入理解Java的思想，这本书不可或缺。 Android方向：第一行代码：Android（第2版） : Android]]></content>
     </entry>
 
     
@@ -75,7 +75,7 @@
     <entry>
       <title><![CDATA[C语言入门汇总]]></title>
       <url>%2F2017%2F03%2F29%2FC%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[扔掉谭浩强，还可以看什么。 零基础超入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。 经典必看: 《The C Programming Language》 俗称K&amp;R，C语言之父的作品。]]></content>
+      <content type="text"><![CDATA[扔掉谭浩强，还可以看什么。 零基础超入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。 C语言程序设计 : 现代方法 哈佛、麻省理工、斯坦福的C语言教材 经典必看: C程序设计语言 : 第 2 版·新版 俗称K&amp;R，C语言之父的作品。但不适合入门。]]></content>
     </entry>
 
     
@@ -103,7 +103,7 @@
     <entry>
       <title><![CDATA[我是怎样搭建这个博客的]]></title>
       <url>%2F2017%2F03%2F27%2F%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%2F</url>
-      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。 ~注意~过程中可能会有报错，请不要放弃，多使用搜索引擎搜索报错信息。本人是在第四次尝试时才搭建成功，最后一次捣鼓了一整天终于弄好。所以坚持下去，你也会有自己的博客~ 准备工作注册Github 注册个人账号 创建一个新仓库，并命名为：你的用户名.github.io 环境安装 安装Node.js 安装Git 打开Git Bash，输入 123git config --global user.name &quot;你的github用户名&quot;git config --global user.email &quot;你的github注册邮箱&quot; 安装Hexo 1npm install -g hexo-cli 博客初始化 选择你的保存路径，打开命令行（这里推荐windows下的Cmder），输入 1hexo init blog 成功后，输入 1hexo g 这一步是使用hexo生成博客，不过还在本地。 （可选）在本地预览博客效果 1hexo d 会提示你可以浏览http://localhost:4000/ 查看 部署到github 意思就是上传到github上托管 主题设置hexo官网 挑选喜欢的主题 想要设置我这个主题的请看 这篇 发表文章在cmd中切换到hexo目录，输入 1hexo n 你的文章名字 然后用文件管理器打开 hexo安装目录\source\_post找到新建的MD文件，使用Markdown语法进行写作 注意文档头的设置信息，可选项有标题、时间、分类、标签、是否开启目录、是否开放评论。 (这里推荐Windows下一款Markdown编辑器Typora，灰常好用。 保存完成后在命令行输入 1hexo g -d 这是生成并部署的简写。刷新你的页面，就可以看到更新了~ (可选)安装插件评论组件可选的的有网易云跟帖、友言等 流量统计绑定域名参考链接]]></content>
+      <content type="text"><![CDATA[从零开始，一步一步搭建出属于自己的静态博客。（未写完 ~注意~过程中可能会有报错，请不要放弃，多使用搜索引擎搜索报错信息。本人是在第四次尝试时才搭建成功，最后一次捣鼓了一整天终于弄好。所以坚持下去，你也会有自己的博客~ 准备工作注册Github 注册个人账号 创建一个新仓库，并命名为：你的用户名.github.io 环境安装 安装Node.js 安装Git 打开Git Bash，输入 123git config --global user.name &quot;你的github用户名&quot;git config --global user.email &quot;你的github注册邮箱&quot; 安装Hexo 1npm install -g hexo-cli 博客初始化 选择你的保存路径，打开命令行（这里推荐windows下的Cmder），输入 1hexo init blog 成功后，输入 1hexo g 这一步是使用hexo生成博客，不过还在本地。 （可选）在本地预览博客效果 1hexo d 会提示你可以浏览http://localhost:4000/ 查看 部署到github 意思就是上传到github上托管 主题设置hexo官网 挑选喜欢的主题 想要设置我这个主题的请看 这篇 发表文章在cmd中切换到hexo目录，输入 1hexo n 你的文章名字 然后用文件管理器打开 hexo安装目录\source\_post找到新建的MD文件，使用Markdown语法进行写作 注意文档头的设置信息，可选项有标题、时间、分类、标签、是否开启目录、是否开放评论。 (这里推荐Windows下一款Markdown编辑器Typora，灰常好用。 保存完成后在命令行输入 1hexo g -d 这是生成并部署的简写。刷新你的页面，就可以看到更新了~ (可选)安装插件评论组件可选的的有网易云跟帖、友言等 流量统计可以使用百度统计 绑定域名参考链接Hexo教程https://zhuanlan.zhihu.com/p/25471760 主题教程https://www.haomwei.com/technology/maupassant-hexo.html]]></content>
     </entry>
 
     
