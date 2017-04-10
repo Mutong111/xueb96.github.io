@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[opencv学习笔记]]></title>
+      <url>%2F2017%2F04%2F10%2Fopencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+      <content type="text"><![CDATA[整理学习openCV过程中重要的知识点。 openCV中的helloworld程序123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 首先前两行属于固定开头，这个写法是最简洁的。 opencv.hpp 中包含了opencv全部的库文件声明，不必再include其他头文件。而命名空间cv不必多说。 ​ Mat是openCV中的数据结构，用于保存图像。 ​ imread()函数，原型如下 1Mat imread(const string&amp; filename, int flags=1 ); ​ 第一个参数是文件名。第二个参数是载入标识，默认为1，标识载入三通道的彩色图像。也可取其他值比如： 0 - 将图像转换成灰度返回 imshow()函数,原型如下 1void imshow(const string&amp; winname, InputArray mat); ​ 第一个参数是窗口名。第二个参数填需要显示的图像。 waitKey()函数 保持图片窗口显示，直到任意按键按下。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[优秀博客推荐]]></title>
       <url>%2F2017%2F03%2F30%2F%E4%BC%98%E7%A7%80%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90%2F</url>
       <content type="text"><![CDATA[本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。 刘未鹏 | Mindhacks 他写过一本关于心智成长的书《暗时间》特别好，是他博文的选录。他向我们展示了一个普通人在某一领域钻研能成为什么样子，从C++到思维再到现在的养娃，认真态度总能帮他取得一些成绩。 如果你想开始写博客，建议你读一下这篇 为什么你应该（从现在开始就）写博客 如果你是一名大学生，你应该能从这篇 我在南大的七年 中得到启发 小土刀 | wdxtub 我是通过搜CSAPP找到的，博主技术范围涉猎较广，读书特别多，也乐意分享，是我心中的大牛~~ 如果你在钻研《深入理解计算机系统》这本书，那么他的 读薄 CSAPP 和 读厚 CSAPP 系列也许能作为参考 (未完)]]></content>
@@ -75,7 +82,7 @@
     <entry>
       <title><![CDATA[C语言入门汇总]]></title>
       <url>%2F2017%2F03%2F29%2FC%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[扔掉谭浩强，还可以看什么。 零基础超入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。 C语言程序设计 : 现代方法 哈佛、麻省理工、斯坦福的C语言教材 经典必看: C程序设计语言 : 第 2 版·新版 俗称K&amp;R，C语言之父的作品。但不适合入门。]]></content>
+      <content type="text"><![CDATA[扔掉谭浩强，还可以看什么。 零基础超入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。另外，李戈老师在PKU的课程录像放在了北大公开课，有不少学生的讨论。 C语言程序设计 : 现代方法 哈佛、麻省理工、斯坦福的C语言教材 经典必看: C程序设计语言 : 第 2 版·新版 俗称K&amp;R，C语言之父的作品。但不适合入门。]]></content>
     </entry>
 
     
