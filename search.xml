@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[PAT(乙级) 1066. 图像过滤(15)]]></title>
       <url>%2F2017%2F04%2F16%2FPAT-%E4%B9%99%E7%BA%A7-1066-%E5%9B%BE%E5%83%8F%E8%BF%87%E6%BB%A4-15%2F</url>
-      <content type="text"><![CDATA[1234567891011121314151617#include &lt;cstdio&gt;int main() &#123; int m, n, a, b, num, raw; scanf("%d%d%d%d%d", &amp;m, &amp;n, &amp;a, &amp;b, &amp;num); for (int i = 0; i &lt; m; i++) &#123; for (int j = 0; j &lt; n; j++) &#123; scanf("%d", &amp;raw); if (raw &gt;= a &amp;&amp; raw &lt;= b) raw = num; if (j != 0) printf(" "); printf("%03d", raw); &#125; printf("\n"); &#125; return 0;&#125;]]></content>
+      <content type="text"><![CDATA[图像过滤是把图像中不重要的像素都染成背景色，使得重要部分被凸显出来。现给定一幅黑白图像，要求你将灰度值位于某指定区间内的所有像素颜色都用一种指定的颜色替换。 输入格式：输入在第一行给出一幅图像的分辨率，即两个正整数M和N（0 &lt; M, N &lt;= 500），另外是待过滤的灰度值区间端点A和B（0 &lt;= A &lt; B &lt;= 255）、以及指定的替换灰度值。随后M行，每行给出N个像素点的灰度值，其间以空格分隔。所有灰度值都在[0, 255]区间内。 输出格式：输出按要求过滤后的图像。即输出M行，每行N个像素灰度值，每个灰度值占3位（例如黑色要显示为000），其间以一个空格分隔。行首尾不得有多余空格。 输入样例：3 5 100 150 03 189 254 101 119150 233 151 99 10088 123 149 0 255 输出样例：003 189 254 000 000000 233 151 099 000088 000 000 000 255 题解：1234567891011121314151617#include &lt;cstdio&gt;int main()&#123; int m, n, a, b, num, raw; scanf("%d%d%d%d%d", &amp;m, &amp;n, &amp;a, &amp;b, &amp;num); for (int i = 0; i &lt; m; i++) &#123; for (int j = 0; j &lt; n; j++) &#123; scanf("%d", &amp;raw); if (raw &gt;= a &amp;&amp; raw &lt;= b) raw = num; if (j != 0) printf(" "); printf("%03d", raw); &#125; printf("\n"); &#125; return 0;&#125; 心得：数组必须要用常数来定义，而这个题无法预知数组大小，但同时可以抛开数组采用“输入-处理-输出”的方法，不做中间保存。 另外这道题可以先根据条件开辟一个大数组，然后“输入-保存-处理-输出”]]></content>
     </entry>
 
     
