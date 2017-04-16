@@ -10,6 +10,13 @@
 
     
     <entry>
+      <title><![CDATA[编程语言入门汇总]]></title>
+      <url>%2F2017%2F04%2F15%2F%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
+      <content type="text"><![CDATA[Python、C语言、C++、Java 的入门。 Python如果你之前没接触过编程，那么以Python上手无疑是最好的。 零基础入门: 廖雪峰的Python教程 这个教程是大家口口相传的良心入门资料，经过群众检验的好东西~ Udacity的CS入门课 ​ C语言 零基础入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授在Coursea上的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。另外，李戈老师在PKU的课程录像放在了北大公开课，相比慕课版有不少学生的讨论的环节。 C语言程序设计 : 现代方法 哈佛、麻省理工、斯坦福的C语言教材。比《C Primer Plus》生动些。 经典必看: C程序设计语言 : 第 2 版·新版 俗称K&amp;R，C语言之父的作品。不适合入门，但入门之后必看。 C++ 零基础入门: C++程序设计（原书第3版） 这本书是很多学校的教材。作者梁勇，美国教授，他编写的教材特点是适合初学者。 如果你嫌看书枯燥，那么以此书为上课教材的 北邮C++程序设计(网易云课堂) 可搭配食用 C++ Primer（第 5 版） 如果你之前有过C语言基础，那么这本全明星阵容的经典适合你。读完这本你就入门了！ Java 零基础入门：Java核心技术·卷Ⅰ 对比了网上推荐的众多经典书籍，我选定了这本作为我的入门教材。目前出到了第10版，基于 Java 8 ，非常新，面向零基础。 经典必看：Java编程思想 如果想深入理解Java面向对象的思想，这本书不可或缺。 Android方向：第一行代码：Android（第2版） : Android]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[openCV学习笔记]]></title>
       <url>%2F2017%2F04%2F10%2Fopencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
       <content type="text"><![CDATA[整理学习openCV过程中重要的知识点。 openCV中的helloworld程序123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 首先前两行属于固定开头，这个写法是最简洁的。 opencv.hpp 中包含了opencv全部的库文件声明，不必再include其他头文件。而命名空间cv不必多说。 Mat是openCV中的数据结构，用于保存图像。 imread()函数，原型如下 1Mat imread(const string&amp; filename, int flags=1 ); ​第一个参数是文件名。第二个参数是载入标识，默认为1，标识载入三通道的彩色图像。也可取其他值比如：0-将图像转换成灰度返回 imshow()函数,原型如下 1void imshow(const string&amp; winname, InputArray mat); 第一个参数是窗口名。第二个参数填需要显示的图像 waitKey()函数 保持图片窗口显示，直到任意按键按下。 视频的读取与播放12345678910111213141516#include &lt;opencv2\opencv.hpp&gt; using namespace cv; int main() &#123; VideoCapture capture("1.avi"); while(1) &#123; Mat frame; capture&gt;&gt;frame; if (frame.empty()) break; imshow("读取视频",frame); waitKey(30); &#125; return 0; &#125;]]></content>
@@ -66,37 +73,9 @@
 
     
     <entry>
-      <title><![CDATA[Python入门汇总]]></title>
-      <url>%2F2017%2F03%2F29%2Fpython%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[Life is short, using Python. 零基础超入门: 廖雪峰的Python教程 这个教程是大家口口相传的良心入门资料，经过群众检验的好东西~]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[Web前端入门汇总]]></title>
       <url>%2F2017%2F03%2F29%2FWeb%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
       <content type="text"><![CDATA[Web前端三剑客：HTML、CSS 和 JavaScript 。怎样入门 零基础超入门: ​ Head First HTML与CSS（第2版） ​ JavaScript DOM编程艺术 （第2版） 发现一个灰常好的英文资料，涵盖了前端的方方面面，而且每年更新：Front-End Developer Handbook 2017]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[Java入门汇总]]></title>
-      <url>%2F2017%2F03%2F29%2Fjava%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[新手上路，如何学习一个。 零基础超入门：Java核心技术·卷Ⅰ 对比了网上推荐的众多经典书籍，我选定了这本作为我的入门教材。目前出到了第10版，基于 Java 8 ，非常新，面向零基础。 经典必看：Java编程思想 如果想深入理解Java的思想，这本书不可或缺。 Android方向：第一行代码：Android（第2版） : Android]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[C++入门汇总]]></title>
-      <url>%2F2017%2F03%2F29%2FC-%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[21天学不会C++ 零基础超入门: Introduction to Programming with C++ 这本书是很多学校的教材。我看的英文版第三版，作者梁勇，美籍华人。同时他的Java教材评价也不错。 如果你嫌看书枯燥，那么将本书作为上课教程的 网易云课堂-北邮C++ 可搭配食用 经典必看： C++ Primer 中文版（第 5 版） 译者和审校真是全明星阵容，内容详细适合自学。]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[C语言入门汇总]]></title>
-      <url>%2F2017%2F03%2F29%2FC%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[扔掉谭浩强，还可以看什么。 零基础超入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。另外，李戈老师在PKU的课程录像放在了北大公开课，有不少学生的讨论。 C语言程序设计 : 现代方法 哈佛、麻省理工、斯坦福的C语言教材 经典必看: C程序设计语言 : 第 2 版·新版 俗称K&amp;R，C语言之父的作品。但不适合入门。]]></content>
     </entry>
 
     
