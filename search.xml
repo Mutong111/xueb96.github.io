@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[PAT(乙级) 1066. 图像过滤(15)]]></title>
+      <url>%2F2017%2F04%2F16%2FPAT-%E4%B9%99%E7%BA%A7-1066-%E5%9B%BE%E5%83%8F%E8%BF%87%E6%BB%A4-15%2F</url>
+      <content type="text"><![CDATA[1234567891011121314151617#include &lt;cstdio&gt;int main() &#123; int m, n, a, b, num, raw; scanf("%d%d%d%d%d", &amp;m, &amp;n, &amp;a, &amp;b, &amp;num); for (int i = 0; i &lt; m; i++) &#123; for (int j = 0; j &lt; n; j++) &#123; scanf("%d", &amp;raw); if (raw &gt;= a &amp;&amp; raw &lt;= b) raw = num; if (j != 0) printf(" "); printf("%03d", raw); &#125; printf("\n"); &#125; return 0;&#125;]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[openCV学习笔记]]></title>
       <url>%2F2017%2F04%2F10%2Fopencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
       <content type="text"><![CDATA[整理学习openCV过程中重要的知识点。 openCV中的helloworld程序123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 首先前两行属于固定开头，这个写法是最简洁的。 opencv.hpp 中包含了opencv全部的库文件声明，不必再include其他头文件。而命名空间cv不必多说。 Mat是openCV中的数据结构，用于保存图像。 imread()函数，原型如下 1Mat imread(const string&amp; filename, int flags=1 ); ​第一个参数是文件名。第二个参数是载入标识，默认为1，标识载入三通道的彩色图像。也可取其他值比如：0-将图像转换成灰度返回 imshow()函数,原型如下 1void imshow(const string&amp; winname, InputArray mat); 第一个参数是窗口名。第二个参数填需要显示的图像 waitKey()函数 保持图片窗口显示，直到任意按键按下。 视频的读取与播放12345678910111213141516#include &lt;opencv2\opencv.hpp&gt; using namespace cv; int main() &#123; VideoCapture capture("1.avi"); while(1) &#123; Mat frame; capture&gt;&gt;frame; if (frame.empty()) break; imshow("读取视频",frame); waitKey(30); &#125; return 0; &#125;]]></content>
