@@ -40,14 +40,14 @@
     <entry>
       <title><![CDATA[PAT(乙级) 1026. 程序运行时间(15)]]></title>
       <url>%2F2017%2F04%2F17%2FPAT-%E4%B9%99%E7%BA%A7-1026-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4-15%2F</url>
-      <content type="text"></content>
+      <content type="text"><![CDATA[带坑的水题。 题解：#include &lt;iostream&gt;#include &lt;cstdio&gt;using namespace std;int main() &#123; int c1, c2; cin &gt;&gt; c1 &gt;&gt; c2; int time = (int)((c2 - c1) / 100.0 + 0.5); int hh = time / 3600; time %= 3600; int mm = time / 60; int ss = time % 60; //setw设置宽度但不能补0，只好用printf了 printf("%02d:%02d:%02d", hh, mm, ss); return 0;&#125;]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[PAT(乙级) 1031. 查验身份证(15)]]></title>
       <url>%2F2017%2F04%2F17%2FPAT-%E4%B9%99%E7%BA%A7-1031-%E6%9F%A5%E9%AA%8C%E8%BA%AB%E4%BB%BD%E8%AF%81-15%2F</url>
-      <content type="text"><![CDATA[题解。 题解： 心得：]]></content>
+      <content type="text"><![CDATA[好麻烦的一道题。 暂时不会，贴出晴神代码= = 题解：#include &lt;cstdio&gt;#include &lt;cstring&gt;int w[20] = &#123;7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2&#125;;char change[15] = &#123;'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'&#125;;int main() &#123; int n; scanf("%d", &amp;n); bool flag = true; char str[20]; for(int i = 0; i &lt; n; i++) &#123; scanf("%s", str); int j, last = 0; for(j = 0; j &lt; 17; j++) &#123; if(!(str[j] &gt;= '0' &amp;&amp; str[j] &lt;= '9')) break; last = last + (str[j] - '0') * w[j]; &#125; if(j &lt; 17) &#123; flag = false; printf("%s\n", str); &#125; else &#123; if(change[last % 11] != str[17]) &#123; flag = false; printf("%s\n", str); &#125; &#125; &#125; if(flag == true) &#123; printf("All passed\n"); &#125; return 0;&#125; 心得：]]></content>
     </entry>
 
     
