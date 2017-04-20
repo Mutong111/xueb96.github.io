@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[PAT(乙级) 1001. 害死人不偿命的(3n+1)猜想(15)]]></title>
       <url>%2F2017%2F04%2F17%2FPAT-%E4%B9%99%E7%BA%A7-1001-%E5%AE%B3%E6%AD%BB%E4%BA%BA%E4%B8%8D%E5%81%BF%E5%91%BD%E7%9A%84-3n-1-%E7%8C%9C%E6%83%B3-15%2F</url>
-      <content type="text"></content>
+      <content type="text"><![CDATA[大概是PAT中最简单的一道。 题目描述：卡拉兹(Callatz)猜想： 对任何一个自然数n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把(3n+1)砍掉一半。这样一直反复砍下去，最后一定在某一步得到n=1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，传说当时耶鲁大学师生齐动员，拼命想证明这个貌似很傻很天真的命题，结果闹得学生们无心学业，一心只证(3n+1)，以至于有人说这是一个阴谋，卡拉兹是在蓄意延缓美国数学界教学与科研的进展…… 我们今天的题目不是证明卡拉兹猜想，而是对给定的任一不超过1000的正整数n，简单地数一下，需要多少步（砍几下）才能得到n=1？ 输入格式：每个测试输入包含1个测试用例，即给出自然数n的值。 输出格式：输出从n计算到1需要的步数。 输入样例：3 输出样例：5 题解：#include &lt;iostream&gt;using namespace std;int main()&#123; int n, step=0; cin &gt;&gt; n; while (n != 1) &#123; if (n % 2 == 0) n /= 2; else n = (3 * n + 1) / 2; step++; &#125; cout &lt;&lt; step; return 0;&#125;]]></content>
     </entry>
 
     
@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[PAT(乙级) 1011. A+B和C(15)]]></title>
       <url>%2F2017%2F04%2F17%2FPAT-%E4%B9%99%E7%BA%A7-1011-A-B%E5%92%8CC-15%2F</url>
-      <content type="text"></content>
+      <content type="text"><![CDATA[简单题，带小坑。 题目描述给定区间[-2^31, 2^31]内的3个整数A、B和C，请判断A+B是否大于C。 输入格式：输入第1行给出正整数T(&lt;=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。 输出格式：对每组测试用例，在一行中输出“Case #X: true”如果A+B&gt;C，否则输出“Case #X: false”，其中X是测试用例的编号（从1开始）。 输入样例：41 2 32 3 42147483647 0 21474836460 -2147483648 -2147483647 输出样例：Case #1: falseCase #2: trueCase #3: trueCase #4: false 题解：#include &lt;iostream&gt;using namespace std;int main()&#123; int n; cin &gt;&gt; n; for (int i = 1; i &lt;= n; i++) &#123; long a, b, c; //用int不全对 cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if ((a + b) &gt; c) cout &lt;&lt; "Case #" &lt;&lt; i &lt;&lt; ": true"&lt;&lt;endl; else cout &lt;&lt; "Case #" &lt;&lt; i &lt;&lt; ": false"&lt;&lt;endl; &#125; return 0;&#125; 心得： 给定区间[-2^31, 2^31]内的3个整数A、B和C a,b,c用int存储是部分正确，换成long就对了，难道OJ是用32位的吗？？？]]></content>
     </entry>
 
     
@@ -40,7 +40,7 @@
     <entry>
       <title><![CDATA[PAT(乙级) 1026. 程序运行时间(15)]]></title>
       <url>%2F2017%2F04%2F17%2FPAT-%E4%B9%99%E7%BA%A7-1026-%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4-15%2F</url>
-      <content type="text"><![CDATA[带坑的水题。 题解：#include &lt;iostream&gt;#include &lt;cstdio&gt;using namespace std;int main() &#123; int c1, c2; cin &gt;&gt; c1 &gt;&gt; c2; int time = (int)((c2 - c1) / 100.0 + 0.5); int hh = time / 3600; time %= 3600; int mm = time / 60; int ss = time % 60; //setw设置宽度但不能补0，只好用printf了 printf("%02d:%02d:%02d", hh, mm, ss); return 0;&#125;]]></content>
+      <content type="text"><![CDATA[格式化输出。 题目描述：要获得一个C语言程序的运行时间，常用的方法是调用头文件time.h，其中提供了clock()函数，可以捕捉从程序开始运行到clock()被调用时所耗费的时间。这个时间单位是clock tick，即“时钟打点”。同时还有一个常数CLK_TCK，给出了机器时钟每秒所走的时钟打点数。于是为了获得一个函数f的运行时间，我们只要在调用f之前先调用clock()，获得一个时钟打点数C1；在f执行完成后再调用clock()，获得另一个时钟打点数C2；两次获得的时钟打点数之差(C2-C1)就是f运行所消耗的时钟打点数，再除以常数CLK_TCK，就得到了以秒为单位的运行时间。 这里不妨简单假设常数CLK_TCK为100。现给定被测函数前后两次获得的时钟打点数，请你给出被测函数运行的时间。 输入格式：输入在一行中顺序给出2个整数C1和C2。注意两次获得的时钟打点数肯定不相同，即C1 &lt; C2，并且取值在[0, 107]。 输出格式：在一行中输出被测函数运行的时间。运行时间必须按照“hh:mm:ss”（即2位的“时:分:秒”）格式输出；不足1秒的时间四舍五入到秒。 输入样例：123 4577973 输出样例：12:42:59 题解：#include &lt;iostream&gt;#include &lt;cstdio&gt;using namespace std;int main() &#123; int c1, c2; cin &gt;&gt; c1 &gt;&gt; c2; int time = (int)((c2 - c1) / 100.0 + 0.5); int hh = time / 3600; time %= 3600; int mm = time / 60; int ss = time % 60; //setw设置宽度但不能补0，只好用printf了 printf("%02d:%02d:%02d", hh, mm, ss); return 0;&#125; 心得：不知道C++中如何实现这种效果。。]]></content>
     </entry>
 
     
