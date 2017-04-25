@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>C++学习笔记 | Xueb96</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">C++学习笔记</h1><a id="logo" href="/.">Xueb96</a><p class="description">_(:3」∠)_</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-rocket"> 主页</i></a><a href="/archives/"><i class="fa fa-bars"> 归档</i></a><a href="/about/"><i class="fa fa-user-o"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">C++学习笔记</h1><div class="post-meta">Apr 25, 2017<span> | </span><span class="category"><a href="/categories/Notes/">Notes</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本："><span class="toc-number">1.</span> <span class="toc-text">基本：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据类型："><span class="toc-number">2.</span> <span class="toc-text">数据类型：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#库函数"><span class="toc-number">3.</span> <span class="toc-text">库函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串："><span class="toc-number">4.</span> <span class="toc-text">字符串：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#格式化输出："><span class="toc-number">5.</span> <span class="toc-text">格式化输出：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#cout："><span class="toc-number">5.1.</span> <span class="toc-text">cout：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#printf："><span class="toc-number">5.2.</span> <span class="toc-text">printf：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件输入输出："><span class="toc-number">6.</span> <span class="toc-text">文件输入输出：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入输出重定向："><span class="toc-number">7.</span> <span class="toc-text">输入输出重定向：</span></a></li></ol></div></div><div class="post-content"><p>阅读Y.Daniel Liang的《C++程序设计》时所作的笔记。</p>
+<a id="more"></a>
+<h4 id="基本："><a href="#基本：" class="headerlink" title="基本："></a>基本：</h4><ul>
+<li>震惊！<code>cout</code>居然是console output的简写。<code>endl</code>是end line的简写</li>
+<li>C++支持形如<code>int a(1);</code>的语法来声明并初始化变量，等价于<code>int a = 1;</code></li>
+</ul>
+<h4 id="数据类型："><a href="#数据类型：" class="headerlink" title="数据类型："></a>数据类型：</h4><ul>
+<li><p><code>long long</code>与<code>long</code>的区别：</p>
+<p>(等看过C++Primer后整理)</p>
+</li>
+<li><p><code>#include &lt;limits&gt;</code> 中定义了一些非常有用的常量： <code>INT_MIN</code>、<code>INT_MAX</code>、<code>LONG_MIN</code>、<code>LONG_MAX</code>、<code>FLT_MIN</code>、<code>FLT_MAX</code>、<code>DBL_MIN</code>、<code>DBL_MAX</code> </p>
+</li>
+<li><p><code>sizeof()</code>可用于类型名也可以用于变量</p>
+</li>
+<li><p>前缀0表示八进制整数，前缀0x表示十六进制整数</p>
+</li>
+<li><p>浮点数的名字由来：带小数点的数值，用科学计数法表示时，小数点的位置浮动了。</p>
+</li>
+<li><p>类型转换：</p>
+<ul>
+<li>显式转换(Explicit Conversion)     <ul>
+<li>转换运算符： <code>static_cast&lt;type&gt;(value)</code>,其中value是一个变量/字面常量/表达式</li>
+<li>C-style cast：<code>(int)value</code></li>
+<li>强制转换(Cast)：显式转换的另一种说法(大坑</li>
+</ul>
+</li>
+<li>隐式转换(Implicit Conversion)</li>
+</ul>
+</li>
+<li><p>溢出：</p>
+<ul>
+<li>overflow：数据超过类型最大值或低于最小值。</li>
+<li>underflow：浮点数太小(太接近于0)被近似为0</li>
+</ul>
+</li>
+<li><p>浮点数有精度，涉及浮点数的计算会导致四舍五入误差，因此，浮点数之间判断相等是不可靠的。</p>
+<p>解决方案：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> <span class="keyword">double</span> EPSILON = <span class="number">1E-14</span>;  <span class="comment">//const float EPSILON = 1E-7;</span></div><div class="line"><span class="keyword">if</span>( <span class="built_in">abs</span>(a-b) &lt; EPSILON )       <span class="comment">//使用abs()需要#include &lt;cmath&gt;</span></div><div class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"a = b"</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>简化<code>bool</code>变量赋值：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> ( number%<span class="number">2</span> == <span class="number">0</span>)</div><div class="line">  even = <span class="literal">true</span>;</div><div class="line"><span class="keyword">else</span></div><div class="line">  even = <span class="literal">false</span>;</div></pre></td></tr></table></figure>
+<p>写成下面这样会好一点：</p>
+<p><code>bool even = number%2 == 0;</code></p>
+<p>直接输出：</p>
+<p><code>cout &lt;&lt; (num % 2 == 0 ? &quot;num is even&quot; : &quot;num is odd&quot;);</code></p>
+</li>
+</ul>
+<h4 id="库函数"><a href="#库函数" class="headerlink" title="库函数"></a>库函数</h4><ul>
+<li><p>生成随机整数：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">srand(time(<span class="number">0</span>));  	<span class="comment">//以time(0)为种子</span></div><div class="line"><span class="built_in">cout</span> &lt;&lt; rand()%<span class="number">10</span>;	<span class="comment">//生成1~9的随机整数</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>数学函数：</p>
+<ul>
+<li><code>ceil(x)</code>  x被向上取整  ， <code>floor(x)</code>   x被向下取整  ， 返回的整数是double类型</li>
+</ul>
+</li>
+<li><p>字符函数：</p>
+<p>需要<code>#include &lt;cctype&gt;</code></p>
+<ul>
+<li><code>isdigit(ch)</code>   数字，返回true</li>
+<li><code>isalpha(ch)</code>   字母，返回true</li>
+<li><code>isalnum(ch)</code>   字母或数字，返回true</li>
+<li><code>islower(ch)</code>   <code>issupper(ch)</code>   判断大小写</li>
+<li><code>isspace(ch)</code>   判断空格</li>
+<li><code>tolower(ch)</code>  <code>tosupper(ch)</code>  转换大小写</li>
+</ul>
+</li>
+</ul>
+<h4 id="字符串："><a href="#字符串：" class="headerlink" title="字符串："></a>字符串：</h4><ul>
+<li>连接：<ul>
+<li><code>string s3 = s1 + s2;</code>  可以</li>
+<li><code>string s += &quot;blabla&quot;;</code>  可以</li>
+<li><code>string s = &quot;abc&quot; + &quot;def&quot;;</code> 是非法的</li>
+</ul>
+</li>
+<li>比较：<ul>
+<li>==、!=、&lt;=、&gt;、=、&lt;、&gt;</li>
+</ul>
+</li>
+<li>读：<ul>
+<li>cin &gt;&gt; s;`  以空白字符结束，如果字符串中有空格则无法正确输入</li>
+<li><code>#include &lt;string&gt;</code>中的 <code>getline(cin, s)</code>   第三个参数默认值为 ‘\n’  ，可以读入空格</li>
+</ul>
+</li>
+</ul>
+<h4 id="格式化输出："><a href="#格式化输出：" class="headerlink" title="格式化输出："></a>格式化输出：</h4><h5 id="cout："><a href="#cout：" class="headerlink" title="cout："></a>cout：</h5><ul>
+<li>setprecision(n)  <ul>
+<li>指定浮点数显示的总位数，cout&lt;&lt;setprecision(3)&lt;&lt;12.34567;  会输出12.3</li>
+<li>宽度不够整数部分，setprecision将被忽略，cout&lt;&lt;setprecision(3)&lt;&lt;23456;  会输出23456</li>
+<li>精度不改变，会一直保持效果</li>
+</ul>
+</li>
+<li>fixed<ul>
+<li>计算机自动使用科学计数法来显示长浮点数，使用fixed强制使用费科学计数法，默认显示到小数点后6位</li>
+<li>使用cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;可控制显示到小数点后2位    </li>
+</ul>
+</li>
+<li>showpoint<ul>
+<li>强制显示小数点</li>
+</ul>
+</li>
+<li>setw(width)<ul>
+<li>指定最小占用宽度，只影响接下来的<strong>一次</strong>输出</li>
+</ul>
+</li>
+<li>left和right<ul>
+<li>setw(width)默认输出右对齐，使用lift可设置为左对齐</li>
+</ul>
+</li>
+</ul>
+<h5 id="printf："><a href="#printf：" class="headerlink" title="printf："></a>printf：</h5><h4 id="文件输入输出："><a href="#文件输入输出：" class="headerlink" title="文件输入输出："></a>文件输入输出：</h4><h4 id="输入输出重定向："><a href="#输入输出重定向：" class="headerlink" title="输入输出重定向："></a>输入输出重定向：</h4></div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://yoursite.com/2017/04/25/cpp学习笔记/" data-id="cj1x7zr5m0000cggdd0iy6arf" class="article-share-link">分享</a><div class="tags"><a href="/tags/C-C/">C/C++</a></div><div class="post-nav"><a href="/2017/04/25/PAT-乙级-1057-数零壹-20/" class="next">PAT(乙级) 1057. 数零壹(20)</a></div><div id="uyan_frame"><script src="http://v2.uyan.cc/code/uyan.js?uid='2129055'"></script></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PAT乙级/">PAT乙级</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安利/">安利</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tutorial/">教程</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">算法题解</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Algorithm/" style="font-size: 15px;">Algorithm</a> <a href="/tags/PAT/" style="font-size: 15px;">PAT</a> <a href="/tags/Liunx/" style="font-size: 15px;">Liunx</a> <a href="/tags/openCV/" style="font-size: 15px;">openCV</a> <a href="/tags/Web/" style="font-size: 15px;">Web</a> <a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/Math/" style="font-size: 15px;">Math</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Network/" style="font-size: 15px;">Network</a> <a href="/tags/C-C/" style="font-size: 15px;">C/C++</a> <a href="/tags/OS/" style="font-size: 15px;">OS</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 链接</i></div><ul></ul><a href="https://github.com/xueb96" title="Github" target="_blank">Github</a><ul></ul><a href="http://weibo.com/xueb96" title="Weibo" target="_blank">Weibo</a><ul></ul><a href="https://www.douban.com/people/xueb96/" title="Douban" target="_blank">Douban</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Xueb96.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1cdfc2bec66c6f122a28a01311eb6535";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
