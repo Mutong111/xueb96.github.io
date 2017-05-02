@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[Toy programs]]></title>
       <url>%2F2017%2F04%2F30%2FToy-programs%2F</url>
-      <content type="text"><![CDATA[也许会有用的一些代码段。比如判断回文、判断素数。 isPrime123456789101112bool isPrime(int n) &#123; if (n==2) return true; if (n % 2 == 0) return false; int sq = (int)sqrt(n); for (int i = 0; i&lt;sq; i += 2) &#123; if (n%i == 0) return false; &#125; return true;&#125; isPalindrome方法1： 123456bool isPalindrome(string a) &#123; if (a == string(a.rbegin(), a.rend())) return true; else return false;&#125; 方法2： 1234567bool isPalindrome(string a) &#123; for (int i = 0, j = a.length() - 1; i &lt; j; i++, j--) &#123; if (a[i] != a[j]) return false; &#125; return true;&#125;]]></content>
+      <content type="text"><![CDATA[也许会有用的一些代码段。比如判断回文、判断素数。 isPrime123456789101112bool isPrime(int n) &#123; if (n == 2) return true; if (n % 2 == 0) return false; int sq = (int)sqrt(n); for (int i = 3; i&lt;=sq; i += 2) &#123; if (n % i == 0) return false; &#125; return true;&#125; isPalindrome方法1： 123456bool isPalindrome(string a) &#123; if (a == string(a.rbegin(), a.rend())) return true; else return false;&#125; 方法2： 1234567bool isPalindrome(string a) &#123; for (int i = 0, j = a.length() - 1; i &lt; j; i++, j--) &#123; if (a[i] != a[j]) return false; &#125; return true;&#125;]]></content>
     </entry>
 
     
