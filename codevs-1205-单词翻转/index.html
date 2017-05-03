@@ -183,13 +183,13 @@
   </header>
 
   <section class="post">
-    <p>给出一个英语句子，希望你把句子里的单词顺序都翻转过来</p>
-<h4 id="输入描述-Input-Description"><a href="#输入描述-Input-Description" class="headerlink" title="输入描述 Input Description"></a>输入描述 Input Description</h4><p>输入包括一个英语句子。</p>
-<h4 id="输出描述-Output-Description"><a href="#输出描述-Output-Description" class="headerlink" title="输出描述 Output Description"></a>输出描述 Output Description</h4><p>按单词的顺序把单词倒序输出</p>
-<h4 id="样例输入-Sample-Input"><a href="#样例输入-Sample-Input" class="headerlink" title="样例输入 Sample Input"></a>样例输入 Sample Input</h4><p>I love you</p>
-<h4 id="样例输出-Sample-Output"><a href="#样例输出-Sample-Output" class="headerlink" title="样例输出 Sample Output"></a>样例输出 Sample Output</h4><p>you love I</p>
-<h4 id="数据范围及提示-Data-Size-amp-Hint"><a href="#数据范围及提示-Data-Size-amp-Hint" class="headerlink" title="数据范围及提示 Data Size &amp; Hint"></a>数据范围及提示 Data Size &amp; Hint</h4><p>简单的字符串操作</p>
-<h4 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">  	<span class="built_in">string</span> a, b;</div><div class="line">	<span class="built_in">cin</span> &gt;&gt; a;</div><div class="line">	<span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; b)</div><div class="line">		a = b + <span class="string">" "</span> + a;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; a;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+    <p>给出一个英语句子，希望你把句子里的单词顺序都翻转过来<br><a id="more"></a></p>
+<h3 id="输入描述-Input-Description"><a href="#输入描述-Input-Description" class="headerlink" title="输入描述 Input Description"></a>输入描述 Input Description</h3><p>输入包括一个英语句子。</p>
+<h3 id="输出描述-Output-Description"><a href="#输出描述-Output-Description" class="headerlink" title="输出描述 Output Description"></a>输出描述 Output Description</h3><p>按单词的顺序把单词倒序输出</p>
+<h3 id="样例输入-Sample-Input"><a href="#样例输入-Sample-Input" class="headerlink" title="样例输入 Sample Input"></a>样例输入 Sample Input</h3><p>I love you</p>
+<h3 id="样例输出-Sample-Output"><a href="#样例输出-Sample-Output" class="headerlink" title="样例输出 Sample Output"></a>样例输出 Sample Output</h3><p>you love I</p>
+<h3 id="数据范围及提示-Data-Size-amp-Hint"><a href="#数据范围及提示-Data-Size-amp-Hint" class="headerlink" title="数据范围及提示 Data Size &amp; Hint"></a>数据范围及提示 Data Size &amp; Hint</h3><p>简单的字符串操作</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">  	<span class="built_in">string</span> a, b;</div><div class="line">	<span class="built_in">cin</span> &gt;&gt; a;</div><div class="line">	<span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; b)</div><div class="line">		a = b + <span class="string">" "</span> + a;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; a;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <blockquote>
 <p>真是简洁优雅，能一下想到的肯定是大神吧。</p>
 </blockquote>
@@ -203,23 +203,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/Web学习资源汇总/" title="Web学习资源汇总">Web学习资源汇总</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/Web学习资料汇总/" title="Web学习资料汇总">Web学习资料汇总</a></h2>
                 <p class="excerpt">
                 
-                前端入门:
-Head First HTML与CSS（第2版）
-JavaScript DOM编程艺术 （第2版）
-发现一个灰常好的英文资料，涵盖了前端的方方面面，而且每年更新：Front-End Developer Handbook 2017
-
-后端：
-还没研究，，好像技术栈很多= =
-
-&hellip;
+                &lt;p&gt;整理一下web学习资料&lt;br&gt;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-03-28T19:54:59.000Z" class="post-list__meta--date date">2017-03-29</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
   <a class="tag-link" href="/tags/Web/">Web</a>
-</span><a class="btn-border-small" href="/Web学习资源汇总/">继续阅读</a></div>
+</span><a class="btn-border-small" href="/Web学习资料汇总/">继续阅读</a></div>
                            
             </div>
         
@@ -230,11 +222,7 @@ JavaScript DOM编程艺术 （第2版）
                 <h2 class="post-list__post-title post-title"><a href="/codevs-1204-寻找子串位置/" title="CodeVS[青铜]  1204  寻找子串位置">CodeVS[青铜]  1204  寻找子串位置</a></h2>
                 <p class="excerpt">
                 
-                给出字符串a和字符串b，保证b是a的一个子串，请你输出b在a中第一次出现的位置。
-输入描述 Input Description仅一行包含两个字符串a和b
-输出描述 Output Description仅一行一个整数
-样例输入 Sample Inputabcd bc
-样例输出 Sample Outpu&hellip;
+                &lt;p&gt;给出字符串a和字符串b，保证b是a的一个子串，请你输出b在a中第一次出现的位置。&lt;br&gt;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-03-28T13:52:26.000Z" class="post-list__meta--date date">2017-03-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;

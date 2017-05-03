@@ -183,29 +183,17 @@
   </header>
 
   <section class="post">
-    <p>Windows 10 下配置openCV3 </p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>我这里下的是 <a href="https://www.visualstudio.com/zh-hans/vs/community" target="_blank" rel="external">VS2017社区版</a>，对我来说够用了。</p>
-<p>openCV 3.2.0 版本：<a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.2.0/" target="_blank" rel="external">下载地址</a> 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。</p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>我的电脑是64位的，我就按照64位来说。</p>
-<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3><p>此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin</p>
-<p>如下图所示，按红色序号来</p>
-<p><img src="http://img.blog.csdn.net/20170320135410439" alt=""></p>
-<h3 id="配置动态链接库"><a href="#配置动态链接库" class="headerlink" title="配置动态链接库"></a>配置动态链接库</h3><p>就是一步简单的复制粘贴：</p>
-<p><strong>找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 </strong></p>
-<h3 id="工程目录配置"><a href="#工程目录配置" class="headerlink" title="工程目录配置"></a>工程目录配置</h3><p>在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下：</p>
-<p><img src="http://i2.muimg.com/567571/08a3da69104bc257.jpg" alt=""></p>
-<h4 id="包含目录"><a href="#包含目录" class="headerlink" title="包含目录"></a>包含目录</h4><p>在包含目录中添加如下内容(注意自己的opencv目录)</p>
-<p><img src="http://images2015.cnblogs.com/blog/683271/201703/683271-20170314110712760-189501170.png" alt=""></p>
-<h4 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h4><p>在库目录下添加如下内容</p>
-<p><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
-<h4 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h4><p>找到链接器&gt;输入，在附加依赖项中添加如下内容</p>
-<p><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>新建项目，输入下面这段代码，注意在项目目录里放图片= =</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>按Ctrl+F5运行。如果成功的话会看到如下窗口</p>
-<p><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""></p>
-<p>恭喜你，安装成功，开始下一步的学习吧~</p>
-<p>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/2017/04/10/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_blank" rel="external">openCV学习笔记</a></p>
+    <p>Windows 10 下配置openCV3<br><a id="more"></a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>我这里下的是 <a href="https://www.visualstudio.com/zh-hans/vs/community" target="_blank" rel="external">VS2017社区版</a>，对我来说够用了。<br>openCV 3.2.0 版本：<a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.2.0/" target="_blank" rel="external">下载地址</a> 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>我的电脑是64位的，我就按照64位来说。</p>
+<h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin<br>如下图所示，按红色序号来<br><img src="http://img.blog.csdn.net/20170320135410439" alt=""></p>
+<h4 id="配置动态链接库"><a href="#配置动态链接库" class="headerlink" title="配置动态链接库"></a>配置动态链接库</h4><p>就是一步简单的复制粘贴：<br><strong>找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 </strong></p>
+<h4 id="工程目录配置"><a href="#工程目录配置" class="headerlink" title="工程目录配置"></a>工程目录配置</h4><p>在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下：<br><img src="http://i2.muimg.com/567571/08a3da69104bc257.jpg" alt=""></p>
+<h5 id="包含目录"><a href="#包含目录" class="headerlink" title="包含目录"></a>包含目录</h5><p>在包含目录中添加如下内容(注意自己的opencv目录)<br><img src="http://images2015.cnblogs.com/blog/683271/201703/683271-20170314110712760-189501170.png" alt=""></p>
+<h5 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h5><p>在库目录下添加如下内容<br><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
+<h5 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h5><p>找到链接器&gt;输入，在附加依赖项中添加如下内容<br><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>新建项目，输入下面这段代码，注意在项目目录里放图片=<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_blank" rel="external">openCV学习笔记</a></p>
 
   </section>
 
@@ -235,11 +223,7 @@
                 <h2 class="post-list__post-title post-title"><a href="/优秀博客推荐/" title="优秀博客推荐">优秀博客推荐</a></h2>
                 <p class="excerpt">
                 
-                本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。
-
-刘未鹏 |  Mindhacks
-他写过一本关于心智成长的书《暗时间》特别好，是他博文的选录。他向我们展示了一个普通人在某一领域钻研能成为什么样子，从C++到思维再到现在的养娃，认真态度总能帮他取得一些成绩。
-如果你想开始写博客，建议你&hellip;
+                &lt;p&gt;本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。&lt;br&gt;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-03-30T03:54:32.000Z" class="post-list__meta--date date">2017-03-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/优秀博客推荐/">继续阅读</a></div>

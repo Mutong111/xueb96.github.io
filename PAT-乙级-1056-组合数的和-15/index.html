@@ -183,13 +183,13 @@
   </header>
 
   <section class="post">
-    <p>给定N个非0的个位数字，用其中任意2个数字都可以组合成1个2位的数字。要求所有可能组合出来的2位数字的和。例如给定2、5、8，则可以组合出：25、28、52、58、82、85，它们的和为330。</p>
-<h4 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h4><p>输入在一行中先给出N（1&lt;N&lt;10），随后是N个不同的非0个位数字。数字间以空格分隔。</p>
-<h4 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h4><p>输出所有可能组合出来的2位数字的和。</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><p>3 2 8 5</p>
-<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><p>330</p>
-<h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> n, num[<span class="number">10</span>];</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;num[i];</div><div class="line">    <span class="keyword">int</span> temp,sum=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++)&#123;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; n; j++)&#123;</div><div class="line">            temp = num[i] + <span class="number">10</span>*num[j];</div><div class="line">            sum += temp;</div><div class="line">            temp = <span class="number">10</span>*num[i] + num[j];</div><div class="line">            sum += temp;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;sum;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="心得："><a href="#心得：" class="headerlink" title="心得："></a>心得：</h4><blockquote>
+    <p>给定N个非0的个位数字，用其中任意2个数字都可以组合成1个2位的数字。要求所有可能组合出来的2位数字的和。例如给定2、5、8，则可以组合出：25、28、52、58、82、85，它们的和为330。<br><a id="more"></a></p>
+<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在一行中先给出N（1&lt;N&lt;10），随后是N个不同的非0个位数字。数字间以空格分隔。</p>
+<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>输出所有可能组合出来的2位数字的和。</p>
+<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><p>3 2 8 5</p>
+<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><p>330</p>
+<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> n, num[<span class="number">10</span>];</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;num[i];</div><div class="line">    <span class="keyword">int</span> temp,sum=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++)&#123;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; n; j++)&#123;</div><div class="line">            temp = num[i] + <span class="number">10</span>*num[j];</div><div class="line">            sum += temp;</div><div class="line">            temp = <span class="number">10</span>*num[i] + num[j];</div><div class="line">            sum += temp;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;sum;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
 <p>依次找出两数组合，调换个位十位的顺序可得两个数，都加到sum中。</p>
 </blockquote>
 
@@ -205,7 +205,7 @@
                 <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1051-复数乘法-15/" title="PAT(乙级) 1051. 复数乘法(15)">PAT(乙级) 1051. 复数乘法(15)</a></h2>
                 <p class="excerpt">
                 
-                题解：12345678910111213141516171819202122232425#include &amp;lt;iostream&amp;gt;#include &amp;lt;cstdio&amp;gt;#include &amp;lt;cmath&amp;gt;using namespace std;int main()&amp;#123;&hellip;
+                &lt;p&gt;复数可以写成(A + Bi)的常规形式，其中A是实部，B是虚部，i是虚数单位，满足i&lt;sup&gt;2&lt;/sup&gt; = -1；也可以写成极坐标下的指数形式(R*e(Pi))，其中R是复数模，P是辐角，i是虚数单位，其等价于三角形式 R(cos(P) + isin(P))。&lt;br&gt;现给定两个复数的R和P，要求输出两数乘积的常规形式。&lt;br&gt;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-04-17T13:05:28.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
@@ -221,8 +221,7 @@
                 <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1061-判断题-15/" title="PAT(乙级) 1061. 判断题(15)">PAT(乙级) 1061. 判断题(15)</a></h2>
                 <p class="excerpt">
                 
-                判断题的评判很简单，本题就要求你写个简单的程序帮助老师判题并统计学生们判断题的得分。
-输入格式：输入在第一行给出两个不超过100的正整数N和M，分别是学生人数和判断题数量。第二行给出M个不超过5的正整数，是每道题的满分值。第三行给出每道题对应的正确答案，0代表“非”，1代表“是”。随后N行，每行给出&hellip;
+                &lt;p&gt;判断题的评判很简单，本题就要求你写个简单的程序帮助老师判题并统计学生们判断题的得分。&lt;br&gt;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-04-17T03:02:36.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
