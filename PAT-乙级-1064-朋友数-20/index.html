@@ -183,10 +183,7 @@
   </header>
 
   <section class="post">
-    <p>待优化。</p>
-<a id="more"></a>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> n, a[<span class="number">40</span>] = &#123; <span class="number">0</span> &#125;;</div><div class="line">	<span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">	<span class="keyword">while</span> (n--) &#123;</div><div class="line">		<span class="keyword">int</span> num, sum = <span class="number">0</span>;</div><div class="line">		<span class="built_in">cin</span> &gt;&gt; num;</div><div class="line">		<span class="keyword">while</span> (num) &#123;</div><div class="line">			sum += num % <span class="number">10</span>;</div><div class="line">			num /= <span class="number">10</span>;</div><div class="line">		&#125;</div><div class="line">		a[sum]++;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">int</span> k = <span class="number">0</span>, ans[<span class="number">40</span>] = &#123; <span class="number">0</span> &#125;, i;</div><div class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">40</span>; i++) &#123;</div><div class="line">		<span class="keyword">if</span> (a[i]) &#123;</div><div class="line">			ans[k] = i;</div><div class="line">			k++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; k &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; k; i++) &#123;</div><div class="line">		<span class="built_in">cout</span> &lt;&lt; ans[i];</div><div class="line">		<span class="keyword">if</span> (i != k - <span class="number">1</span>)</div><div class="line">			<span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
+    <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> n, a[<span class="number">40</span>] = &#123; <span class="number">0</span> &#125;;</div><div class="line">	<span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">	<span class="keyword">while</span> (n--) &#123;</div><div class="line">		<span class="keyword">int</span> num, sum = <span class="number">0</span>;</div><div class="line">		<span class="built_in">cin</span> &gt;&gt; num;</div><div class="line">		<span class="keyword">while</span> (num) &#123;</div><div class="line">			sum += num % <span class="number">10</span>;</div><div class="line">			num /= <span class="number">10</span>;</div><div class="line">		&#125;</div><div class="line">		a[sum]++;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">int</span> k = <span class="number">0</span>, ans[<span class="number">40</span>] = &#123; <span class="number">0</span> &#125;, i;</div><div class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">40</span>; i++) &#123;</div><div class="line">		<span class="keyword">if</span> (a[i]) &#123;</div><div class="line">			ans[k] = i;</div><div class="line">			k++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; k &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; k; i++) &#123;</div><div class="line">		<span class="built_in">cout</span> &lt;&lt; ans[i];</div><div class="line">		<span class="keyword">if</span> (i != k - <span class="number">1</span>)</div><div class="line">			<span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
   </section>
 
 </article>
@@ -199,7 +196,15 @@
                 <h2 class="post-list__post-title post-title"><a href="/编程语言入门汇总/" title="编程语言入门汇总">编程语言入门汇总</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;学习编程第一步，学习一门语言。&lt;br&gt;
+                Python如果你之前没接触过编程，那么以Python上手无疑是最好的。
+
+零基础入门: 
+
+一定要首推良心中国大学MOOC上北京理工大学嵩天老师Python系列
+&gt;&amp;gt;Python语言程序设计
+&gt;&amp;gt;Python 网络爬虫与信息提取
+&gt;&amp;gt;Python 数据分析与展示
+&gt;&amp;gt;Pyt&hellip;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-04-28T13:12:59.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
@@ -215,11 +220,18 @@
                 <h2 class="post-list__post-title post-title"><a href="/Git与GitHub入门/" title="Git与GitHub入门">Git与GitHub入门</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;最先进的分布式版本控制系统。&lt;/p&gt;
+                
+入门书：Pro Git
+文字教程：廖雪峰的Git教程
+视频教程：如何使用 Git 和 GitHub 
+
+以上3个教程都是适合新手的。
+学习Git，不必陷入繁杂的细节，先记住最常用的几个操作就能完成绝大场景下的使用。
+&hellip;
                 
                 </p>
                 <div class="post-list__meta"><time datetime="2017-04-28T06:19:01.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/Git/">Git</a>
+  <a class="tag-link" href="/tags/Git/">Git</a>, <a class="tag-link" href="/tags/教程/">教程</a>
 </span><a class="btn-border-small" href="/Git与GitHub入门/">继续阅读</a></div>
                        
             </div>
