@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>计算机系统学习资料汇总 | Xueb96</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Life is too short to program in C++">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="计算机系统学习资料汇总 | Xueb96">
+    <meta name="twitter:description" content="Life is too short to program in C++">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="计算机系统学习资料汇总 | Xueb96">
+    <meta property="og:description" content="Life is too short to program in C++">
+
+    
+    <meta name="author" content="xueb96">
+    
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/计算机系统学习资料汇总"/>
+
+    
+      
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Xueb96 的主页"><img src="/images/avatar.jpg" width="80" alt="Xueb96 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Xueb96">Xueb96</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">_(:3」∠)_</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">Life is too short to program in C++</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/about">About</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/xueb96" title="查看我的 GitHub 主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+
+
+
+
+    <li class="navigation__item">
+  <a href="#" title="搜索">
+    <i class='social fa fa-search search-form-link'></i>
+    <span class="label">搜索</span>
+  </a>
+</li>
+
+<div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="搜索 ..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '无标题',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-04-30T05:08:10.000Z" class="post-list__meta--date date">2017-04-30</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/OS/">OS</a>
+ </span>
+      <span class="page-pv">
+      &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">计算机系统学习资料汇总</h1>
+  </header>
+
+  <section class="post">
+    <p>操作系统与组成原理。<br><a id="more"></a></p>
+<h4 id="计算机系统导论"><a href="#计算机系统导论" class="headerlink" title="计算机系统导论"></a>计算机系统导论</h4><p>先上一门导论课，把软件硬件串起来，为后面深入学习构建一个Big Picture。可选择的有：</p>
+<ul>
+<li><p><a href="https://book.douban.com/subject/26912767/" target="_blank" rel="external">《深入理解计算机系统》</a></p>
+<p>大名鼎鼎的<a href="http://csapp.cs.cmu.edu/3e/labs.html" target="_blank" rel="external">CSAPP</a>，千万不要被中文译名骗了，并不深入。CMU的计算机导论课教材，出自CS系主任之手。</p>
+</li>
+</ul>
+<p>可选择的辅助教程(以下4门课程的参考教材全是CSAPP)</p>
+<ul>
+<li><p>CMU的 <a href="http://www.cs.cmu.edu/~213/index.html" target="_blank" rel="external">Introduction to Computer Systems</a>，包含了讲义，视频，Project和各种资料。</p>
+<p>英语好的同学可以跟着来。毕竟正版，质量应该最好。</p>
+</li>
+<li><p>华盛顿大学的<a href="http://courses.cs.washington.edu/courses/cse351/17sp/index.html" target="_blank" rel="external">The Hardware/Software Interface</a>，使用CSAPP做教材，把经典的几个Project都引入了。</p>
+<p>这门课在Coursea上开过，可以在课程图谱找到当时的视频和字幕(英文)。所以比较适合英语一般的同学。</p>
+</li>
+<li><p><a href="http://www.icourse163.org/learn/NJU-1001625001?tid=1001698002" target="_blank" rel="external">计算机系统基础(一)：程序的表示、转换与链接</a> 和 <a href="http://www.icourse163.org/learn/NJU-1001964032?tid=1002065051" target="_blank" rel="external">计算机系统基础（二）：程序的执行和存储访问</a></p>
+<p>南大袁春风老师的课，内容和CSAPP一致。</p>
+</li>
+<li><p>学堂在线上的<a href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+20240103X+sp/info" target="_blank" rel="external">汇编语言程序设计</a> 汇编语言是学习计算机系统的基础，这门课比较好的一点是既与上层C语言结合讲又与下层体系结构结合讲，起到了软硬件接口的效果，推荐。</p>
+</li>
+</ul>
+<h4 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h4><ul>
+<li>上面提到过的学堂在线上的<a href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+20240103X+sp/info" target="_blank" rel="external">汇编语言程序设计</a> </li>
+</ul>
+<ul>
+<li><a href="https://book.douban.com/subject/25726019/" target="_blank" rel="external">汇编语言(第3版)</a> 王爽的汇编教材，据称是国人写的最好的计算机教材。</li>
+<li><a href="https://book.douban.com/subject/20492528/" target="_blank" rel="external">x86汇编语言 : 从实模式到保护模式</a> 也是一本很好的汇编教材。</li>
+</ul>
+<h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><ul>
+<li><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="external">Operating Systems: Three Easy Pieces</a> 可能是最好的操作系统教材，据说简单易读，文笔很好。</li>
+<li><a href="http://mooc.study.163.com/course/HIT-1000002004?tid=1000002003#/info" target="_blank" rel="external">哈工大操作系统MOOC加实验</a></li>
+<li><a href="https://book.douban.com/subject/3735649/" target="_blank" rel="external">Orange’S:一个操作系统的实现</a> 如果你想动手写一个，推荐这本。</li>
+</ul>
+<h4 id="计算机组成原理"><a href="#计算机组成原理" class="headerlink" title="计算机组成原理"></a>计算机组成原理</h4><ul>
+<li><p><a href="https://book.douban.com/subject/26604008/" target="_blank" rel="external">计算机组成与设计 软件/硬件接口</a></p>
+<p>美国经典教材，对应国内的计算机组成原理，也就是硬件部分</p>
+</li>
+<li><p><a href="http://www.nand2tetris.org/" target="_blank" rel="external">Nand2Tetris</a> 这是一本课本，中译名<a href="https://book.douban.com/subject/1998341/" target="_blank" rel="external">计算机系统要素 : 从零开始构建现代计算机</a>。这还是一个Coursea课程，分为两个Part，第一个部分讲的是从逻辑门开始搭建出一台计算机，第二部分讲的是从这台计算机上写出俄罗斯方块游戏。如果跟下来会计算机系统有非常直观的理解。</p>
+</li>
+</ul>
+<h4 id="科普性质的书"><a href="#科普性质的书" class="headerlink" title="科普性质的书"></a>科普性质的书</h4><p>如果是想系统学习，直接去啃上面的大鱼大肉；如果是业余选手，想要简单了解一下神秘的计算机，推荐下面两本科普书，一英一中，范围内容差不多。</p>
+<ul>
+<li><a href="https://www.douban.com/link2/?url=https%3A%2F%2Fbook.douban.com%2Fsubject%2F1024570%2F&amp;query=%E7%BC%96%E7%A0%81%E7%9A%84%E5%A5%A5%E7%A7%98&amp;cat_id=1001&amp;type=search&amp;pos=0" target="_blank" rel="external">编码的奥秘</a></li>
+<li><a href="https://www.douban.com/link2/?url=https%3A%2F%2Fbook.douban.com%2Fsubject%2F5432475%2F&amp;query=%E7%A9%BF%E8%B6%8A%E8%AE%A1%E7%AE%97%E6%9C%BA&amp;cat_id=1001&amp;type=search&amp;pos=0" target="_blank" rel="external">穿越计算机的迷雾</a></li>
+</ul>
+
+  </section>
+
+</article>
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/cpp学习笔记" title="C++学习笔记">C++学习笔记</a></h2>
+                <p class="excerpt">
+                
+                &lt;p&gt;学习C++时所作的笔记。&lt;/p&gt;
+                
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-30T05:02:25.000Z" class="post-list__meta--date date">2017-04-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/C-C/">C/C++</a>
+</span><a class="btn-border-small" href="/cpp学习笔记">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+
+            
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'xueb96'; 
+      
+  var disqus_identifier = '/计算机系统学习资料汇总';
+  var disqus_title = '计算机系统学习资料汇总';
+  var disqus_url = 'http://yoursite.com/计算机系统学习资料汇总';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = '/js/embed.js';
+          //将disqus使用https协议将大大提高显示速度
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          //dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        基于 <a href="http://hexo.io">Hexo</a> 搭建，感谢 <a href="https://pages.github.com/">GitHub Pages</a> 提供免费的托管服务
+    </span>
+    <span class="footer__copyright">
+        &copy; 2017 - 本站由 <a href="/">@Monniya</a> 创建,
+        使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">hexo-theme-new-vno</a> 主题,
+        修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+</footer>
+        </div>
+    </div>
+
+    
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1cdfc2bec66c6f122a28a01311eb6535";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    
+    </script>
+    
+</body>
+</html>
