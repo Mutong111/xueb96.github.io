@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>VS2017与openCV3的安装 | Xueb96</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Life is too short to program in C++">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="VS2017与openCV3的安装 | Xueb96">
+    <meta name="twitter:description" content="Life is too short to program in C++">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="VS2017与openCV3的安装 | Xueb96">
+    <meta property="og:description" content="Life is too short to program in C++">
+
+    
+    <meta name="author" content="xueb96">
+    
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/VS2017与openCV3的安装/"/>
+
+    
+      
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Xueb96 的主页"><img src="/images/avatar.jpg" width="80" alt="Xueb96 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Xueb96">Xueb96</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">_(:3」∠)_</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">Life is too short to program in C++</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/about">About</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/xueb96" title="查看我的 GitHub 主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+
+
+
+
+    <li class="navigation__item">
+  <a href="#" title="搜索">
+    <i class='social fa fa-search search-form-link'></i>
+    <span class="label">搜索</span>
+  </a>
+</li>
+
+<div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="搜索 ..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '无标题',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-04-10T04:27:32.000Z" class="post-list__meta--date date">2017-04-10</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/openCV/">openCV</a>
+ </span>
+      <span class="page-pv">
+      &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">VS2017与openCV3的安装</h1>
+  </header>
+
+  <section class="post">
+    <p>Windows 10 下配置openCV3 </p>
+<a id="more"></a>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>我这里下的是 <a href="https://www.visualstudio.com/zh-hans/vs/community" target="_blank" rel="external">VS2017社区版</a>，对我来说够用了。</p>
+<p>openCV 3.2.0 版本：<a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.2.0/" target="_blank" rel="external">下载地址</a> 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>我的电脑是64位的，我就按照64位来说。</p>
+<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3><p>此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin</p>
+<p>如下图所示，按红色序号来</p>
+<p><img src="http://img.blog.csdn.net/20170320135410439" alt=""></p>
+<h3 id="配置动态链接库"><a href="#配置动态链接库" class="headerlink" title="配置动态链接库"></a>配置动态链接库</h3><p>就是一步简单的复制粘贴：</p>
+<p><strong>找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 </strong></p>
+<h3 id="工程目录配置"><a href="#工程目录配置" class="headerlink" title="工程目录配置"></a>工程目录配置</h3><p>在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下：</p>
+<p><img src="http://i2.muimg.com/567571/08a3da69104bc257.jpg" alt=""></p>
+<h4 id="包含目录"><a href="#包含目录" class="headerlink" title="包含目录"></a>包含目录</h4><p>在包含目录中添加如下内容(注意自己的opencv目录)</p>
+<p><img src="http://images2015.cnblogs.com/blog/683271/201703/683271-20170314110712760-189501170.png" alt=""></p>
+<h4 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h4><p>在库目录下添加如下内容</p>
+<p><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
+<h4 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h4><p>找到链接器&gt;输入，在附加依赖项中添加如下内容</p>
+<p><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>新建项目，输入下面这段代码，注意在项目目录里放图片= =</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>按Ctrl+F5运行。如果成功的话会看到如下窗口</p>
+<p><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""></p>
+<p>恭喜你，安装成功，开始下一步的学习吧~</p>
+<p>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/2017/04/10/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_blank" rel="external">openCV学习笔记</a></p>
+
+  </section>
+
+</article>
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/opencv学习笔记/" title="openCV学习笔记">openCV学习笔记</a></h2>
+                <p class="excerpt">
+                
+                &lt;p&gt;整理学习openCV过程中重要的知识点。&lt;br&gt;
+                
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-10T12:35:30.000Z" class="post-list__meta--date date">2017-04-10</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/openCV/">openCV</a>
+</span><a class="btn-border-small" href="/opencv学习笔记/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/优秀博客推荐/" title="优秀博客推荐">优秀博客推荐</a></h2>
+                <p class="excerpt">
+                
+                &lt;p&gt;本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。&lt;/p&gt;
+                
+                </p>
+                <div class="post-list__meta"><time datetime="2017-03-30T03:54:32.000Z" class="post-list__meta--date date">2017-03-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/优秀博客推荐/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+
+            
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'xueb96'; 
+      
+  var disqus_identifier = '/VS2017与openCV3的安装/';
+  var disqus_title = 'VS2017与openCV3的安装';
+  var disqus_url = 'http://yoursite.com/VS2017与openCV3的安装/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = '/js/embed.js';
+          //将disqus使用https协议将大大提高显示速度
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          //dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        基于 <a href="http://hexo.io">Hexo</a> 搭建，感谢 <a href="https://pages.github.com/">GitHub Pages</a> 提供免费的托管服务
+    </span>
+    <span class="footer__copyright">
+        &copy; 2017 - 本站由 <a href="/">@Monniya</a> 创建,
+        使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">hexo-theme-new-vno</a> 主题,
+        修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+</footer>
+        </div>
+    </div>
+
+    
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1cdfc2bec66c6f122a28a01311eb6535";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    
+    </script>
+    
+</body>
+</html>
