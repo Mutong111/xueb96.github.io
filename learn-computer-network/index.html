@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>VS2017与openCV3的安装 | Xueb</title>
+    <title>计算机网络入门汇总 | Xueb</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="Life is too short to program in C++">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="VS2017与openCV3的安装 | Xueb">
+    <meta name="twitter:title" content="计算机网络入门汇总 | Xueb">
     <meta name="twitter:description" content="Life is too short to program in C++">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="VS2017与openCV3的安装 | Xueb">
+    <meta property="og:title" content="计算机网络入门汇总 | Xueb">
     <meta property="og:description" content="Life is too short to program in C++">
 
     
@@ -36,7 +36,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://alwaysthink.cn/VS2017与openCV3的安装/"/>
+    <link rel="canonical" href="http://alwaysthink.cn/learn-computer-network/"/>
 
     
       
@@ -171,29 +171,24 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2017-04-10T04:27:32.000Z" class="post-list__meta--date date">2017-04-10</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/openCV/">openCV</a>
+      <time datetime="2017-04-28T19:58:18.000Z" class="post-list__meta--date date">2017-04-29</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/Network/">Network</a>
  </span>
       <span class="page-pv">
       &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">VS2017与openCV3的安装</h1>
+    <h1 class="post-title">计算机网络入门汇总</h1>
   </header>
 
   <section class="post">
-    <p>Windows 10 下配置openCV3<br><a id="more"></a></p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>我这里下的是 <a href="https://www.visualstudio.com/zh-hans/vs/community" target="_blank" rel="external">VS2017社区版</a>，对我来说够用了。<br>openCV 3.2.0 版本：<a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.2.0/" target="_blank" rel="external">下载地址</a> 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>我的电脑是64位的，我就按照64位来说。</p>
-<h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin<br>如下图所示，按红色序号来<br><img src="http://img.blog.csdn.net/20170320135410439" alt=""></p>
-<h4 id="配置动态链接库"><a href="#配置动态链接库" class="headerlink" title="配置动态链接库"></a>配置动态链接库</h4><p>就是一步简单的复制粘贴：<br><strong>找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 </strong></p>
-<h4 id="工程目录配置"><a href="#工程目录配置" class="headerlink" title="工程目录配置"></a>工程目录配置</h4><p>在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下：<br><img src="http://i2.muimg.com/567571/08a3da69104bc257.jpg" alt=""></p>
-<h5 id="包含目录"><a href="#包含目录" class="headerlink" title="包含目录"></a>包含目录</h5><p>在包含目录中添加如下内容(注意自己的opencv目录)<br><img src="http://images2015.cnblogs.com/blog/683271/201703/683271-20170314110712760-189501170.png" alt=""></p>
-<h5 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h5><p>在库目录下添加如下内容<br><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
-<h5 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h5><p>找到链接器&gt;输入，在附加依赖项中添加如下内容<br><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>新建项目，输入下面这段代码，注意在项目目录里放图片=<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_blank" rel="external">openCV学习笔记</a></p>
+    <p>学习计算机网络的原理<br><a id="more"></a></p>
+<h3 id="入门读物"><a href="#入门读物" class="headerlink" title="入门读物"></a>入门读物</h3><p>2017新出炉的日本科普书 <a href="https://book.douban.com/subject/26941639/" target="_blank" rel="external">《网络是怎样连接的》</a> 绝对是最合适的入门书！！</p>
+<h3 id="经典教材："><a href="#经典教材：" class="headerlink" title="经典教材："></a>经典教材：</h3><ul>
+<li>Kurose的 <a href="https://book.douban.com/subject/26176870/" target="_blank" rel="external">《自顶向下方法》</a> 被很多人推荐，据说比特南鲍姆那本要好。</li>
+<li>谢希仁的 <a href="https://book.douban.com/subject/24740558/" target="_blank" rel="external">《计算机网络》</a> 已经出到第七版，考研指定参考书，评价不错</li>
+</ul>
 
   </section>
 
@@ -204,15 +199,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/opencv学习笔记/" title="openCV学习笔记">openCV学习笔记</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/Toy-programs/" title="Toy programs">Toy programs</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;整理学习openCV过程中重要的知识点。&lt;br&gt;
+                &lt;p&gt;收集一些代码段。&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-04-10T12:35:30.000Z" class="post-list__meta--date date">2017-04-10</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/openCV/">openCV</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
-</span><a class="btn-border-small" href="/opencv学习笔记/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-30T05:01:58.000Z" class="post-list__meta--date date">2017-04-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/C-C/">C/C++</a>
+</span><a class="btn-border-small" href="/Toy-programs/">继续阅读</a></div>
                            
             </div>
         
@@ -220,13 +215,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/优秀博客推荐/" title="优秀博客推荐">优秀博客推荐</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/learn-data-structure-and-algorithm/" title="数据结构与算法学习资料">数据结构与算法学习资料</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。&lt;br&gt;
+                &lt;p&gt;Programs = Data Structure + Algorithm&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-03-30T03:54:32.000Z" class="post-list__meta--date date">2017-03-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/优秀博客推荐/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-28T19:57:52.000Z" class="post-list__meta--date date">2017-04-29</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/Algorithm/">Algorithm</a>
+</span><a class="btn-border-small" href="/learn-data-structure-and-algorithm/">继续阅读</a></div>
                        
             </div>
         
@@ -243,9 +240,9 @@
   <script type="text/javascript">
       var disqus_shortname = 'xueb96'; 
       
-  var disqus_identifier = '/VS2017与openCV3的安装/';
-  var disqus_title = 'VS2017与openCV3的安装';
-  var disqus_url = 'http://alwaysthink.cn/VS2017与openCV3的安装/';
+  var disqus_identifier = '/learn-computer-network/';
+  var disqus_title = '计算机网络入门汇总';
+  var disqus_url = 'http://alwaysthink.cn/learn-computer-network/';
   
 
       /* * * DON'T EDIT BELOW THIS LINE * * */

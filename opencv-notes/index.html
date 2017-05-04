@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Web学习资料汇总 | Xueb</title>
+    <title>openCV学习笔记 | Xueb</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="Life is too short to program in C++">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Web学习资料汇总 | Xueb">
+    <meta name="twitter:title" content="openCV学习笔记 | Xueb">
     <meta name="twitter:description" content="Life is too short to program in C++">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Web学习资料汇总 | Xueb">
+    <meta property="og:title" content="openCV学习笔记 | Xueb">
     <meta property="og:description" content="Life is too short to program in C++">
 
     
@@ -36,7 +36,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://alwaysthink.cn/Web学习资料汇总/"/>
+    <link rel="canonical" href="http://alwaysthink.cn/opencv-notes/"/>
 
     
       
@@ -171,27 +171,45 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2017-03-28T19:54:59.000Z" class="post-list__meta--date date">2017-03-29</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/Web/">Web</a>
+      <time datetime="2017-04-28T12:35:30.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/openCV/">openCV</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
  </span>
       <span class="page-pv">
       &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">Web学习资料汇总</h1>
+    <h1 class="post-title">openCV学习笔记</h1>
   </header>
 
   <section class="post">
-    <p>整理一下web学习资料<br><a id="more"></a></p>
-<h3 id="前端入门"><a href="#前端入门" class="headerlink" title="前端入门:"></a>前端入门:</h3><ul>
-<li><a href="https://book.douban.com/subject/25752357/" target="_blank" rel="external">Head First HTML与CSS（第2版）</a></li>
-<li><a href="https://book.douban.com/subject/6038371/" target="_blank" rel="external">JavaScript DOM编程艺术 （第2版）</a></li>
-<li>发现一个灰常好的英文资料，涵盖了前端的方方面面，而且每年更新：<a href="https://frontendmasters.com/books/front-end-handbook/2017/" target="_blank" rel="external">Front-End Developer Handbook 2017</a><h3 id="后端："><a href="#后端：" class="headerlink" title="后端："></a>后端：</h3><blockquote>
-<p>还没研究，，好像技术栈很多= =</p>
-</blockquote>
+    <p>整理学习openCV过程中重要的知识点。<br><a id="more"></a></p>
+<h3 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h3><p>我在学习openCV的过程中，主要参考了以下资料：</p>
+<ul>
+<li>《openCV3编程入门》  虽然这本书写的很没有诚意而且各种抄袭，但新手翻阅一下还是能学到点东西的。</li>
+<li><a href="http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html" target="_blank" rel="external">中文官方文档</a>     翻译的官方文档，错别字挺多的= =</li>
+<li><a href="https://book.douban.com/subject/26579824/" target="_blank" rel="external">Learning OpenCV 3 </a>     著名的openCV书，在openCV1版本就是重要的学习资料，如今随着3版本更新了。此书没有中文版，想要电子版的可以联系我。</li>
+</ul>
+<h3 id="openCV中的helloworld程序"><a href="#openCV中的helloworld程序" class="headerlink" title="openCV中的helloworld程序"></a>openCV中的helloworld程序</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>首先前两行属于固定开头，这个写法是最简洁的。</p>
+<p>opencv.hpp 中包含了opencv全部的库文件声明，不必再include其他头文件。而命名空间cv不必多说。</p>
+</li>
+<li><p>Mat是openCV中的数据结构，用于保存图像。</p>
+</li>
+<li><p>imread()函数，原型如下</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Mat <span class="title">imread</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span>&amp; filename, <span class="keyword">int</span> flags=<span class="number">1</span> )</span></span>;</div></pre></td></tr></table></figure>
+<p>​第一个参数是文件名。第二个参数是载入标识，默认为1，标识载入三通道的彩色图像。也可取其他值比如：0-将图像转换成灰度返回</p>
+</li>
+<li><p>imshow()函数,原型如下</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">imshow</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span>&amp; winname, InputArray mat)</span></span>;</div></pre></td></tr></table></figure>
+<p>第一个参数是窗口名。第二个参数填需要显示的图像</p>
+</li>
+<li><p>waitKey()函数</p>
+<p>保持图片窗口显示，直到任意按键按下。</p>
 </li>
 </ul>
+<h3 id="视频的读取与播放"><a href="#视频的读取与播放" class="headerlink" title="视频的读取与播放"></a>视频的读取与播放</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2\opencv.hpp&gt;  </span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;  </div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>  </span></div><div class="line">&#123;  </div><div class="line">	<span class="function">VideoCapture <span class="title">capture</span><span class="params">(<span class="string">"1.avi"</span>)</span></span>;</div><div class="line">	<span class="keyword">while</span>(<span class="number">1</span>)  </div><div class="line">	&#123;  </div><div class="line">		Mat frame;</div><div class="line">		capture&gt;&gt;frame;</div><div class="line">		<span class="keyword">if</span> (frame.empty())</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">		imshow(<span class="string">"读取视频"</span>,frame);</div><div class="line">		waitKey(<span class="number">30</span>);</div><div class="line">	&#125;  </div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;     </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
   </section>
 
@@ -202,15 +220,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/learn-data-structure-and-algorithm/" title="数据结构与算法学习资料">数据结构与算法学习资料</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/编程语言入门汇总/" title="编程语言入门汇总">编程语言入门汇总</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;Programs = Data Structure + Algorithm&lt;br&gt;
+                &lt;p&gt;汇总一下编程语言学习资料&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-03-28T19:57:52.000Z" class="post-list__meta--date date">2017-03-29</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/Algorithm/">Algorithm</a>
-</span><a class="btn-border-small" href="/learn-data-structure-and-algorithm/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-28T13:12:59.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/C-C/">C/C++</a>
+</span><a class="btn-border-small" href="/编程语言入门汇总/">继续阅读</a></div>
                            
             </div>
         
@@ -218,15 +236,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/codevs-1205-单词翻转/" title="CodeVS[青铜]  1205  单词翻转">CodeVS[青铜]  1205  单词翻转</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/learn-git-and-github/" title="Git与GitHub入门">Git与GitHub入门</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;给出一个英语句子，希望你把句子里的单词顺序都翻转过来&lt;br&gt;
+                &lt;p&gt;Git和GitHub的学习资料&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-03-28T14:18:16.000Z" class="post-list__meta--date date">2017-03-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/CodeVS/">CodeVS</a>
-</span><a class="btn-border-small" href="/codevs-1205-单词翻转/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-28T06:19:01.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/Git/">Git</a>, <a class="tag-link" href="/tags/GitHub/">GitHub</a>
+</span><a class="btn-border-small" href="/learn-git-and-github/">继续阅读</a></div>
                        
             </div>
         
@@ -243,9 +261,9 @@
   <script type="text/javascript">
       var disqus_shortname = 'xueb96'; 
       
-  var disqus_identifier = '/Web学习资料汇总/';
-  var disqus_title = 'Web学习资料汇总';
-  var disqus_url = 'http://alwaysthink.cn/Web学习资料汇总/';
+  var disqus_identifier = '/opencv-notes/';
+  var disqus_title = 'openCV学习笔记';
+  var disqus_url = 'http://alwaysthink.cn/opencv-notes/';
   
 
       /* * * DON'T EDIT BELOW THIS LINE * * */

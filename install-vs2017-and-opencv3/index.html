@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Git与GitHub入门 | Xueb</title>
+    <title>VS2017与openCV3的安装 | Xueb</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="Life is too short to program in C++">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Git与GitHub入门 | Xueb">
+    <meta name="twitter:title" content="VS2017与openCV3的安装 | Xueb">
     <meta name="twitter:description" content="Life is too short to program in C++">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Git与GitHub入门 | Xueb">
+    <meta property="og:title" content="VS2017与openCV3的安装 | Xueb">
     <meta property="og:description" content="Life is too short to program in C++">
 
     
@@ -36,7 +36,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://alwaysthink.cn/Git与GitHub入门/"/>
+    <link rel="canonical" href="http://alwaysthink.cn/install-vs2017-and-opencv3/"/>
 
     
       
@@ -171,27 +171,29 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2017-04-28T06:19:01.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/Git/">Git</a>, <a class="tag-link" href="/tags/教程/">教程</a>
+      <time datetime="2017-04-28T14:27:32.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/openCV/">openCV</a>
  </span>
       <span class="page-pv">
       &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">Git与GitHub入门</h1>
+    <h1 class="post-title">VS2017与openCV3的安装</h1>
   </header>
 
   <section class="post">
-    <p>Git和GitHub的学习资料<br><a id="more"></a></p>
-<ul>
-<li>入门书：<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Pro Git</a></li>
-<li>文字教程：<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的Git教程</a></li>
-<li>视频教程：<a href="https://cn.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank" rel="external">如何使用 Git 和 GitHub</a> </li>
-</ul>
-<blockquote>
-<p>以上3个教程都是适合新手的。<br>学习Git，不必陷入繁杂的细节，先记住最常用的几个操作就能完成绝大场景下的使用。</p>
-</blockquote>
+    <p>Windows 10 下配置 openCV3<br><a id="more"></a></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>我这里下的是 <a href="https://www.visualstudio.com/zh-hans/vs/community" target="_blank" rel="external">VS2017社区版</a>，对我来说够用了。<br>openCV 3.2.0 版本：<a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.2.0/" target="_blank" rel="external">下载地址</a> 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>我的电脑是64位的，我就按照64位来说。</p>
+<h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin<br>如下图所示，按红色序号来<br><img src="http://img.blog.csdn.net/20170320135410439" alt=""></p>
+<h4 id="配置动态链接库"><a href="#配置动态链接库" class="headerlink" title="配置动态链接库"></a>配置动态链接库</h4><p>就是一步简单的复制粘贴：<br><strong>找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 </strong></p>
+<h4 id="工程目录配置"><a href="#工程目录配置" class="headerlink" title="工程目录配置"></a>工程目录配置</h4><p>在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下：<br><img src="http://i2.muimg.com/567571/08a3da69104bc257.jpg" alt=""></p>
+<h5 id="包含目录"><a href="#包含目录" class="headerlink" title="包含目录"></a>包含目录</h5><p>在包含目录中添加如下内容(注意自己的opencv目录)<br><img src="http://images2015.cnblogs.com/blog/683271/201703/683271-20170314110712760-189501170.png" alt=""></p>
+<h5 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h5><p>在库目录下添加如下内容<br><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
+<h5 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h5><p>找到链接器&gt;输入，在附加依赖项中添加如下内容<br><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>新建项目，输入下面这段代码，注意在项目目录里放图片=<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">openCV学习笔记</a></p>
 
   </section>
 
@@ -202,15 +204,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1064-朋友数-20/" title="PAT(乙级) 1064. 朋友数(20)">PAT(乙级) 1064. 朋友数(20)</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/learn-data-structure-and-algorithm/" title="数据结构与算法学习资料">数据结构与算法学习资料</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;如果两个整数各位数字的和是一样的，则被称为是“朋友数”，而那个公共的和就是它们的“朋友证号”。例如123和51就是朋友数，因为1+2+3 = 5+1 = 6，而6就是它们的朋友证号。给定一些整数，要求你统计一下它们中有多少个不同的朋友证号。注意：我们默认一个整数自己是自己的朋友。&lt;br&gt;
+                &lt;p&gt;Programs = Data Structure + Algorithm&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-04-28T06:45:37.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/PAT/">PAT</a>
-</span><a class="btn-border-small" href="/PAT-乙级-1064-朋友数-20/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-28T19:57:52.000Z" class="post-list__meta--date date">2017-04-29</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/Algorithm/">Algorithm</a>
+</span><a class="btn-border-small" href="/learn-data-structure-and-algorithm/">继续阅读</a></div>
                            
             </div>
         
@@ -218,15 +220,15 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/大学数学学习资源推荐/" title="大学数学学习资源推荐">大学数学学习资源推荐</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/编程语言入门汇总/" title="编程语言入门汇总">编程语言入门汇总</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;汇总一下数学学习资料&lt;br&gt;
+                &lt;p&gt;汇总一下编程语言学习资料&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-04-27T19:56:18.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/Math/">Math</a>
-</span><a class="btn-border-small" href="/大学数学学习资源推荐/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-04-28T13:12:59.000Z" class="post-list__meta--date date">2017-04-28</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/C-C/">C/C++</a>
+</span><a class="btn-border-small" href="/编程语言入门汇总/">继续阅读</a></div>
                        
             </div>
         
@@ -243,9 +245,9 @@
   <script type="text/javascript">
       var disqus_shortname = 'xueb96'; 
       
-  var disqus_identifier = '/Git与GitHub入门/';
-  var disqus_title = 'Git与GitHub入门';
-  var disqus_url = 'http://alwaysthink.cn/Git与GitHub入门/';
+  var disqus_identifier = '/install-vs2017-and-opencv3/';
+  var disqus_title = 'VS2017与openCV3的安装';
+  var disqus_url = 'http://alwaysthink.cn/install-vs2017-and-opencv3/';
   
 
       /* * * DON'T EDIT BELOW THIS LINE * * */

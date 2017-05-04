@@ -24,6 +24,27 @@
 
     
     <entry>
+      <title><![CDATA[计算机网络入门汇总]]></title>
+      <url>%2Flearn-computer-network%2F</url>
+      <content type="text"><![CDATA[学习计算机网络的原理 入门读物2017新出炉的日本科普书 《网络是怎样连接的》 绝对是最合适的入门书！！ 经典教材： Kurose的 《自顶向下方法》 被很多人推荐，据说比特南鲍姆那本要好。 谢希仁的 《计算机网络》 已经出到第七版，考研指定参考书，评价不错]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[数据结构与算法学习资料]]></title>
+      <url>%2Flearn-data-structure-and-algorithm%2F</url>
+      <content type="text"><![CDATA[Programs = Data Structure + Algorithm 面向学习 清华邓俊辉的数据结构 估计是中文资料中最好的数据结构MOOC，使用C++描述。 浙大陈越姥姥的数据结构 面向考试 《数据结构高分笔记》 购买链接请关注率辉学长的公众号：shuaihui_ds 率辉学长为18考研出了专栏，已经开始更新了，在他的公众号里面向Java程序员 算法第4版 (Ps:作者是高德纳的学生) 应该是最好的选择 同时配合Coursera上普林斯顿的课程，直接打通。面向天才 计算机程序设计艺术（第1卷） : 基本算法 算法导论（原书第3版） 做题 CS界的托福考试 PAT ，高分者会有名企通知面试（Ps：牛客网有优惠券活动，能减50元报名费） 算法笔记 江湖人称晴神宝典的PAT上机指南，共两本。刷两遍书，PAT甲级差不多能考满分了]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[VS2017与openCV3的安装]]></title>
+      <url>%2Finstall-vs2017-and-opencv3%2F</url>
+      <content type="text"><![CDATA[Windows 10 下配置 openCV3 下载我这里下的是 VS2017社区版，对我来说够用了。openCV 3.2.0 版本：下载地址 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。 配置我的电脑是64位的，我就按照64位来说。 添加环境变量此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin如下图所示，按红色序号来 配置动态链接库就是一步简单的复制粘贴：找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 工程目录配置在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下： 包含目录在包含目录中添加如下内容(注意自己的opencv目录) 库目录在库目录下添加如下内容 附加依赖项找到链接器&gt;输入，在附加依赖项中添加如下内容 测试新建项目，输入下面这段代码，注意在项目目录里放图片=123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 按Ctrl+F5运行。如果成功的话会看到如下窗口恭喜你，安装成功，开始下一步的学习吧~如果你连测试程序都看不懂的话，可以看我另一篇博文：openCV学习笔记]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[编程语言入门汇总]]></title>
       <url>%2F%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
       <content type="text"><![CDATA[汇总一下编程语言学习资料 Python如果你之前没接触过编程，那么以Python上手无疑是最好的。 零基础入门: 一定要首推良心中国大学MOOC上北京理工大学嵩天老师Python系列>&gt;Python语言程序设计 >&gt;Python 网络爬虫与信息提取 >&gt;Python 数据分析与展示 >&gt;Python 机器学习应用 >&gt;Python 科学计算三维可视化 >&gt;Python 游戏开发入门 >&gt;Python 云端系统开发入门 这样跟下来就可用学到Python在各个领域的应用了，真是不得了~ 廖雪峰的Python教程 这个教程是大家口口相传的良心入门资料，经过群众检验的好东西~ Udacity的CS入门课 优达学城真是良心啊！通过这门课可以学到Python、搭建搜索引擎和社交网络 C语言 零基础入门: 计算导论与C语言基础 C程序设计进阶 PKU李戈教授在Coursea上的课程，可以说李老师是我看过所有MOOC中讲课最精彩的。富有激情，生动有趣，总能把知识点讲解透彻。另外，李戈老师在PKU的课程录像放在了北大公开课，相比慕课版有不少学生的讨论的环节。 C语言程序设计 : 现代方法 哈佛、麻省理工、斯坦福的C语言教材。比《C Primer Plus》生动些。 经典必看: C程序设计语言 : 第 2 版·新版 俗称K&amp;R，C语言之父的作品。不适合入门，但入门之后必看。 C++讲真，如果你不是非要用C++，那就不要学。Life is too short to program in C++! 当然，想练习算法题的话，C++是很好的选择，特别是运行时间受限时。使用C语言加上C++的STL部分就够了。 零基础入门: C++程序设计（原书第3版） 这本书是很多学校的教材。作者梁勇，美国教授，他编写的教材特点是适合初学者。 如果你嫌看书枯燥，那么以此书为上课教材的 北邮C++程序设计(网易云课堂) 可搭配食用 C++ Primer（第 5 版） 如果你之前有过C语言基础，那么这本全明星阵容的经典适合你。读完这本你就入门了！ Java 零基础入门： Java核心技术·卷Ⅰ 对比了网上推荐的众多经典书籍，我选定了这本作为我的入门教材。目前出到了第10版，基于 Java 8 ，非常新，面向零基础。 去Coursea、Udacity上面搜Java吧，应该都挺新的。 经典必看： Java编程思想 ​如果想深入理解Java面向对象的思想，这本书不可或缺。 Android方向： 第一行代码：Android（第2版） 需要有Java基础，16年新出的。 Google参与制作的优达学城上的 Android 开发入门（中/英） 面向零基础，不会Java也行]]></content>
@@ -31,15 +52,15 @@
 
     
     <entry>
-      <title><![CDATA[PAT(乙级) 1064. 朋友数(20)]]></title>
-      <url>%2FPAT-%E4%B9%99%E7%BA%A7-1064-%E6%9C%8B%E5%8F%8B%E6%95%B0-20%2F</url>
-      <content type="text"><![CDATA[如果两个整数各位数字的和是一样的，则被称为是“朋友数”，而那个公共的和就是它们的“朋友证号”。例如123和51就是朋友数，因为1+2+3 = 5+1 = 6，而6就是它们的朋友证号。给定一些整数，要求你统计一下它们中有多少个不同的朋友证号。注意：我们默认一个整数自己是自己的朋友。 输入格式：输入第一行给出正整数N。随后一行给出N个正整数，数字间以空格分隔。题目保证所有数字小于104。 输出格式：首先第一行输出给定数字中不同的朋友证号的个数；随后一行按递增顺序输出这些朋友证号，数字间隔一个空格，且行末不得有多余空格。 输入样例：8123 899 51 998 27 33 36 12 输出样例：43 6 9 26 题解1234567891011121314151617181920212223242526272829#include &lt;iostream&gt;using namespace std;int main() &#123; int n, a[40] = &#123; 0 &#125;; cin &gt;&gt; n; while (n--) &#123; int num, sum = 0; cin &gt;&gt; num; while (num) &#123; sum += num % 10; num /= 10; &#125; a[sum]++; &#125; int k = 0, ans[40] = &#123; 0 &#125;, i; for (i = 0; i &lt; 40; i++) &#123; if (a[i]) &#123; ans[k] = i; k++; &#125; &#125; cout &lt;&lt; k &lt;&lt; endl; for (i = 0; i &lt; k; i++) &#123; cout &lt;&lt; ans[i]; if (i != k - 1) cout &lt;&lt; " "; &#125; return 0;&#125;]]></content>
+      <title><![CDATA[openCV学习笔记]]></title>
+      <url>%2Fopencv-notes%2F</url>
+      <content type="text"><![CDATA[整理学习openCV过程中重要的知识点。 学习资料我在学习openCV的过程中，主要参考了以下资料： 《openCV3编程入门》 虽然这本书写的很没有诚意而且各种抄袭，但新手翻阅一下还是能学到点东西的。 中文官方文档 翻译的官方文档，错别字挺多的= = Learning OpenCV 3 著名的openCV书，在openCV1版本就是重要的学习资料，如今随着3版本更新了。此书没有中文版，想要电子版的可以联系我。 openCV中的helloworld程序123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 首先前两行属于固定开头，这个写法是最简洁的。 opencv.hpp 中包含了opencv全部的库文件声明，不必再include其他头文件。而命名空间cv不必多说。 Mat是openCV中的数据结构，用于保存图像。 imread()函数，原型如下 1Mat imread(const string&amp; filename, int flags=1 ); ​第一个参数是文件名。第二个参数是载入标识，默认为1，标识载入三通道的彩色图像。也可取其他值比如：0-将图像转换成灰度返回 imshow()函数,原型如下 1void imshow(const string&amp; winname, InputArray mat); 第一个参数是窗口名。第二个参数填需要显示的图像 waitKey()函数 保持图片窗口显示，直到任意按键按下。 视频的读取与播放12345678910111213141516#include &lt;opencv2\opencv.hpp&gt; using namespace cv; int main() &#123; VideoCapture capture("1.avi"); while(1) &#123; Mat frame; capture&gt;&gt;frame; if (frame.empty()) break; imshow("读取视频",frame); waitKey(30); &#125; return 0; &#125;]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Git与GitHub入门]]></title>
-      <url>%2FGit%E4%B8%8EGitHub%E5%85%A5%E9%97%A8%2F</url>
+      <url>%2Flearn-git-and-github%2F</url>
       <content type="text"><![CDATA[Git和GitHub的学习资料 入门书：Pro Git 文字教程：廖雪峰的Git教程 视频教程：如何使用 Git 和 GitHub 以上3个教程都是适合新手的。学习Git，不必陷入繁杂的细节，先记住最常用的几个操作就能完成绝大场景下的使用。]]></content>
     </entry>
 
@@ -48,6 +69,13 @@
       <title><![CDATA[大学数学学习资源推荐]]></title>
       <url>%2F%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90%2F</url>
       <content type="text"><![CDATA[汇总一下数学学习资料 微积分 浙大名师苏德矿的课堂录制版，非常详细 传送门 哈工大尹逊波老师的微积分课，评价非常好，老师很有人格魅力。传送门线性代数MIT的线性代数，Gilbert Strang 讲授，非常非常好。网易公开课和B站 有中文字幕，还有习题课的视频概率论与数理统计如果是计算机专业的同学，那么南京大学的概率论MOOC一定不能错过~使用Python辅助教学]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[PAT(乙级) 1064. 朋友数(20)]]></title>
+      <url>%2FPAT-%E4%B9%99%E7%BA%A7-1064-%E6%9C%8B%E5%8F%8B%E6%95%B0-20%2F</url>
+      <content type="text"><![CDATA[如果两个整数各位数字的和是一样的，则被称为是“朋友数”，而那个公共的和就是它们的“朋友证号”。例如123和51就是朋友数，因为1+2+3 = 5+1 = 6，而6就是它们的朋友证号。给定一些整数，要求你统计一下它们中有多少个不同的朋友证号。注意：我们默认一个整数自己是自己的朋友。 输入格式：输入第一行给出正整数N。随后一行给出N个正整数，数字间以空格分隔。题目保证所有数字小于104。 输出格式：首先第一行输出给定数字中不同的朋友证号的个数；随后一行按递增顺序输出这些朋友证号，数字间隔一个空格，且行末不得有多余空格。 输入样例：8123 899 51 998 27 33 36 12 输出样例：43 6 9 26 题解1234567891011121314151617181920212223242526272829#include &lt;iostream&gt;using namespace std;int main() &#123; int n, a[40] = &#123; 0 &#125;; cin &gt;&gt; n; while (n--) &#123; int num, sum = 0; cin &gt;&gt; num; while (num) &#123; sum += num % 10; num /= 10; &#125; a[sum]++; &#125; int k = 0, ans[40] = &#123; 0 &#125;, i; for (i = 0; i &lt; 40; i++) &#123; if (a[i]) &#123; ans[k] = i; k++; &#125; &#125; cout &lt;&lt; k &lt;&lt; endl; for (i = 0; i &lt; k; i++) &#123; cout &lt;&lt; ans[i]; if (i != k - 1) cout &lt;&lt; " "; &#125; return 0;&#125;]]></content>
     </entry>
 
     
@@ -178,20 +206,6 @@
 
     
     <entry>
-      <title><![CDATA[openCV学习笔记]]></title>
-      <url>%2Fopencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
-      <content type="text"><![CDATA[整理学习openCV过程中重要的知识点。 学习资料我在学习openCV的过程中，主要参考了以下资料： 《openCV3编程入门》 虽然这本书写的很没有诚意而且各种抄袭，但新手翻阅一下还是能学到点东西的。 中文官方文档 翻译的官方文档，错别字挺多的= = Learning OpenCV 3 著名的openCV书，在openCV1版本就是重要的学习资料，如今随着3版本更新了。此书没有中文版，想要电子版的可以联系我。 openCV中的helloworld程序123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 首先前两行属于固定开头，这个写法是最简洁的。 opencv.hpp 中包含了opencv全部的库文件声明，不必再include其他头文件。而命名空间cv不必多说。 Mat是openCV中的数据结构，用于保存图像。 imread()函数，原型如下 1Mat imread(const string&amp; filename, int flags=1 ); ​第一个参数是文件名。第二个参数是载入标识，默认为1，标识载入三通道的彩色图像。也可取其他值比如：0-将图像转换成灰度返回 imshow()函数,原型如下 1void imshow(const string&amp; winname, InputArray mat); 第一个参数是窗口名。第二个参数填需要显示的图像 waitKey()函数 保持图片窗口显示，直到任意按键按下。 视频的读取与播放12345678910111213141516#include &lt;opencv2\opencv.hpp&gt; using namespace cv; int main() &#123; VideoCapture capture("1.avi"); while(1) &#123; Mat frame; capture&gt;&gt;frame; if (frame.empty()) break; imshow("读取视频",frame); waitKey(30); &#125; return 0; &#125;]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[VS2017与openCV3的安装]]></title>
-      <url>%2FVS2017%E4%B8%8EopenCV3%E7%9A%84%E5%AE%89%E8%A3%85%2F</url>
-      <content type="text"><![CDATA[Windows 10 下配置openCV3 下载我这里下的是 VS2017社区版，对我来说够用了。openCV 3.2.0 版本：下载地址 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。 配置我的电脑是64位的，我就按照64位来说。 添加环境变量此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin如下图所示，按红色序号来 配置动态链接库就是一步简单的复制粘贴：找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 工程目录配置在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下： 包含目录在包含目录中添加如下内容(注意自己的opencv目录) 库目录在库目录下添加如下内容 附加依赖项找到链接器&gt;输入，在附加依赖项中添加如下内容 测试新建项目，输入下面这段代码，注意在项目目录里放图片=123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 按Ctrl+F5运行。如果成功的话会看到如下窗口恭喜你，安装成功，开始下一步的学习吧~如果你连测试程序都看不懂的话，可以看我另一篇博文：openCV学习笔记]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[优秀博客推荐]]></title>
       <url>%2F%E4%BC%98%E7%A7%80%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90%2F</url>
       <content type="text"><![CDATA[本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。 刘未鹏 | Mindhacks 他写过一本关于心智成长的书《暗时间》特别好，是他博文的选录。他向我们展示了一个普通人在某一领域钻研能成为什么样子，从C++到思维再到现在的养娃，认真态度总能帮他取得一些成绩。 如果你想开始写博客，建议你读一下这篇 为什么你应该（从现在开始就）写博客 如果你是一名大学生，你应该能从这篇 我在南大的七年 中得到启发 小土刀 | wdxtub 我是通过搜CSAPP找到的，博主技术范围涉猎较广，读书特别多，也乐意分享，是我心中的大牛~~ 如果你在钻研《深入理解计算机系统》这本书，那么他的 读薄 CSAPP 和 读厚 CSAPP 系列也许能作为参考 (未完)]]></content>
@@ -199,22 +213,8 @@
 
     
     <entry>
-      <title><![CDATA[计算机网络入门汇总]]></title>
-      <url>%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%85%A5%E9%97%A8%E6%B1%87%E6%80%BB%2F</url>
-      <content type="text"><![CDATA[学习计算机网络的原理 入门读物2017新出炉的日本科普书 《网络是怎样连接的》 绝对是最合适的入门书！！ 经典教材： Kurose的 《自顶向下方法》 被很多人推荐，据说比特南鲍姆那本要好。 谢希仁的 《计算机网络》 已经出到第七版，考研指定参考书，评价不错]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[数据结构与算法学习资料]]></title>
-      <url>%2Flearn-data-structure-and-algorithm%2F</url>
-      <content type="text"><![CDATA[Programs = Data Structure + Algorithm 面向学习 清华邓俊辉的数据结构 估计是中文资料中最好的数据结构MOOC，使用C++描述。 浙大陈越姥姥的数据结构 面向考试 《数据结构高分笔记》 购买链接请关注率辉学长的公众号：shuaihui_ds 率辉学长为18考研出了专栏，已经开始更新了，在他的公众号里面向Java程序员 算法第4版 (Ps:作者是高德纳的学生) 应该是最好的选择 同时配合Coursera上普林斯顿的课程，直接打通。面向天才 计算机程序设计艺术（第1卷） : 基本算法 算法导论（原书第3版） 做题 CS界的托福考试 PAT ，高分者会有名企通知面试（Ps：牛客网有优惠券活动，能减50元报名费） 算法笔记 江湖人称晴神宝典的PAT上机指南，共两本。刷两遍书，PAT甲级差不多能考满分了]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[Web学习资料汇总]]></title>
-      <url>%2FWeb%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%B1%87%E6%80%BB%2F</url>
+      <url>%2Flearn-web-development%2F</url>
       <content type="text"><![CDATA[整理一下web学习资料 前端入门: Head First HTML与CSS（第2版） JavaScript DOM编程艺术 （第2版） 发现一个灰常好的英文资料，涵盖了前端的方方面面，而且每年更新：Front-End Developer Handbook 2017后端： 还没研究，，好像技术栈很多= =]]></content>
     </entry>
 
