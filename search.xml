@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Web学习笔记]]></title>
       <url>%2Fweb-notes%2F</url>
-      <content type="text"><![CDATA[整理一下学习 Web 开发时学到的东西 学习路径 freeCodeCamp 响应式设计(Responsive Design) Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name Responsive Design.]]></content>
+      <content type="text"><![CDATA[整理一下学习 Web 开发时学到的东西 学习路径 freeCodeCamp MDN响应式设计(Responsive Design) Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name Responsive Design. 还在刷FCC，边学边整理]]></content>
     </entry>
 
     
