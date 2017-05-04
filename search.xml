@@ -47,7 +47,7 @@
     <entry>
       <title><![CDATA[VS2017与openCV3的安装]]></title>
       <url>%2Finstall-vs2017-and-opencv3%2F</url>
-      <content type="text"><![CDATA[Windows 10 下配置 openCV3 下载我这里下的是 VS2017社区版，对我来说够用了。openCV 3.2.0 版本：下载地址 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。 配置我的电脑是64位的，我就按照64位来说。 添加环境变量此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin如下图所示，按红色序号来 配置动态链接库就是一步简单的复制粘贴：找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 工程目录配置在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下： 包含目录在包含目录中添加如下内容(注意自己的opencv目录) 库目录在库目录下添加如下内容 附加依赖项找到链接器&gt;输入，在附加依赖项中添加如下内容 测试新建项目，输入下面这段代码，注意在项目目录里放图片=123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 按Ctrl+F5运行。如果成功的话会看到如下窗口恭喜你，安装成功，开始下一步的学习吧~如果你连测试程序都看不懂的话，可以看我另一篇博文：openCV学习笔记]]></content>
+      <content type="text"><![CDATA[Install VS2017 and opencv3 step by step 下载我这里下的是 VS2017社区版，对我来说够用了。openCV 3.2.0 版本：下载地址 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。 配置我的电脑是64位的，我就按照64位来说。 添加环境变量此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin如下图所示，按红色序号来 配置动态链接库就是一步简单的复制粘贴：找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 工程目录配置在VS2017中新建空项目，x86改为x64，debug模式。进入属性窗口，如下： 包含目录在包含目录中添加如下内容(注意自己的opencv目录) 库目录在库目录下添加如下内容 附加依赖项找到链接器&gt;输入，在附加依赖项中添加如下内容 测试新建项目，输入下面这段代码，注意在项目目录里放图片=123456789#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main()&#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 按Ctrl+F5运行。如果成功的话会看到如下窗口恭喜你，安装成功，开始下一步的学习吧~如果你连测试程序都看不懂的话，可以看我另一篇博文：openCV学习笔记]]></content>
     </entry>
 
     

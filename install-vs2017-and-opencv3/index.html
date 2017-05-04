@@ -183,7 +183,7 @@
   </header>
 
   <section class="post">
-    <p>Windows 10 下配置 openCV3<br><a id="more"></a></p>
+    <p>Install VS2017 and opencv3 step by step<br><a id="more"></a></p>
 <h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>我这里下的是 <a href="https://www.visualstudio.com/zh-hans/vs/community" target="_blank" rel="external">VS2017社区版</a>，对我来说够用了。<br>openCV 3.2.0 版本：<a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.2.0/" target="_blank" rel="external">下载地址</a> 。自己选择安装目录，下面使用\opencv 代表你的安装目录，自己要补全。</p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>我的电脑是64位的，我就按照64位来说。</p>
 <h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>此电脑右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加\openCV\build\x64\vc14\bin<br>如下图所示，按红色序号来<br><img src="http://img.blog.csdn.net/20170320135410439" alt=""></p>
@@ -193,7 +193,7 @@
 <h5 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h5><p>在库目录下添加如下内容<br><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
 <h5 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h5><p>找到链接器&gt;输入，在附加依赖项中添加如下内容<br><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>新建项目，输入下面这段代码，注意在项目目录里放图片=<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">openCV学习笔记</a></p>
+<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果你连测试程序都看不懂的话，可以看我另一篇博文：<a href="http://alwaysthink.cn/opencv-notes">openCV学习笔记</a></p>
 
   </section>
 
