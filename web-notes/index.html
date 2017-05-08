@@ -183,7 +183,7 @@
   </header>
 
   <section class="post">
-    <p>整理一下学习 Web 开发时学到的东西，不过用Markdown转HTML的HTML笔记真的好二逼<br><a id="more"></a></p>
+    <p>整理一下学习 Web 开发时学到的东西<br><a id="more"></a></p>
 <h3 id="学习路径"><a href="#学习路径" class="headerlink" title="学习路径"></a>学习路径</h3><ol>
 <li><a href="https://www.freecodecamp.com/" target="_blank" rel="external">freeCodeCamp</a></li>
 <li><a href="https://book.douban.com/subject/25752357/" target="_blank" rel="external">Head First HTML and CSS 第二版</a></li>
@@ -202,36 +202,30 @@
 <h4 id="lt-img-gt"><a href="#lt-img-gt" class="headerlink" title="&lt;img&gt;"></a><code>&lt;img&gt;</code></h4><p>内联元素<br>src属性指定图像文件的位置<br>alt属性会在图像不能显示时取代图像<br>width和height属性指定图像宽度高度<br>浏览器如何处理：显示html文件后会从Web服务器获取图像，然后图像会取代img元素<br>格式：<br>    JPEG    有损、不支持透明度<br>    PNG     无损、支持透明度 、擅长logo和文本图像<br>    GIF     无损、支持一种颜色透明、最多256种颜色、Web最早的图像格式</p>
 <h4 id="字符实体"><a href="#字符实体" class="headerlink" title="字符实体"></a>字符实体</h4><p>character entity:   www.w3schools.com/tags/ref_entities.asp<br>字符  实体名 编号<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;   &amp;<span class="attr">lt</span>;</span></div><div class="line">&gt;   &amp;gt;</div><div class="line">&amp;   &amp;amp;</div><div class="line">cc  &amp;copyright;</div></pre></td></tr></table></figure></p>
 <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><h4 id="控制字体："><a href="#控制字体：" class="headerlink" title="控制字体："></a>控制字体：</h4><blockquote>
-<p>font-family:<br>    五大系列(不是真正的字体)：Helvetica<br>    sans-serif: Verdana / Geneva(Mac) / Arial(都很常见) 高雅传统<br>    serif:      Times(Mac) / Times New Roman / Georgia 清晰可读<br>    monospace:  Courier(Mac) / Courier New / Andale Mono 等宽，用于代码<br>    cursive:    Comic Sans / Apple Chancery 类似手写，用于标题<br>    fantasy:    LAST NINJA / Impact 装饰性<br>    使用：<br>    候选字列表，逗号分隔，字体名字有多个单词要加””，最后放一个通用的字体系列名<br><code>font-size</code>     14px指定的是高度；150%指定相对父级；1.2em指定比例；关键字small,medium,large<br><code>font-weight</code>   加粗使用bold正常使用normal；还可以使用相对bolder和lighter<br><code>font-style</code>    斜体italic是专门设计的倾斜字符；倾斜文本oblique是浏览器将文字倾斜<br><code>color</code>         大约150个颜色名 / rgb( %, %, %) / rgb(255, 255, 225) / #ffffff 其中#aabbcc格式可以缩写成#abc<br><code>text-decoration</code>underline下划线 / line-through中间穿过的线 / none没有任何装饰  / underline overline既有上划线又有下划线，但两个不同的规则不会累加<br><code>line-height</code> 行间距ledding1.6em表示字体大小的1.6倍</p>
+<p>font-family:<br>五大系列(不是真正的字体)：Helvetica<br>  sans-serif: Verdana / Geneva(Mac) / Arial(都很常见) 高雅传统<br>  serif:      Times(Mac) / Times New Roman / Georgia 清晰可读<br>  monospace:  Courier(Mac) / Courier New / Andale Mono 等宽，用于代码<br>  cursive:    Comic Sans / Apple Chancery 类似手写，用于标题<br>  fantasy:    LAST NINJA / Impact 装饰性<br>  使用：<br>  候选字列表，逗号分隔，字体名字有多个单词要加””，最后放一个通用的字体系列名<br>属性<br><code>font-size</code>     14px指定的是高度；150%指定相对父级；1.2em指定比例；关键字small,medium,large<br><code>font-weight</code>   加粗使用bold正常使用normal；还可以使用相对bolder和lighter<br><code>font-style</code>    斜体italic是专门设计的倾斜字符；倾斜文本oblique是浏览器将文字倾斜<br><code>color</code>         大约150个颜色名 / rgb( %, %, %) / rgb(255, 255, 225) / #ffffff 其中#aabbcc格式可以缩写成#abc<br><code>text-decoration</code>underline下划线 / line-through中间穿过的线 / none没有任何装饰  / underline overline既有上划线又有下划线，但两个不同的规则不会累加<br><code>line-height</code> 行间距ledding1.6em表示字体大小的1.6倍</p>
 </blockquote>
 <h4 id="Web字体"><a href="#Web字体" class="headerlink" title="Web字体:"></a>Web字体:</h4><p>.ttf    经常作为候选<br>.otf    建立在ttf基础上比ttf新<br>.svg    Scalable Vector Graphics一种通用图像格式<br>.woff   Web open font format支持最广泛<br>在CSS中添加<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">font-face</span> &#123;</div><div class="line">    <span class="attribute">font-family</span>: <span class="string">""</span>;</div><div class="line">    <span class="attribute">src</span>:    <span class="built_in">url</span>(<span class="string">""</span>),</div><div class="line">            <span class="built_in">url</span>(<span class="string">""</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h4 id="盒模型："><a href="#盒模型：" class="headerlink" title="盒模型："></a>盒模型：</h4><p>CSS将<strong>每个元素</strong>看作由一个盒子表示<br><img src="http://www.milkaddict.com/images/css/boxmodel.png" alt=""></p>
 <blockquote>
 <ul>
-<li>content   内容区-内容与边缘之间没有边界<ul>
+<li>content   内容区-内容与边缘之间没有边界</li>
 <li>padding   内边距-可选，透明，无颜色无装饰</li>
-<li>border    边  框-可选，一条线，可利用CSS控制宽度颜色样式<pre><code>border-style: solid/double/groove/outset/dotted/dashed/inset/ridge
-border-width: thin/medium/thick/15px
-border-color:
-border-radius: 15px/3em/
-</code></pre></li>
+<li>border    边  框-可选，一条线，可利用CSS控制宽度颜色样式<br>  border-style: solid/double/groove/outset/dotted/dashed/inset/ridge<br>  border-width: thin/medium/thick/15px<br>  border-color:<br>  border-radius: 15px/3em/</li>
 <li>margin    外边距-可选，透明，无颜色无装饰，可以用来增加同一页面不同元素间的距离</li>
-</ul>
-</li>
 </ul>
 </blockquote>
 <h4 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.class</span> &#123;</div><div class="line">    <span class="attribute">background-img</span>: <span class="built_in">url</span>(http://xxx/xxx.gif);</div><div class="line">    <span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">    <span class="attribute">background-position</span>: top left;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="class-与-id"><a href="#class-与-id" class="headerlink" title="class 与 id"></a>class 与 id</h4><blockquote>
 <ul>
 <li>class 标识一组<pre><code>类名要以字母开头
-</code></pre><ul>
-<li>id    标识唯一<br>  id名可以以字母或数字开头</li>
-</ul>
-</li>
+</code></pre></li>
+<li>id    标识唯一<pre><code>id名可以以字母或数字开头
+</code></pre></li>
 </ul>
 </blockquote>
-<h4 id="混合样式表-使用多个样式表"><a href="#混合样式表-使用多个样式表" class="headerlink" title="混合样式表(使用多个样式表)"></a>混合样式表(使用多个样式表)</h4><p>顺序很重要，下面的覆盖上面的</p>
-
+<h4 id="检查媒体"><a href="#检查媒体" class="headerlink" title="检查媒体"></a>检查媒体</h4><p><code>&lt;link&gt;</code>元素中的media属性可以检查媒体，据此连接不同的样式表</p>
+<p>或者直接在CSS中增加媒体查询<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> screen &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> print &#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="lt-div-gt-和-lt-span-gt"><a href="#lt-div-gt-和-lt-span-gt" class="headerlink" title="&lt;div&gt;和&lt;span&gt;"></a><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code></h3>
   </section>
 
 </article>
