@@ -245,6 +245,25 @@
 <h5 id="浮动："><a href="#浮动：" class="headerlink" title="浮动："></a>浮动：</h5><p>浏览器正常的将元素流入页面，遇到浮动元素会把尽可能放在指定的边上。<br>还会在正常流中删除这个元素，好像它浮在页面上一样。<br>其他块元素会填在这里，但其中的内联元素定位时会考虑浮动元素的边界，因此会围绕着浮动元素。<br>设置外边距使左右两栏分开<br>解决层叠问题： <code>clear: right;</code> 表示footer右面不允许有浮动内容</p>
 <h4 id="浏览器特定的CSS属性"><a href="#浏览器特定的CSS属性" class="headerlink" title="浏览器特定的CSS属性"></a>浏览器特定的CSS属性</h4><p>浏览器用来测试新特性增加的新功能，或还没有得到标准组织批准的CSS扩展，长这样：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">rotate</span>(45<span class="selector-tag">deg</span>);</div></pre></td></tr></table></figure></p>
 <h3 id="服务器端脚本"><a href="#服务器端脚本" class="headerlink" title="服务器端脚本"></a>服务器端脚本</h3><p>PHP/Python/Perl/Node.js/Ruby on Rails/JavaServer Pages/VB.NET/ASP.NET</p>
+<blockquote>
+<p>5月678日三天看完HeadFirstHTMLandCSS，暂时放下Web的学习，先去做毕设</p>
+</blockquote>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><p>JavaScript这个术语通常涵盖了3个部分</p>
+<ul>
+<li>ECMAScript: 语言核心部分，独立于浏览器。</li>
+<li>DOM(Document Object Model): 提供一种与HTML、XML文档交互的方式。W3C创建了DOM标准，是一种独立于JS的操作结构化文档的方式</li>
+<li>BOM(Boswer Object Model): 一个与浏览器环境有关的对象集合，HTML5之后定义了一些浏览器之间通用的对象标准<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4>五种基本类型</li>
+<li>number<br>  范围[5e-324,1e308]    超出后变成Infinity。Infinity-Infinity会得到NaN(Not a Number)</li>
+<li>string<br>  \u后面的字符会被视为Unicode码</li>
+<li><p>boolean</p>
+</li>
+<li><p>undefined<br>  一般没有返回值的表达式会打印一个undefined</p>
+</li>
+<li>null<br>非基本类型</li>
+<li>对象<br>查看类型操作符typeof</li>
+</ul>
+<p>可以在变量名的任意位置使用$</p>
+<h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><p>JS没有类。一切都是基于对象的，依靠一套原型(prototype)系统。不同于传统OO语言，类似“基于A类创建了一个叫做B的新对象”的描述会在JS中变成“将现有的A对象扩展成了一个叫做B的新对象”<br>JS所有方法和属性都是public的。但还是提供了一些隐藏数据的方法。<br>聚合和继承都发生在对象之间。</p>
 
   </section>
 
@@ -252,6 +271,20 @@
 <section class="read-more">
            
     
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/opencv-notes/" title="openCV学习笔记">openCV学习笔记</a></h2>
+                <p class="excerpt">
+                
+                &lt;p&gt;整理学习openCV过程中重要的知识点。&lt;br&gt;
+                
+                </p>
+                <div class="post-list__meta"><time datetime="2017-05-09T03:35:30.000Z" class="post-list__meta--date date">2017-05-09</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/openCV/">openCV</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+</span><a class="btn-border-small" href="/opencv-notes/">继续阅读</a></div>
+                           
+            </div>
         
         
                
