@@ -198,22 +198,12 @@
 <h4 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h4><p>首先前两行属于固定开头，并且这个写法是最简洁的。<br>头文件 <code>opencv.hpp</code> 中包含了openCV其余各个模块头文件声明，所以不必再include其他头文件。</p>
 <h4 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h4><p>OpenCV中的类和函数都在命名空间cv中</p>
 <h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><p>在OpenCV中，使用Mat类来保存图像。<br>图像在计算机中是以矩阵的格式存储的，所以Mat本质上是一个矩阵的类，每一个像素都有它的列数和行数。同时，Mat类还可作为代数矩阵并执行操作(如矩阵加法、矩阵乘法、创造一个对角矩阵)<br>在计算机内存中，矩阵被保存为一个有序序列。为什么要知道这个呢？这是为了更为高效地访问像素，虽然OpenCV中的函数对随机存取进行了优化，但使用指针计算来直接访问内存仍然是坠吼的。</p>
-<h4 id="图片的读写"><a href="#图片的读写" class="headerlink" title="图片的读写"></a>图片的读写</h4><ul>
-<li>读取图像的函数 <code>imread()</code> 原型如下<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Mat <span class="title">imread</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span>&amp; filename, <span class="keyword">int</span> flags=<span class="number">1</span> )</span></span>;</div></pre></td></tr></table></figure>
-</li>
-</ul>
+<h4 id="图片的读写"><a href="#图片的读写" class="headerlink" title="图片的读写"></a>图片的读写</h4><p>读取图像的函数 <code>imread()</code> 原型如下<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function">Mat <span class="title">imread</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span>&amp; filename, <span class="keyword">int</span> flags=<span class="number">1</span> )</span></span>;</div></pre></td></tr></table></figure></p>
 <p>第一个参数是文件名，要放在双引号中<br>第二个参数是载入标识，默认为1，表示载入三通道的彩色图像。一般会省略</p>
-<ul>
-<li><p>写图像的函数 <code>imwrite()</code><br>第一个参数是带有扩展名的保存路径<br>第二个参数是要保存的图像对象名<br>上面的最简OpenCV程序没有用到，但还是在这一并介绍了</p>
-</li>
-<li><p>显示图像的函数 <code>imshow()函数</code> 原型如下</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">imshow</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span>&amp; winname, InputArray mat)</span></span>;</div></pre></td></tr></table></figure>
-</li>
-</ul>
+<p>写图像的函数 <code>imwrite()</code><br>第一个参数是带有扩展名的保存路径<br>第二个参数是要保存的图像对象名<br>上面的最简OpenCV程序没有用到，但还是在这一并介绍了</p>
+<p>显示图像的函数 <code>imshow()函数</code> 原型如下<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">imshow</span><span class="params">(<span class="keyword">const</span> <span class="built_in">string</span>&amp; winname, InputArray mat)</span></span>;</div></pre></td></tr></table></figure></p>
 <p>imshow()函数会创建一个窗口来显示图像<br>第一个参数是窗口的名字<br>第二个参数是要显示的图像对象名</p>
-<h4 id="等待"><a href="#等待" class="headerlink" title="等待"></a>等待</h4><ul>
-<li><code>waitKey()</code><br>等待用户按任意键停止程序<br>其中参数是等待的毫秒数，设置为0表示永远等待</li>
-</ul>
+<h4 id="等待"><a href="#等待" class="headerlink" title="等待"></a>等待</h4><p><code>waitKey()</code><br>等待用户按任意键停止程序<br>其中参数是等待的毫秒数，设置为0表示永远等待</p>
 
   </section>
 
