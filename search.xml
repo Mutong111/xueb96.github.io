@@ -80,6 +80,13 @@
 
     
     <entry>
+      <title><![CDATA[Web学习资料汇总]]></title>
+      <url>%2Flearn-web-development%2F</url>
+      <content type="text"><![CDATA[整理一下web学习资料 前端入门: Head First HTML与CSS（第2版） JavaScript DOM编程艺术 （第2版） 发现一个灰常好的英文资料，涵盖了前端的方方面面，而且每年更新：Front-End Developer Handbook 2017后端： 还没研究，，好像技术栈很多= =]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[PAT(乙级) 1064. 朋友数(20)]]></title>
       <url>%2FPAT-%E4%B9%99%E7%BA%A7-1064-%E6%9C%8B%E5%8F%8B%E6%95%B0-20%2F</url>
       <content type="text"><![CDATA[如果两个整数各位数字的和是一样的，则被称为是“朋友数”，而那个公共的和就是它们的“朋友证号”。例如123和51就是朋友数，因为1+2+3 = 5+1 = 6，而6就是它们的朋友证号。给定一些整数，要求你统计一下它们中有多少个不同的朋友证号。注意：我们默认一个整数自己是自己的朋友。 输入格式：输入第一行给出正整数N。随后一行给出N个正整数，数字间以空格分隔。题目保证所有数字小于104。 输出格式：首先第一行输出给定数字中不同的朋友证号的个数；随后一行按递增顺序输出这些朋友证号，数字间隔一个空格，且行末不得有多余空格。 输入样例：8123 899 51 998 27 33 36 12 输出样例：43 6 9 26 题解1234567891011121314151617181920212223242526272829#include &lt;iostream&gt;using namespace std;int main() &#123; int n, a[40] = &#123; 0 &#125;; cin &gt;&gt; n; while (n--) &#123; int num, sum = 0; cin &gt;&gt; num; while (num) &#123; sum += num % 10; num /= 10; &#125; a[sum]++; &#125; int k = 0, ans[40] = &#123; 0 &#125;, i; for (i = 0; i &lt; 40; i++) &#123; if (a[i]) &#123; ans[k] = i; k++; &#125; &#125; cout &lt;&lt; k &lt;&lt; endl; for (i = 0; i &lt; k; i++) &#123; cout &lt;&lt; ans[i]; if (i != k - 1) cout &lt;&lt; " "; &#125; return 0;&#125;]]></content>
@@ -216,13 +223,6 @@
       <title><![CDATA[优秀博客推荐]]></title>
       <url>%2F%E4%BC%98%E7%A7%80%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90%2F</url>
       <content type="text"><![CDATA[本文推荐我所知道的优秀个人博客，主要是CS领域的名人或学生。 刘未鹏 | Mindhacks 他写过一本关于心智成长的书《暗时间》特别好，是他博文的选录。他向我们展示了一个普通人在某一领域钻研能成为什么样子，从C++到思维再到现在的养娃，认真态度总能帮他取得一些成绩。 如果你想开始写博客，建议你读一下这篇 为什么你应该（从现在开始就）写博客 如果你是一名大学生，你应该能从这篇 我在南大的七年 中得到启发 小土刀 | wdxtub 我是通过搜CSAPP找到的，博主技术范围涉猎较广，读书特别多，也乐意分享，是我心中的大牛~~ 如果你在钻研《深入理解计算机系统》这本书，那么他的 读薄 CSAPP 和 读厚 CSAPP 系列也许能作为参考 (未完)]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[Web学习资料汇总]]></title>
-      <url>%2Flearn-web-development%2F</url>
-      <content type="text"><![CDATA[整理一下web学习资料 前端入门: Head First HTML与CSS（第2版） JavaScript DOM编程艺术 （第2版） 发现一个灰常好的英文资料，涵盖了前端的方方面面，而且每年更新：Front-End Developer Handbook 2017后端： 还没研究，，好像技术栈很多= =]]></content>
     </entry>
 
     
