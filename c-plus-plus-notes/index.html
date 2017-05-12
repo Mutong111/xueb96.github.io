@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>C++学习笔记 | Xueb</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Life is too short to program in C++">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="C++学习笔记 | Xueb">
+    <meta name="twitter:description" content="Life is too short to program in C++">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="C++学习笔记 | Xueb">
+    <meta property="og:description" content="Life is too short to program in C++">
+
+    
+    <meta name="author" content="xueb96">
+    
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://alwaysthink.cn/c-plus-plus-notes/"/><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
+      
+</head>
+
+<body class="home-template no-js">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Xueb 的主页"><img src="/images/avatar.jpg" width="80" alt="Xueb logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Xueb">Xueb</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">_(:3」∠)_</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">Life is too short to program in C++</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/about">About</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/xueb96" title="查看我的 GitHub 主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+
+
+
+
+    <li class="navigation__item">
+  <a href="#" title="搜索">
+    <i class='social fa fa-search search-form-link'></i>
+    <span class="label">搜索</span>
+  </a>
+</li>
+
+<div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="搜索 ..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '无标题',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-04-30T05:02:25.000Z" class="post-list__meta--date date">2017-04-30</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/C-C/">C/C++</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+ </span>
+      <span class="page-pv">
+      &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">C++学习笔记</h1>
+  </header>
+
+  <section class="post">
+    <p>学习C++时所作的笔记。<br><a id="more"></a></p>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><ul>
+<li><a href="https://book.douban.com/subject/26390133/" target="_blank" rel="external">C++程序设计（原书第3版）</a></li>
+<li><a href="https://book.douban.com/subject/25708312/" target="_blank" rel="external">C++ Primer 中文版（第 5 版）</a></li>
+</ul>
+<h3 id="基本："><a href="#基本：" class="headerlink" title="基本："></a>基本：</h3><ul>
+<li>震惊！<code>cout</code>居然是console output的简写。<code>endl</code>是end line的简写。</li>
+</ul>
+<h3 id="命名空间："><a href="#命名空间：" class="headerlink" title="命名空间："></a>命名空间：</h3><ul>
+<li>定义命名空间</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">namespace</span> A &#123;</div><div class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">     <span class="comment">//todo</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="数据类型："><a href="#数据类型：" class="headerlink" title="数据类型："></a>数据类型：</h3><ul>
+<li><code>long long</code>与<code>long</code>的区别：<br>(等看过C++Primer后整理)</li>
+<li><code>#include &lt;limits&gt;</code> 中定义了一些非常有用的常量： <code>INT_MIN</code>、<code>INT_MAX</code>、<code>LONG_MIN</code>、<code>LONG_MAX</code>、<code>FLT_MIN</code>、<code>FLT_MAX</code>、<code>DBL_MIN</code>、<code>DBL_MAX</code> </li>
+<li><code>sizeof()</code>可用于类型名也可以用于变量、对象</li>
+<li>前缀0表示八进制整数，前缀0x表示十六进制整数</li>
+<li>浮点数的名字由来：带小数点的数值，用科学计数法表示时，小数点的位置浮动了。</li>
+<li>类型转换：<ul>
+<li>显式转换(Explicit Conversion)     <ul>
+<li>转换运算符： <code>static_cast&lt;type&gt;(value)</code>,其中value是一个变量/字面常量/表达式</li>
+<li>C-style cast：<code>(int)value</code></li>
+<li>强制转换(Cast)：显式转换的另一种说法(大坑</li>
+</ul>
+</li>
+<li>隐式转换(Implicit Conversion)</li>
+</ul>
+</li>
+<li>溢出：<ul>
+<li>overflow：数据超过类型最大值或低于最小值。</li>
+<li>underflow：浮点数太小(太接近于0)被近似为0</li>
+</ul>
+</li>
+<li><p>浮点数有精度，涉及浮点数的计算会导致四舍五入误差，因此，浮点数之间判断相等是不可靠的。<br>解决方案：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> <span class="keyword">double</span> EPSILON = <span class="number">1E-14</span>;  <span class="comment">//const float EPSILON = 1E-7;</span></div><div class="line"><span class="keyword">if</span>( <span class="built_in">abs</span>(a-b) &lt; EPSILON )       <span class="comment">//使用abs()需要#include &lt;cmath&gt;</span></div><div class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"a = b"</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>简化<code>bool</code>变量赋值：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> ( number%<span class="number">2</span> == <span class="number">0</span>)</div><div class="line">  even = <span class="literal">true</span>;</div><div class="line"><span class="keyword">else</span></div><div class="line">  even = <span class="literal">false</span>;</div></pre></td></tr></table></figure>
+<p>写成下面这样会好一点：<br><code>bool even = number%2 == 0;</code><br>直接输出：<br><code>cout &lt;&lt; (num % 2 == 0 ? &quot;num is even&quot; : &quot;num is odd&quot;);</code></p>
+</li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
+<li>C++支持形如<code>int a(1);</code>的语法来声明并初始化变量，等价于<code>int a = 1;</code></li>
+</ul>
+<h3 id="变量作用域："><a href="#变量作用域：" class="headerlink" title="变量作用域："></a>变量作用域：</h3><ul>
+<li>局部静态变量：<br>函数结束执行后局部变量会自动销毁，可使用静态局部变量保留。<br>使用方法：变量声明语句最前加<code>static</code>关键字</li>
+</ul>
+<h3 id="库函数"><a href="#库函数" class="headerlink" title="库函数"></a>库函数</h3><ul>
+<li><p>生成随机整数：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">srand(time(<span class="number">0</span>));  	<span class="comment">//以time(0)为种子</span></div><div class="line"><span class="built_in">cout</span> &lt;&lt; rand()%<span class="number">10</span>;	<span class="comment">//生成1~9的随机整数</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>数学函数：</p>
+<ul>
+<li><code>ceil(x)</code>  x被向上取整  ， <code>floor(x)</code>   x被向下取整，返回的整数是double类型</li>
+</ul>
+</li>
+<li>字符函数：<br>需要<code>#include &lt;cctype&gt;</code>  <ul>
+<li><code>isdigit(ch)</code>   数字，返回true</li>
+<li><code>isalpha(ch)</code>   字母，返回true</li>
+<li><code>isalnum(ch)</code>   字母或数字，返回true</li>
+<li><code>islower(ch)</code>   <code>issupper(ch)</code> 判断大小写</li>
+<li><code>isspace(ch)</code>   判断空格</li>
+<li><code>tolower(ch)</code>  <code>tosupper(ch)</code>  转换大小写</li>
+</ul>
+</li>
+</ul>
+<h3 id="字符串与数字的转换："><a href="#字符串与数字的转换：" class="headerlink" title="字符串与数字的转换："></a>字符串与数字的转换：</h3><p>需要<code>#include &lt;cstdlib&gt;</code>  </p>
+<ul>
+<li>atoi(s)    将C字符串转换为int类型的整数</li>
+<li>atof(s)    将C字符串转换为浮点数</li>
+</ul>
+<h3 id="一维数组："><a href="#一维数组：" class="headerlink" title="一维数组："></a>一维数组：</h3><ul>
+<li>数组大小必须为常量。有时算法题要根据输入来决定数组大小，解决方法是开辟一个大数组或者使用vector类</li>
+<li>数组初始化：<ul>
+<li>数组声明和初始化必须在同一语句</li>
+<li>以初始化语句创建一个数组时允许省略数组大小</li>
+<li>允许只初始化一部分元素，其余元素被赋予0</li>
+<li>未被初始化的数组，元素值都不确定</li>
+</ul>
+</li>
+<li>数组边界不会被检查，要小心越界</li>
+</ul>
+<h3 id="String类："><a href="#String类：" class="headerlink" title="String类："></a>String类：</h3><ul>
+<li>连接：<ul>
+<li><code>string s3 = s1 + s2;</code>  可以</li>
+<li><code>string s += &quot;blabla&quot;;</code>  可以</li>
+<li><code>string s = &quot;abc&quot; + &quot;def&quot;;</code> 是非法的</li>
+</ul>
+</li>
+<li>比较：<ul>
+<li>==、!=、&lt;=、&gt;、=、&lt;、&gt;</li>
+</ul>
+</li>
+<li>读：<ul>
+<li><code>cin &gt;&gt; s;</code>  以空白字符结束，如果字符串中有空格则无法正确输入</li>
+<li><code>#include &lt;string&gt;</code>中的 <code>getline(cin, s)</code>   第三个参数默认值为 ‘\n’  ，可以读入空格</li>
+</ul>
+</li>
+</ul>
+<h3 id="格式化输出："><a href="#格式化输出：" class="headerlink" title="格式化输出："></a>格式化输出：</h3><h4 id="cout："><a href="#cout：" class="headerlink" title="cout："></a>cout：</h4><ul>
+<li>setprecision(n)  <ul>
+<li>指定浮点数显示的总位数，cout&lt;&lt;setprecision(3)&lt;&lt;12.34567;  会输出12.3</li>
+<li>宽度不够整数部分，setprecision将被忽略，cout&lt;&lt;setprecision(3)&lt;&lt;23456;  会输出23456</li>
+<li>精度不改变，会一直保持效果</li>
+</ul>
+</li>
+<li>fixed<ul>
+<li>计算机自动使用科学计数法来显示长浮点数，使用fixed强制使用费科学计数法，默认显示到小数点后6位</li>
+<li>使用cout&lt;&lt;fixed&lt;&lt;setprecision(2)&lt;&lt;可控制显示到小数点后2位    </li>
+</ul>
+</li>
+<li>showpoint<ul>
+<li>强制显示小数点</li>
+</ul>
+</li>
+<li>setw(width)<ul>
+<li>指定最小占用宽度，只影响接下来的<strong>一次</strong>输出</li>
+</ul>
+</li>
+<li>left和right<ul>
+<li>setw(width)默认输出右对齐，使用lift可设置为左对齐</li>
+</ul>
+</li>
+</ul>
+<h4 id="printf："><a href="#printf：" class="headerlink" title="printf："></a>printf：</h4><h3 id="文件输入输出："><a href="#文件输入输出：" class="headerlink" title="文件输入输出："></a>文件输入输出：</h3><ul>
+<li>需要 <code>#include &lt;fstream&gt;</code></li>
+<li><p>读取文件：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function">ifstream <span class="title">input</span><span class="params">(<span class="string">"filename.txt"</span>)</span></span>;	<span class="comment">//创建一个对象并打开文件，如果文件不存在会出现unexpected error</span></div><div class="line">input&gt;&gt;var1&gt;&gt;var2;	<span class="comment">//读入数据，与cin类似</span></div><div class="line">input.close();	<span class="comment">//关闭文件</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>写入文件：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function">ofstream <span class="title">output</span><span class="params">(<span class="string">"filename.txt"</span>)</span></span>;<span class="comment">//创建一个对象并打开文件,如果文件已经存在，内容会销毁并重新创建</span></div><div class="line">output&lt;&lt;var1&lt;&lt;var2;	<span class="comment">//读入数据，与cout类似</span></div><div class="line">output.close();	<span class="comment">//关闭文件</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>输入输出重定向：<br><code>Redirection.exe &lt; input.txt &gt; output.txt</code>可以从input.txt获取输入并把输出发送到output.txt</p>
+</li>
+</ul>
+<h3 id="函数重载："><a href="#函数重载：" class="headerlink" title="函数重载："></a>函数重载：</h3><p>必须有不同的参数列表，而不能依据不同的返回类型重载。</p>
+<h3 id="内联函数："><a href="#内联函数：" class="headerlink" title="内联函数："></a>内联函数：</h3><p>编译器将代码复制到每个调用点，避免函数调用的开销。<br>适用于短函数，而多次调用的长函数可能会被编译器忽略inline关键字。</p>
+<h3 id="STL"><a href="#STL" class="headerlink" title="STL"></a>STL</h3><h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4><ul>
+<li>顺序容器(一级容器)<br>线性数据结构：多个元素的有序集合<ul>
+<li>vector：直接访问任意元素，快速插删尾部元素</li>
+<li>deque：直接访问任意元素，快速插删头尾元素</li>
+<li>list：快速插删任意元素</li>
+</ul>
+</li>
+<li>关联容器(一级容器)<br>可快速定位元素的非线性数据结构<ul>
+<li>set：无重复关键字</li>
+<li>multiset：允许重复关键字</li>
+<li>map：键值对映射，无重复关键字</li>
+<li>multimap：允许重复关键字</li>
+</ul>
+</li>
+<li><p>容器适配器<br>顺序容器的受限版本，处理特殊情况</p>
+<ul>
+<li>stack</li>
+<li>queue</li>
+<li>priority_queue</li>
+</ul>
+</li>
+<li><p>容器共同函数</p>
+<ul>
+<li>无参有参拷贝构造函数，析构函数</li>
+<li>empty()</li>
+<li>size()：返回当前元素数量</li>
+<li>=</li>
+<li>&lt;,&lt;=,&gt;,&gt;=,==,!=</li>
+</ul>
+</li>
+<li><p>一级容器函数</p>
+<ul>
+<li>c1.swap(c2)：交换c1,c2</li>
+<li>c1.max_size()：返回可容纳最大元素数量</li>
+<li>c.clear()：删除所有元素</li>
+<li>c.begin()：返回首元素迭代器</li>
+<li>c.end()：返回尾元素之后位置的迭代器</li>
+<li>c.rbegin()：返回尾元素的迭代器，用于逆序遍历</li>
+<li>c.rend()：返回首元素之前位置的迭代器，用于逆序遍历</li>
+<li>c.erase(beg,end)：删除beg~end-1的元素</li>
+</ul>
+</li>
+</ul>
+<h4 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h4><p>用于访问和处理一级容器中的元素</p>
+<h4 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h4><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><h4 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h4><p>通过调用构造函数来初始化对象。</p>
+<ul>
+<li>构造函数名必须与类名相同</li>
+<li>构造函数没有返回类型(void也不行)</li>
+<li>可被重载</li>
+</ul>
+<h4 id="数据域初始化"><a href="#数据域初始化" class="headerlink" title="数据域初始化"></a>数据域初始化</h4><p>作为类成员，数据域不能再声明时进行初始化</p>
+<ul>
+<li>构造函数</li>
+<li>初始化列表</li>
+</ul>
+<h4 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h4><p>数据存储在对象里，而函数是这个类所有对象共享的</p>
+
+  </section>
+
+</article>
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/learn-computer-system/" title="计算机系统学习资料汇总">计算机系统学习资料汇总</a></h2>
+                <p class="excerpt">
+                
+                &lt;p&gt;计算机原理，操作系统，体系结构&lt;br&gt;
+                
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-30T05:08:10.000Z" class="post-list__meta--date date">2017-04-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/OS/">OS</a>, <a class="tag-link" href="/tags/机组/">机组</a>
+</span><a class="btn-border-small" href="/learn-computer-system/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/Toy-programs/" title="Toy programs">Toy programs</a></h2>
+                <p class="excerpt">
+                
+                &lt;p&gt;收集一些代码段。&lt;br&gt;
+                
+                </p>
+                <div class="post-list__meta"><time datetime="2017-04-30T05:01:58.000Z" class="post-list__meta--date date">2017-04-30</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/C-C/">C/C++</a>
+</span><a class="btn-border-small" href="/Toy-programs/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+
+            
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'xueb96'; 
+      
+  var disqus_identifier = '/c-plus-plus-notes/';
+  var disqus_title = 'C++学习笔记';
+  var disqus_url = 'http://alwaysthink.cn/c-plus-plus-notes/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = '/js/embed.js';
+          //将disqus使用https协议将大大提高显示速度
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          //dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        基于 <a href="http://hexo.io">Hexo</a> 搭建
+    </span>
+    <span class="footer__copyright">
+        &copy; 2017 - 本站由 <a href="https://github.com/xueb96" target="_blank">@xueb</a> 创建,
+        使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">hexo-theme-new-vno</a> 主题,
+        修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+</footer>
+        </div>
+    </div>
+
+    
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-98442455-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1cdfc2bec66c6f122a28a01311eb6535";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</body>
+</html>
