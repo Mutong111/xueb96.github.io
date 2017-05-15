@@ -171,7 +171,7 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2017-05-09T13:27:32.000Z" class="post-list__meta--date date">2017-05-09</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+      <time datetime="2017-05-15T12:27:32.000Z" class="post-list__meta--date date">2017-05-15</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
   <a class="tag-link" href="/tags/openCV/">openCV</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
  </span>
       <span class="page-pv">
@@ -193,7 +193,7 @@
 <h5 id="库目录"><a href="#库目录" class="headerlink" title="库目录"></a>库目录</h5><p>在库目录下添加如下内容<br><img src="http://img.blog.csdn.net/20170320140432297" alt=""></p>
 <h5 id="附加依赖项"><a href="#附加依赖项" class="headerlink" title="附加依赖项"></a>附加依赖项</h5><p>找到链接器&gt;输入，在附加依赖项中添加如下内容<br><img src="http://img.blog.csdn.net/20170320140644628" alt=""></p>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>新建一个C++文件，输入下面这段代码，注意把图片放在你的工程所在目录<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	Mat img = imread(<span class="string">"1.jpg"</span>);</div><div class="line">	imshow(<span class="string">"原图"</span>, img);</div><div class="line">	waitKey();</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果上面的程序看不懂，可以看我下一篇博文的讲解：<a href="http://alwaysthink.cn/opencv-notes-1">OpenCV学习笔记(一) 图像的读写与显示</a></p>
+<p>按Ctrl+F5运行。如果成功的话会看到如下窗口<br><img src="http://i2.muimg.com/567571/8598bda5cb50d38d.png" alt=""><br>恭喜你，安装成功，开始下一步的学习吧~<br>如果上面的程序看不懂，可以看我下一篇博文的讲解：<a href="http://alwaysthink.cn/opencv-notes-2">OpenCV学习笔记(二) 图像与视频的读写与显示</a></p>
 
   </section>
 
@@ -201,34 +201,20 @@
 <section class="read-more">
            
     
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/opencv-notes-1/" title="OpenCV学习笔记(一) 图像的读写与显示">OpenCV学习笔记(一) 图像的读写与显示</a></h2>
-                <p class="excerpt">
-                
-                &lt;p&gt;OpenCV系列笔记第一篇。介绍 Hello World 程序&lt;br&gt;
-                
-                </p>
-                <div class="post-list__meta"><time datetime="2017-05-09T13:40:30.000Z" class="post-list__meta--date date">2017-05-09</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/OpenCV/">OpenCV</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
-</span><a class="btn-border-small" href="/opencv-notes-1/">继续阅读</a></div>
-                           
-            </div>
         
         
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/web-notes/" title="Web学习笔记">Web学习笔记</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/opencv-notes-2/" title="OpenCV学习笔记(二) 图像与视频的读写与显示">OpenCV学习笔记(二) 图像与视频的读写与显示</a></h2>
                 <p class="excerpt">
                 
-                &lt;p&gt;整理一下学习 Web 开发时学到的东西&lt;br&gt;
+                &lt;p&gt;OpenCV系列笔记第二篇。介绍图像与视频的输入输出&lt;br&gt;
                 
                 </p>
-                <div class="post-list__meta"><time datetime="2017-05-07T02:33:59.000Z" class="post-list__meta--date date">2017-05-07</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/Web/">Web</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
-</span><a class="btn-border-small" href="/web-notes/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2017-05-15T12:00:30.000Z" class="post-list__meta--date date">2017-05-15</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/OpenCV/">OpenCV</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+</span><a class="btn-border-small" href="/opencv-notes-2/">继续阅读</a></div>
                        
             </div>
         
