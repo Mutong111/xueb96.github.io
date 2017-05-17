@@ -3,13 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[OpenCV学习笔记(零) VS2017与OpenCV3的安装]]></title>
-      <url>%2Finstall-vs2017-and-opencv3%2F</url>
-      <content type="text"><![CDATA[OpenCV系列笔记第零篇。开发环境搭建教程 下载宇宙最强IDE VS2017社区版 免费OpenCV 3.2.0 版本：下载地址 自己选择安装目录，下文中使用 \opencv 代表你的安装目录。 配置我的电脑是64位的，相信大部分人的PC都是64位，所以按照64位来说。 添加环境变量此电脑 右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加 \openCV\build\x64\vc14\bin如下图所示，按红色序号来 配置动态链接库一步简单的复制粘贴找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 工程目录配置在VS2017中新建空项目，并设置x64，debug模式。进入属性窗口，如下： 包含目录在包含目录中添加如下内容 库目录在库目录下添加如下内容 附加依赖项找到链接器&gt;输入，在附加依赖项中添加如下内容 测试新建一个C++文件，输入下面这段代码，注意把图片放在你的工程所在目录12345678#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main() &#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 按Ctrl+F5运行。如果成功的话会看到如下窗口恭喜你，安装成功，开始下一步的学习吧~如果上面的程序看不懂，可以看我下一篇博文的讲解：OpenCV学习笔记(二) 图像与视频的读写与显示]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[OpenCV学习笔记(二) 图像与视频的读写与显示]]></title>
       <url>%2Fopencv-notes-2%2F</url>
       <content type="text"><![CDATA[OpenCV系列笔记第二篇。介绍图像与视频的输入输出 写在前面我在学习OpenCV的过程中，主要参考了以下资料： OpenCV3编程入门 虽然这本书写的很没有诚意而且各种抄袭，但 新手翻阅一下能学到一些东西 Learning OpenCV 3 著名的参考书，在 OpenCV1 时代就是重要的学习资料，如今随着3版本更新了。此书还没有中文版。 官方文档 如果你发现了本文中的错误或者没说清楚的地方，欢迎在下方评论。 图像输入输出12345678#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main() &#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 头文件首先前两行属于固定开头，并且这个写法是最简洁的。头文件 opencv.hpp 中包含了openCV其余各个模块头文件声明，所以不必再include其他头文件。 命名空间OpenCV中的类和函数都在命名空间cv中 数据结构在OpenCV中，使用Mat类来保存图像。图像在计算机中是以矩阵的格式存储的，所以Mat本质上是一个矩阵的类，每一个像素都有它的列数和行数。Mat类还可作为代数矩阵并执行操作(如矩阵加法、乘法、创造一个对角矩阵)Mat类对应于以前C语言版本的OpenCV中的IplImage结构体，但Mat不必再手动开辟空间和释放内存。 图片的读写读取图像的函数 imread() 原型如下1Mat imread(const string&amp; filename, int flags=1 ); 第一个参数是文件名，要放在双引号中第二个参数是载入标识，默认为1，表示载入三通道的彩色图像。一般会省略 写图像的函数 imwrite()第一个参数是带有扩展名的保存路径第二个参数是要保存的图像对象名上面的最简OpenCV程序没有用到，但还是在这一并介绍了 显示图像的函数 imshow()函数 原型如下1void imshow(const string&amp; winname, InputArray mat); imshow()函数会创建一个窗口来显示图像第一个参数是窗口的名字第二个参数是要显示的图像对象名 等待waitKey()等待用户按任意键停止程序其中参数是等待的毫秒数，设置为0表示永远等待 视频输入输出读取视频文件1234567891011121314151617181920#include &lt;opencv2\opencv.hpp&gt; using namespace cv; int main() &#123; //读入视频 VideoCapture capture("1.avi"); //写法1 /* 写法2：先实例化再初始化 VideoCapture capture; capture.open("1.avi"); */ //循环显示每一帧 while(1) &#123; Mat frame; capture&gt;&gt;frame; //读取当前帧到frame变量 if (frame.empty()) //判空 break; imshow("视频",frame); waitKey(1); &#125; return 0; &#125; 调用摄像头来读取视频只需要把上面程序中的 VideoCapture capture(&quot;1.avi&quot;); 换成 VideoCapture capture(0) 即可表示调用摄像头来读取视频]]></content>
@@ -20,6 +13,13 @@
       <title><![CDATA[OpenCV学习笔记(一) OpenCV 模块]]></title>
       <url>%2Fopencv-notes-1%2F</url>
       <content type="text"><![CDATA[OpenCV系列笔记第一篇。 OpenCV 各模块的简介 OpenCV采用模块化的架构设计，我们打开\opencv\sources\modules可以看到OpenCV的各个模块，每个模块包含不同的内容。 主要模块按照官方文档的顺序列举主要模块 Module Feature core The Core Functionality imgproc Image Processing highgui High Level GUI and Media imgcodecs Image Input and Output videoio Video Input and Output calib3d Camera calibration and 3D reconstruction(相机校准和3D重建) feature2d 2D Features framework video Video analysis objdetect Object Detection ml Machine Learning photo Computational photography stitching Images stitching(图像拼接) cuda GPU-Accelerated Computer Vision 还有其他一些不常用的模块，这里就不一一列举了。 头文件要在程序中使用OpenCV，我们需要包含头文件。在程序的开始，我们只需要添加一句 #include &lt;opencv2/opencv.hpp&gt; 即可，而没有必要像网上一些示例程序一样包含好几个模块头文件。这是因为opencv.hpp中已经包含了所有的模块]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[OpenCV学习笔记(零) VS2017与OpenCV3的安装]]></title>
+      <url>%2Finstall-vs2017-and-opencv3%2F</url>
+      <content type="text"><![CDATA[OpenCV系列笔记第零篇。开发环境搭建教程 下载宇宙最强IDE VS2017社区版 免费OpenCV 3.2.0 版本：下载地址 自己选择安装目录，下文中使用 \opencv 代表你的安装目录。 配置我的电脑是64位的，相信大部分人的PC都是64位，所以按照64位来说。 添加环境变量此电脑 右键&gt;属性&gt;高级系统设置&gt;环境变量&gt;选中Path编辑&gt;在变量值末尾增加 \openCV\build\x64\vc14\bin如下图所示，按红色序号来 配置动态链接库一步简单的复制粘贴找到 \opencv\build\x64\vc14\lib\ 目录，将文件全部选中，拷贝至c:\Windows\SysWOW64 文件夹下 工程目录配置在VS2017中新建空项目，并设置x64，debug模式。进入属性窗口，如下： 包含目录在包含目录中添加如下内容 库目录在库目录下添加如下内容 附加依赖项找到链接器&gt;输入，在附加依赖项中添加如下内容 测试新建一个C++文件，输入下面这段代码，注意把图片放在你的工程所在目录12345678#include &lt;opencv2/opencv.hpp&gt;using namespace cv;int main() &#123; Mat img = imread("1.jpg"); imshow("原图", img); waitKey(); return 0;&#125; 按Ctrl+F5运行。如果成功的话会看到如下窗口恭喜你，安装成功，开始下一步的学习吧~如果上面的程序看不懂，可以看我下一篇博文的讲解：OpenCV学习笔记(二) 图像与视频的读写与显示]]></content>
     </entry>
 
     
