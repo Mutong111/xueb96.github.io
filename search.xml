@@ -12,7 +12,7 @@
     <entry>
       <title><![CDATA[OpenCV学习笔记(一) OpenCV 模块]]></title>
       <url>%2Fopencv-notes-1%2F</url>
-      <content type="text"><![CDATA[OpenCV系列笔记第一篇。 OpenCV 各模块的简介 OpenCV采用模块化的架构设计，我们打开\opencv\sources\modules可以看到OpenCV的各个模块，每个模块包含不同的内容。 主要模块按照官方文档的顺序列举主要模块 Module Feature core The Core Functionality imgproc Image Processing highgui High Level GUI and Media imgcodecs Image Input and Output videoio Video Input and Output calib3d Camera calibration and 3D reconstruction(相机校准和3D重建) feature2d 2D Features framework video Video analysis objdetect Object Detection ml Machine Learning photo Computational photography stitching Images stitching(图像拼接) cuda GPU-Accelerated Computer Vision 还有其他一些不常用的模块，这里就不一一列举了。 头文件要在程序中使用OpenCV，我们需要包含头文件。在程序的开始，我们只需要添加一句 #include &lt;opencv2/opencv.hpp&gt; 即可，而没有必要像网上一些示例程序一样包含好几个模块头文件。这是因为opencv.hpp中已经包含了所有的模块]]></content>
+      <content type="text"><![CDATA[OpenCV系列笔记第一篇。 OpenCV 各模块的简介 OpenCV采用模块化的架构设计，我们打开\opencv\sources\modules可以看到OpenCV的各个模块，每个模块包含不同的内容。 主要模块按照官方文档的顺序列举主要模块 Module Feature core The Core Functionality imgproc Image Processing highgui High Level GUI and Media imgcodecs Image Input and Output videoio Video Input and Output calib3d Camera calibration and 3D reconstruction(相机校准和3D重建) feature2d 2D Features framework video Video analysis objdetect Object Detection ml Machine Learning photo Computational photography stitching Images stitching(图像拼接) cuda GPU-Accelerated Computer Vision 还有其他一些不常用的模块，这里就不一一列举了。 头文件要在程序中使用OpenCV，我们需要包含头文件。在程序的开始，我们只需要添加一句 #include &lt;opencv2/opencv.hpp&gt; 即可，而没有必要像网上一些示例程序一样包含好几个模块头文件。这是因为 opencv.hpp 中已经包含了所有的模块]]></content>
     </entry>
 
     
