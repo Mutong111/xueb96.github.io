@@ -71,6 +71,8 @@
             <ul class="navigation">
               <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">Blog</a></li>
             
+              <li class="navigation__item"><a href="/archives">Archives</a></li>
+            
               <li class="navigation__item"><a href="/about">About</a></li>
             
             </ul>
@@ -82,6 +84,13 @@
 
   <!-- Weibo-->
   
+  <li class="navigation__item">
+    <a href="http://weibo.com/xueb96" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
 
   <!-- Github -->
   
@@ -170,76 +179,6 @@
             <div class="main-post-list">
     
   <ol class="post-list post">
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1026-程序运行时间-15/" title="link to post.title">PAT(乙级) 1026. 程序运行时间(15)</a></h2>
-      <p class="excerpt">
-    
-      <p>要获得一个C语言程序的运行时间，常用的方法是调用头文件time.h，其中提供了clock()函数，可以捕捉从程序开始运行到clock()被调用时所耗费的时间。这个时间单位是clock tick，即“时钟打点”。同时还有一个常数CLK_TCK，给出了机器时钟每秒所走的时钟打点数。于是为了获得一个函数f的运行时间，我们只要在调用f之前先调用clock()，获得一个时钟打点数C1；在f执行完成后再调用clock()，获得另一个时钟打点数C2；两次获得的时钟打点数之差(C2-C1)就是f运行所消耗的时钟打点数，再除以常数CLK_TCK，就得到了以秒为单位的运行时间。<br>
-    
-      </p>
-      <div class="post-list__meta"><time datetime="2017-04-17T13:18:43.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/PAT/">PAT</a>
-</span><a class="btn-border-small" href="/PAT-乙级-1026-程序运行时间-15/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1031-查验身份证-15/" title="link to post.title">PAT(乙级) 1031. 查验身份证(15)</a></h2>
-      <p class="excerpt">
-    
-      <p>一个合法的身份证号码由17位地区、日期编号和顺序编号加1位校验码组成。校验码的计算规则如下：<br>首先对前17位数字加权求和，权重分配为：{7，9，10，5，8，4，2，1，6，3，7，9，10，5，8，4，2}；然后将计算的和对11取模得到值Z；最后按照以下关系对应Z值与校验码M的值：<br>Z：0 1 2 3 4 5 6 7 8 9 10<br>M：1 0 X 9 8 7 6 5 4 3 2<br>现在给定一些身份证号码，请你验证校验码的有效性，并输出有问题的号码。<br>
-    
-      </p>
-      <div class="post-list__meta"><time datetime="2017-04-17T13:18:02.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/PAT/">PAT</a>
-</span><a class="btn-border-small" href="/PAT-乙级-1031-查验身份证-15/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1036-跟奥巴马一起编程-15/" title="link to post.title">PAT(乙级) 1036. 跟奥巴马一起编程(15)</a></h2>
-      <p class="excerpt">
-    
-      <p>美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！<br>
-    
-      </p>
-      <div class="post-list__meta"><time datetime="2017-04-17T13:17:39.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/PAT/">PAT</a>
-</span><a class="btn-border-small" href="/PAT-乙级-1036-跟奥巴马一起编程-15/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1041-考试座位号-15/" title="link to post.title">PAT(乙级) 1041. 考试座位号(15)</a></h2>
-      <p class="excerpt">
-    
-      <p>每个PAT考生在参加考试时都会被分配两个座位号，一个是试机座位，一个是考试座位。正常情况下，考生在入场时先得到试机座位号码，入座进入试机状态后，系统会显示该考生的考试座位号码，考试时考生需要换到考试座位就座。但有些考生迟到了，试机已经结束，他们只能拿着领到的试机座位号码求助于你，从后台查出他们的考试座位号码。<br>
-    
-      </p>
-      <div class="post-list__meta"><time datetime="2017-04-17T13:17:06.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/PAT/">PAT</a>
-</span><a class="btn-border-small" href="/PAT-乙级-1041-考试座位号-15/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/PAT-乙级-1046-划拳-15/" title="link to post.title">PAT(乙级) 1046. 划拳(15)</a></h2>
-      <p class="excerpt">
-    
-      <p>划拳是古老中国酒文化的一个有趣的组成部分。酒桌上两人划拳的方法为：每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就赢了，输家罚一杯酒。两人同赢或两人同输则继续下一轮，直到唯一的赢家出现。<br>下面给出甲、乙两人的划拳记录，请你统计他们最后分别喝了多少杯酒。<br>
-    
-      </p>
-      <div class="post-list__meta"><time datetime="2017-04-17T13:11:53.000Z" class="post-list__meta--date date">2017-04-17</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/PAT/">PAT</a>
-</span><a class="btn-border-small" href="/PAT-乙级-1046-划拳-15/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
   
     
     <li>
