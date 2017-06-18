@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Linux学习笔记]]></title>
       <url>%2Flinux-notes%2F</url>
-      <content type="text"><![CDATA[Linux 是 CS 必修。 主要类型的 Unix： Linux 基于 System V (AT&amp;T) 的 Solaris 等 基于 BSD (Berkeley Software Distribution, 由 Bill Joy 开发, TCP/IP 最早实现在上面) 的 FreeBSD 和 Mac OS X（2001 年前，Macintosh 的 OS 是完全专有的，2001 年苹果公司采用了基于 Unix 的OS X） 为什么输入网址时必须注意大小写？因为大多数 Web 服务器运行在某种类型的 Unix 系统上，而 Unix 系统是区分大小写的。 待续]]></content>
+      <content type="text"><![CDATA[Linux 是 CS 必修。 背景GNU copyleft Unix主要类型的 Unix： Linux 基于 System V (AT&amp;T) 的 Solaris 等 基于 BSD (Berkeley Software Distribution, 由 Bill Joy 开发, TCP/IP 最早实现在上面) 的 FreeBSD 和 Mac OS X（2001 年前，Macintosh 的 OS 是完全专有的，2001 年苹果公司采用了基于 Unix 的OS X） 为什么输入网址时必须注意大小写？因为大多数 Web 服务器运行在某种类型的 Unix 系统上，而 Unix 系统是区分大小写的。 待续]]></content>
     </entry>
 
     
