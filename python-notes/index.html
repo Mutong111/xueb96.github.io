@@ -195,7 +195,11 @@
 <li><a href="https://book.douban.com/subject/26836700/" target="_blank" rel="external">《Python编程快速上手——让繁琐工作自动化》</a><br>真是相当好的入门书，我之前看过《笨方法学Python(Learn Python the hard way)》、《Python简明教程(A byte of Python)》，都十分不满意，虽然这两本书人气很高评价也不错。</li>
 <li>如果有进一步学习我会写上，记录完整的路径</li>
 </ol>
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h4><table>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><ul>
+<li><code>print()</code><br>打印输出</li>
+<li><code>input()</code><br>默认的返回值类型为 <code>string</code></li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h4><table>
 <thead>
 <tr>
 <th style="text-align:center">操作符</th>
@@ -258,11 +262,15 @@
 <h5 id="print-的关键字参数"><a href="#print-的关键字参数" class="headerlink" title="print() 的关键字参数"></a>print() 的关键字参数</h5><ul>
 <li>end 关键字参数</li>
 </ul>
+<blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'hello'</span>)</div><div class="line">print(<span class="string">'world'</span>)</div><div class="line"><span class="comment"># 输出将会是：</span></div><div class="line">hello</div><div class="line">world</div><div class="line"><span class="comment"># 因为print()函数自动在传入的字符串末尾添加了换行符，但是可以设置 end 关键字参数</span></div><div class="line">print(<span class="string">'hello'</span>, end=<span class="string">''</span>)</div><div class="line">print(<span class="string">'world'</span>)</div><div class="line"><span class="comment"># 输出将会是：</span></div><div class="line">helloworld</div></pre></td></tr></table></figure>
+</blockquote>
 <ul>
 <li>sep 关键字参数</li>
 </ul>
+<blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'how'</span>, <span class="string">'are'</span>, <span class="string">'you'</span>)</div><div class="line"><span class="comment"># 输出将会是：</span></div><div class="line">how are you</div><div class="line"><span class="comment"># 因为 print() 函数自动在传入的多个字符串之间用一个空格分割他们</span></div><div class="line"><span class="comment"># 但是可以设置 sep 关键字参数，替换掉默认的分隔字符串</span></div><div class="line">print(<span class="string">'how'</span>, <span class="string">'are'</span>, <span class="string">'you'</span>, sep=<span class="string">','</span>)</div><div class="line"><span class="comment"># 输出将会是</span></div><div class="line">how,are,you</div></pre></td></tr></table></figure>
+</blockquote>
 <h4 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h4><p>global 语句用来在函数内修改全局变量</p>
 <h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
 <li>列表值是列表本身</li>
