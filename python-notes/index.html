@@ -195,14 +195,6 @@
 <li><a href="https://book.douban.com/subject/26836700/" target="_blank" rel="external">《Python编程快速上手——让繁琐工作自动化》</a><br>真是相当好的入门书，我之前看过《笨方法学Python(Learn Python the hard way)》、《Python简明教程(A byte of Python)》，都十分不满意，虽然这两本书人气很高评价也不错。</li>
 <li>如果有进一步学习我会写上，记录完整的路径</li>
 </ol>
-<h2 id="计算机科学"><a href="#计算机科学" class="headerlink" title="计算机科学"></a>计算机科学</h2><blockquote>
-<p>三大主题</p>
-<ul>
-<li>抽象</li>
-<li>通用</li>
-<li>递归定义</li>
-</ul>
-</blockquote>
 <h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><ul>
 <li><code>print()</code><br>打印输出</li>
 <li><code>input()</code><br>默认的返回值类型为 <code>string</code></li>
@@ -245,6 +237,7 @@
 </tr>
 </tbody>
 </table>
+<h5 id="float"><a href="#float" class="headerlink" title="float"></a>float</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="number">0.2</span> + <span class="number">0.1</span></div><div class="line"><span class="number">0.30000000000000004</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span> <span class="number">3</span> * <span class="number">0.1</span></div><div class="line"><span class="number">0.30000000000000004</span></div></pre></td></tr></table></figure>
 <h4 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h4><ul>
 <li><code>True</code></li>
 <li><code>False</code></li>
@@ -255,6 +248,7 @@
 <h4 id="NoneType"><a href="#NoneType" class="headerlink" title="NoneType"></a>NoneType</h4><ul>
 <li><code>None</code><br>  表示没有值，其他语言可能称这个值为null、nil、undefined<br>  <code>print()</code> 的返回值就是 <code>None</code><br>  在幕后，对于所有没有 return 语句的函数定义，Python都会在末尾加上 <code>return None</code>，类似于 while 或 for 循环隐式地以 continue 语句结尾。<br>  使用不带值的 return 语句，那么就返回 None。</li>
 </ul>
+<h4 id="string"><a href="#string" class="headerlink" title="string"></a>string</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">s = <span class="string">' I love you '</span></div><div class="line"></div><div class="line">s.title() == <span class="string">' I Love You '</span></div><div class="line">s.upper() == <span class="string">' I LOVE YOU '</span></div><div class="line">s.lower() == <span class="string">' i love you '</span></div><div class="line">s.rstrip() == <span class="string">' I love you'</span></div><div class="line">s.lstrip() == <span class="string">'I love you '</span></div><div class="line">s.strip() == <span class="string">'I love you'</span></div><div class="line">len(s) == <span class="number">12</span></div></pre></td></tr></table></figure>
 <h4 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h4><ul>
 <li><code>str()</code></li>
 <li><code>int()</code></li>
