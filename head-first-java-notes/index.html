@@ -124,8 +124,59 @@
 </ul>
 <h2 id="Chap-3"><a href="#Chap-3" class="headerlink" title="Chap 3"></a>Chap 3</h2><ul>
 <li>除非末尾加上 f 否则所有带有小数点的值都会被 Java 当作 <code>double</code> 处理。一次声明 <code>float</code> 变量时应该 <code>float a = 1.0f</code> (P51)</li>
-<li>8 种原始类型 (primitive types) (P51)<br>|  type   |      bits      |    range     |<br>| :—–: | :————: | :———-: |<br>| boolean | depends on JVM |  true/false  |<br>|  char   |       16       |   0~65535    |<br>|  byte   |       8        |   -128~127   |<br>|  short  |       16       | -32768~32767 |<br>|   int   |       32       | -2^31~2^31-1 |<br>|  long   |       64       | -2^63~2^63-1 |<br>|  float  |       32       |   variable   |<br>| double  |       64       |   variable   |</li>
+<li>8 种原始类型 (primitive types) (P51)</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">type</th>
+<th style="text-align:center">bits</th>
+<th style="text-align:center">range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">depends on JVM</td>
+<td style="text-align:center">true/false</td>
+</tr>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0~65535</td>
+</tr>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-128~127</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">-32768~32767</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">-2^31~2^31-1</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">64</td>
+<td style="text-align:center">-2^63~2^63-1</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">variable</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">64</td>
+<td style="text-align:center">variable</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p>Java 只支持有符号数</p>
 </blockquote>
