@@ -178,11 +178,10 @@
 </tbody>
 </table>
 <blockquote>
-<p>Java 只支持有符号数</p>
+<p>Java 只支持有符号整数</p>
 </blockquote>
 <ul>
-<li>Java 只支持有符号整数</li>
-<li>编译器不允许将大类型的内容放到小类型中，但反过来可以。 (P52)</li>
+<li>编译器不允许直接将大类型的内容放到小类型中，但反过来可以。 (P52)</li>
 <li>类、方法、变量的命名方法  (P53)<ul>
 <li>名称必须以字母、<code>_</code> 、<code>$</code> 符号开头，不能用数字开头</li>
 <li>除第一个字符之外后面可用数字</li>
@@ -203,7 +202,60 @@
 </li>
 </ul>
 <h2 id="Chap-5"><a href="#Chap-5" class="headerlink" title="Chap 5"></a>Chap 5</h2><ul>
-<li>​</li>
+<li><p><code>Integer.parseInt(&quot;3&quot;);</code>  </p>
+<p><code>Integer</code> 为 Java 内置类，其 <code>parseInt</code> 方法能够将 <code>String</code> 类型转换成 <code>int</code> 类型。若传入的参数不是代表数字的String，就会抛出一个异常。 (P105)</p>
+</li>
+<li><p><code>for(int i:array){}</code></p>
+<p>类似 Python 中的 <code>for i in array:</code>，将后面数组或其他集合中的元素逐个赋值给 i 进行迭代。循环变量的类型必须与数组元素的类型相同。 (P111,116)</p>
+</li>
+<li><p><code>int randomNum = (int)(Math.random()*5);</code></p>
+<p><code>Math.random()</code> 会返回 [0,1) 上的一个 <code>double</code> 类型的随机小数，因此上面这条语句会生成一个 0~4 的整数保存在 <code>randomNum</code> 变量中。 (P111)</p>
+</li>
+</ul>
+<h2 id="Chap-6"><a href="#Chap-6" class="headerlink" title="Chap 6"></a>Chap 6</h2><ul>
+<li><p><code>ArrayList</code> 类：</p>
+<p><code>import java.util.ArrayList;</code></p>
+<p>(P132)</p>
+</li>
+<li><p>布尔运算符</p>
+<p><code>&amp;&amp;</code> 和 <code>||</code> 会进行短路计算，可以利用这一特性：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(ref != <span class="keyword">null</span> &amp;&amp; ref.isValidType())&#123;</div><div class="line">  <span class="comment">// 避免调用内容为 null 的指针变量</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>长运算符 <code>&amp;</code> 和 <code>|</code> 会强制 Java 虚拟机一定要计算两边的算式。 (P151)</p>
+</li>
+<li><p>Java API</p>
+<ul>
+<li><p>java.lang</p>
+<ul>
+<li>System</li>
+<li>String</li>
+<li>Math</li>
+</ul>
+<p>是预先被引用的包，所以可以不必指定名称。</p>
+</li>
+<li><p>java.util</p>
+</li>
+<li><p>javax.swing</p>
+</li>
+</ul>
+<p>import 和 C 语言的 #include 并不相同，运用 import 只是省下每个类前面的包名称而已，程序不会因为用了 import 而变大或变慢。 (P157)</p>
+</li>
+</ul>
+<h2 id="Chap-7"><a href="#Chap-7" class="headerlink" title="Chap 7"></a>Chap 7</h2><ul>
+<li><p>次级类继承上级类所有 <code>public</code> 类型的实例变量和方法，次级类可以覆盖(override)继承得到的方法，实例变量无法被覆盖掉是因为不需要，它们没有定义特殊的行为。一定要确定子类是父类的一种更特定的类型才能用继承关系。 (P168)</p>
+</li>
+<li><p>可以在子类中通过 <code>super</code> 这个关键词来取用父类</p>
+<p>父类可以通过存取权限决定子类是否能够继承某些特定的成员。其中 <code>public</code> 类型的成员会被继承，<code>private</code> 类型的成员不会被继承。 (P180)</p>
+</li>
+<li><p>多态：</p>
+<p>一般声明引用和创建对象的步骤：声明一个引用变量=&gt;创建对象=&gt;连接对象和引用。重点在于引用类型和对象的类型必须相符。但在多态下，引用类型可以是实际对象的父类。</p>
+<p>如果将参数声明成父类类型，就可以传入任何的子类对象。</p>
+<p>覆盖父类方法的规则：①参数必须一样，返回类型必须与父类一样或该类型的子类，要保证能够执行父类的一切。②不能降低存取权限。 (P190)</p>
+</li>
+<li><p>方法的重载(overload)与多态继承毫无关系。重载①返回类型可以不同，但不能只改变返回类型，重载的条件是使用不同的参数。②可以更改存取权限。 (P191)</p>
+</li>
+</ul>
+<h2 id="Chap-8"><a href="#Chap-8" class="headerlink" title="Chap 8"></a>Chap 8</h2><ul>
+<li>有些抽象类不应该被初始化。</li>
 </ul>
 </section>
     
