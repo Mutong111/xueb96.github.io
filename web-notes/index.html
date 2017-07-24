@@ -195,12 +195,24 @@
 </blockquote>
 <h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>五种基本类型</p>
 <ul>
-<li>number<br>  范围[5e-324,1e308]    超出后变成Infinity。Infinity-Infinity会得到NaN(Not a Number)</li>
-<li>string<br>  \u后面的字符会被视为Unicode码</li>
-<li>boolean</li>
-<li>undefined<br>  一般没有返回值的表达式会打印一个undefined</li>
-<li>null<br>非基本类型</li>
-<li>对象<br>查看类型操作符typeof</li>
+<li><p>number<br>  范围[5e-324,1e308]    超出后变成Infinity。Infinity-Infinity会得到- - -</p>
+<ul>
+<li><p>NaN(Not a Number)</p>
+<p>任何涉及NaN的操作都会返回NaN</p>
+<p>NaN与任何值都不相等，包括NaN本身</p>
+</li>
+</ul>
+</li>
+<li><p>string<br>  \u后面的字符会被视为Unicode码</p>
+</li>
+<li><p>boolean</p>
+</li>
+<li><p>undefined<br>  一般没有返回值的表达式会打印一个undefined</p>
+</li>
+<li><p>null<br>非基本类型</p>
+</li>
+<li><p>对象<br>查看类型操作符typeof</p>
+</li>
 </ul>
 <p>可以在变量名的任意位置使用\$</p>
 <h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><p>JS没有类。一切都是基于对象的，依靠一套原型(prototype)系统。不同于传统OO语言，类似“基于A类创建了一个叫做B的新对象”的描述会在JS中变成“将现有的A对象扩展成了一个叫做B的新对象”<br>JS所有方法和属性都是public的。但还是提供了一些隐藏数据的方法。<br>聚合和继承都发生在对象之间。</p>

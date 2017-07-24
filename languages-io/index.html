@@ -7,7 +7,7 @@
   <meta name="keyword" content="null">
   <title>
     
-      OpenCV学习笔记(一) OpenCV 模块 | xueb96 | _(:з」∠)_
+      各语言输入输出注意事项 | xueb96 | _(:з」∠)_
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -105,90 +105,57 @@
 </header>
 
     <div id="article-banner">
-  <h2>OpenCV学习笔记(一) OpenCV 模块</h2>
-  <p class="post-date">2017-05-15</p>
+  <h2>各语言输入输出注意事项</h2>
+  <p class="post-date">2017-07-24</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
   </div>
 </div>
 <main class="app-body">
   <article class="post-article">
-    <section class="markdown-content"><p>OpenCV系列笔记第一篇。 OpenCV 各模块的简介<br><a id="more"></a></p>
-<p>OpenCV采用模块化的架构设计，我们打开<code>\opencv\sources\modules</code>可以看到OpenCV的各个模块，每个模块包含不同的内容。</p>
-<p><img src="http://i4.buimg.com/588926/8451f744952a78ab.jpg" alt=""></p>
-<h3 id="主要模块"><a href="#主要模块" class="headerlink" title="主要模块"></a>主要模块</h3><p>按照官方文档的顺序列举主要模块</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Module</th>
-<th style="text-align:center">Feature</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">core</td>
-<td style="text-align:center">The Core Functionality</td>
-</tr>
-<tr>
-<td style="text-align:center">imgproc</td>
-<td style="text-align:center">Image Processing</td>
-</tr>
-<tr>
-<td style="text-align:center">highgui</td>
-<td style="text-align:center">High Level GUI and Media</td>
-</tr>
-<tr>
-<td style="text-align:center">imgcodecs</td>
-<td style="text-align:center">Image Input and Output</td>
-</tr>
-<tr>
-<td style="text-align:center">videoio</td>
-<td style="text-align:center">Video Input and Output</td>
-</tr>
-<tr>
-<td style="text-align:center">calib3d</td>
-<td style="text-align:center">Camera calibration and 3D reconstruction<br>(相机校准和3D重建)</td>
-</tr>
-<tr>
-<td style="text-align:center">feature2d</td>
-<td style="text-align:center">2D Features framework</td>
-</tr>
-<tr>
-<td style="text-align:center">video</td>
-<td style="text-align:center">Video analysis</td>
-</tr>
-<tr>
-<td style="text-align:center">objdetect</td>
-<td style="text-align:center">Object Detection</td>
-</tr>
-<tr>
-<td style="text-align:center">ml</td>
-<td style="text-align:center">Machine Learning</td>
-</tr>
-<tr>
-<td style="text-align:center">photo</td>
-<td style="text-align:center">Computational photography</td>
-</tr>
-<tr>
-<td style="text-align:center">stitching</td>
-<td style="text-align:center">Images stitching<br>(图像拼接)</td>
-</tr>
-<tr>
-<td style="text-align:center">cuda</td>
-<td style="text-align:center">GPU-Accelerated Computer Vision</td>
-</tr>
-</tbody>
-</table>
-<p>还有其他一些不常用的模块，这里就不一一列举了。</p>
-<h3 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h3><p>要在程序中使用OpenCV，我们需要包含头文件。<br>在程序的开始，我们只需要添加一句 <code>#include &lt;opencv2/opencv.hpp&gt;</code> 即可，而没有必要像网上一些示例程序一样包含好几个模块头文件。这是因为 <code>opencv.hpp</code> 中已经包含了所有的模块</p>
+    <section class="markdown-content"><p>做题的基础，记录一些输入输出的方法。<br><a id="more"></a><br>个人学习总结，只会一些 C/C++、Java、Python。目的是完成 OJ 上的题目，所以并不详细。</p>
+<h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><p>普通输入输出使用C++中的 <code>cin</code> 与 <code>cout</code> 即可，但控制输出位数时使用 <code>printf</code> 比较方便，要记得 <code>#include &lt;cstdio&gt;</code></p>
+<h4 id="printf"><a href="#printf" class="headerlink" title="printf"></a>printf</h4><ul>
+<li>%ld 输出长整型；%Lf输出长双精度浮点型</li>
+<li>使用 %% 来打印一个 %</li>
+<li><strong>float 与 double 类型都以 %f 指定输出</strong>(<code>printf</code>会把<code>float</code>自动转化为<code>double</code>)</li>
+<li>%f 最多输出小数点后6位</li>
+<li>%m.nf 此处m, n皆为整数。<br>m 指定最小位宽，小数点也占一位。数据位宽大于m时，按实际位宽输出；数据位宽小于m时，m为正数则右对齐左补空格，m为负数则左对齐右补空格。<br>n 控制小数位数</li>
+</ul>
+<h4 id="scanf"><a href="#scanf" class="headerlink" title="scanf"></a>scanf</h4><ul>
+<li><code>scanf(&quot;输入格式控制字符串&quot;, 输入地址表)</code></li>
+<li><strong>%f 输入 float; %lf 输入 double</strong></li>
+<li>可指定截取位宽但不能指定小数位数</li>
+<li>%*2d表示跳过2个int</li>
+<li>普通字符原样输入<ul>
+<li><code>&quot;%d %d&quot;</code> 表示以空格/Tab/回车作为输入数据的分隔符输入</li>
+<li><code>&quot;%d,%d&quot;</code> 表示以逗号作为数据分隔符输入，其他普通字符同理</li>
+</ul>
+</li>
+<li>由于 <code>scanf()</code> 把空格/Tab/回车等作为分隔符，读到这些字符时系统会认为读入结束，因此<strong>不能读入带空格的字符串</strong></li>
+<li>以任意分隔符输入算式 <code>scanf(&quot;%d %c%d&quot;, &amp;data1, &amp;op, &amp;data2);</code></li>
+</ul>
+<h4 id="putchar-与-getchar"><a href="#putchar-与-getchar" class="headerlink" title="putchar 与 getchar"></a>putchar 与 getchar</h4><ul>
+<li>putchar(ch)向屏幕输出一个字符</li>
+<li>ch = getchar() 从键盘接收一个字符保存在变量ch中</li>
+<li>一些情况下使用 <code>getchar();</code> 来吸收输入缓冲区中的回车字符，避免被后面的变量当作有效字符读入。(输入过程：键盘-&gt;输入缓冲区–按回车–&gt;内存) 另一种解决方案为把下一条语句改成 <code>scanf(&quot; %c&quot;, &amp;ch);</code> 即 %c 前加一个空格</li>
+</ul>
+<h4 id="gets-与-puts"><a href="#gets-与-puts" class="headerlink" title="gets 与 puts"></a>gets 与 puts</h4><ul>
+<li><code>puts(str);</code> 与 <code>printf(&quot;%s&quot;, str);</code> 等价</li>
+<li><code>gets(str);</code> 可以输入带空格的字符串，因其把空格和制表符当成字符串的一部分。把回车作为字符串的终止符，同时将回车从缓冲区读走但不作为字符串的一部分</li>
+</ul>
+<p>通过哈工大苏小红的超星视频复习(中国大学MOOC不在开课时间)，才发现我的基础好差，老师讲得很不错，看到缓冲区溢出攻击了，Mark一下</p>
+<embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9026489&page=44" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">
+
+<p>###Java</p>
+<p>###Python</p>
+<p>####input</p>
 </section>
     
       <div class="tags">
         <span>Tags:</span>
         
-  <span class="tag-code">OpenCV</span>
-
-  <span class="tag-code">学习笔记</span>
+  <span class="tag-code">OJ</span>
 
       </div>
     
@@ -218,7 +185,7 @@
 
 <script>
   (function () {
-    var url = 'http://alwaysthink.cn/opencv-notes-1/';
+    var url = 'http://alwaysthink.cn/languages-io/';
     $('#article-banner').geopattern(url)
     $('.header').removeClass('fixed-header')
 
