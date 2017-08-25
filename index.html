@@ -21,6 +21,20 @@
   <script src="/js/qrious.js"></script>
   <script src="/js/gitment.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
+  
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/koharu/koharu.model.json")</script>
+  
   <body>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="header fixed-header">
   <div class="header-container">
@@ -105,78 +119,6 @@
 </header>
 
     <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/languages-io/">各语言输入输出注意事项</a>
-      </h2>
-      <p class="article-date">2017-07-24</p>
-      
-        
-  <span class="tag-code">OJ</span>
-
-      
-      <div class="article-summary">
-        
-          <p>做题的基础，记录一些输入输出的方法。<br>
-        
-      </div>
-      <a class="more" href="/languages-io/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/head-first-java-notes/">《Head First Java》笔记</a>
-      </h2>
-      <p class="article-date">2017-07-11</p>
-      
-        
-  <span class="tag-code">Java</span>
-
-      
-      <div class="article-summary">
-        
-          <p>经典 Java 教材，摘录重点。<br>
-        
-      </div>
-      <a class="more" href="/head-first-java-notes/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/linux-notes/">Linux学习笔记</a>
-      </h2>
-      <p class="article-date">2017-06-16</p>
-      
-        
-  <span class="tag-code">笔记</span>
-
-      
-      <div class="article-summary">
-        
-          <p>Linux 是 CS 必修。<br>
-        
-      </div>
-      <a class="more" href="/linux-notes/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/python-notes/">Python学习笔记</a>
-      </h2>
-      <p class="article-date">2017-05-26</p>
-      
-        
-  <span class="tag-code">学习笔记</span>
-
-      
-      <div class="article-summary">
-        
-          <p>学习 Python 时记的笔记<br>
-        
-      </div>
-      <a class="more" href="/python-notes/">Read more</a>
-    </article>
   
     <article class="article-card">
       <h2 class="article-head">
@@ -292,6 +234,78 @@
         
       </div>
       <a class="more" href="/web-notes/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/learn-computer-system/">计算机系统学习资料汇总</a>
+      </h2>
+      <p class="article-date">2017-04-30</p>
+      
+        
+  <span class="tag-code">系统</span>
+
+      
+      <div class="article-summary">
+        
+          <p>学习计算机系统（程序、组成原理、操作系统），写出更好的代码<br>
+        
+      </div>
+      <a class="more" href="/learn-computer-system/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/Toy-programs/">Toy programs</a>
+      </h2>
+      <p class="article-date">2017-04-30</p>
+      
+        
+  <span class="tag-code">C/C++</span>
+
+      
+      <div class="article-summary">
+        
+          <p>收集一些代码段。<br>
+        
+      </div>
+      <a class="more" href="/Toy-programs/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/learn-computer-network/">计算机网络入门汇总</a>
+      </h2>
+      <p class="article-date">2017-04-29</p>
+      
+        
+  <span class="tag-code">Network</span>
+
+      
+      <div class="article-summary">
+        
+          <p>学习计算机网络的原理<br>
+        
+      </div>
+      <a class="more" href="/learn-computer-network/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/learn-data-structure-and-algorithm/">数据结构与算法学习资料</a>
+      </h2>
+      <p class="article-date">2017-04-29</p>
+      
+        
+  <span class="tag-code">Algorithm</span>
+
+      
+      <div class="article-summary">
+        
+          <p>Programs = Data Structure + Algorithm<br>
+        
+      </div>
+      <a class="more" href="/learn-data-structure-and-algorithm/">Read more</a>
     </article>
   
 
