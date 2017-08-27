@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="xueb96&#39;s blog">
+  <meta name="keyword" content="null">
+  <title>
+    
+      Web 学习心得 | xueb96 | _(:з」∠)_
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/plugins/gitment.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="/js/qrious.js"></script>
+  <script src="/js/gitment.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+  
+    <script type="text/javascript" src="/live2d/script.js"></script>
+    <canvas id="live2dcanvas" width="150" height="300" class="live2d"></canvas>
+    <style>
+      #live2dcanvas {
+        position: fixed;
+        right: 0px;
+        z-index: 999;
+        pointer-events: none;
+        bottom: -60px;
+      }
+    </style>
+    <script>loadlive2d("live2dcanvas" ,"/live2d/assets/koharu/koharu.model.json")</script>
+  
+  <body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>xueb96 | _(:з」∠)_</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>Web 学习心得</h2>
+  <p class="post-date">2017-08-27</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body">
+  <article class="post-article">
+    <section class="markdown-content"><p>最近在学习 Web 开发的知识, 把一些想法记录下来.</p>
+<a id="more"></a>
+<p>什么是 Web 呢? Web == World Wide Web(WWW) 有个中文名字叫 ‘万维网’.</p>
+<p>还有一个网叫 ‘互联网’, 台湾叫 ‘網際網絡’, 英文原名叫 ‘Internet’, 所以另一个中文名字叫 ‘因特网’. Web 和 Internet 是不一样的. 简单来说, Web 是建立在 Internet 上的一种服务, 建立其上的服务还有 FTP, SMTP, Telnet 等, 都是 Internet 的一部分, 只不过我们使用 Web 更多一些.</p>
+<p>Web 是由英国科学家 Tim Berners-Lee 在 1989 年发明的, 这个发明是什么意思呢? 其实就是做了一点小小的贡献, 主要干了三件事:</p>
+<ol>
+<li>定义了 HTTP 协议, 也就是规定了浏览器和服务器如何通信</li>
+<li>写出了第一个 Web browser (网页浏览器)</li>
+<li>写出了第一个 Web server (Web 服务器)</li>
+</ol>
+<p>这就是 Web, 两个软件加上它们之间的交流语言. </p>
+<blockquote>
+<p>我们常听到说前端工程师, 后端工程师. 前端主要与浏览器打交道, 为了让用户得到更好更快的网页, 由于与用户接近所以称之为前端. 后端主要与服务器打交道, 主要的工作内容是处理业务逻辑, 管理数据和提高性能和稳定性等. </p>
+<p>近几年还出现了 ‘全栈工程师’ 这么个称号, 这个称号定义不明, 好像会写个网站的前端后端或者再会写个APP就是全栈工程师了, 在我看来是特别忽悠的, 只是一个花俏的名字而已, 然后擅长忽悠的投机分子李笑来就拿着这个去<a href="https://ruby-china.org/topics/33036" target="_blank" rel="external">骗钱</a>了.</p>
+<p>我更喜欢的头衔是 ‘Web Developer’, Tim Berners-Lee 在某次访谈中的介绍很低调的写了这个, 不过人家是发明 Web 的开发者, 哈哈确实没毛病.</p>
+</blockquote>
+<p>嗯, 回到 Web 本身, 学习新技术首先应该了解它解决了什么问题, 理解它的本质. 这也是本文的重点, 当然目前我只是一个初学者, 所以并没有什么深刻的看法. </p>
+<p>我认为 Web 的本质就是 <strong>传输文件</strong>, 什么文件呢? HTML 文本和一些图片视频等媒体文件. 在 Web 之前, 人们是怎么完成同样的功能呢? FTP. 想象这么一个场景, 为了取得其他计算机上的资源, 我要利用 FTP 建立连接, 然后下载到我的计算机上, 然后通过相应的软件查看, 哪怕这个东西只是一段文字, 我也要下载一个 txt 文件然后打开. 是的, 太麻烦了, 我不需要那个文件, 我只想看一下然后关掉, 我不想下载, 我想直接就能看.</p>
+<p> 嗯, Berners-Lee 也是这么想的, 然后发明了 Web, 我们想看什么, 打开浏览器直接看就好了. </p>
+<p> 一开始只是文字, 后来逐渐的支持了图片, 声音, 视频, 网站越来越丰富. 这些内容通过 HTML 文件组织起来, 但人们不止要内容, 还要形式, 谁不爱美的东西呢, 所以就添加了一些样式在 HTML 里, 让网页更美观. 但样式越来越多, HTML 越来越臃肿, 对开发人员很不友好, 所以就把控制样式的代码剥离出来, 也就是 CSS. 但是这样的页面只是静态的, 对用户来说, 就是你看到的和我看到的一模一样, 对开发者来说, 更新页面就要再写个新的 HTML 文件. 要想有更多功能, 就要写动态的网站了, 也就是通过程序语言来控制输出什么内容, 比如我的微博和你的微博首页不是一样的, 是因为我们关注的人不是一样的, 后端把我们各自关注的人发的微博内容从数据库里拉出来, 然后发送给前端, 我们就看到了各自的首页. 后端处理了数据, 而前端控制了如何向我们展示这些数据. 后端常用的编程语言有 PHP, Java, Ruby, Python, Go 等.</p>
+<p> 待续</p>
+</section>
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <span class="tag-code">Web</span>
+
+      </div>
+    
+    <div class="money-like">
+      <div class="reward-btn">
+        赏
+        <span class="money-code">
+          <span class="alipay-code">
+            <div class="code-image"></div>
+            <b>使用支付宝打赏</b>
+          </span>
+          <span class="wechat-code">
+            <div class="code-image"></div>
+            <b>使用微信打赏</b>
+          </span>
+        </span>
+      </div>
+      <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+    </div>
+    <div class="qrcode">
+      <canvas id="share-qrcode"></canvas>
+      <p class="notice">扫描二维码，分享此文章</p>
+    </div>
+    <div id="comments"></div>
+  </article>
+</main>
+
+<script>
+  (function () {
+    var url = 'http://alwaysthink.cn/think-web/';
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png') 
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      var imageW = $(this).width()
+      var imageH = $(this).height()
+      
+      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+      zoom = zoom < 1 ? 1 : zoom
+      zoom = zoom > 2 ? 2 : zoom
+      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+      $('.image-view-wrap').addClass('wrap-active')
+      $('.image-view-wrap img').css({
+        'width': `${imageW}`,
+        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+      })
+      $('html').css('overflow', 'hidden')
+
+      $('.image-view-wrap').on('click', function() {
+        $(this).remove()
+        $('html').attr('style', '')
+      })
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "undefined";
+    if (gitmentConfig != "undefined") {
+      var gitment = new Gitment({
+        owner: "undefined",
+        repo: "undefined",
+        oauth: {
+          client_id: "undefined",
+          client_secret: "undefined"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2017
+    <br>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+<script>
+  var hasLine = 'true';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine == 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+  </body>
+</html>
